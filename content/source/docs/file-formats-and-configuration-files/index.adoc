@@ -13,33 +13,52 @@
 toc::[]
 
 == RoR File Formats
+////
+Everything I comment out is because the pages do not yet exist. Anything orange is old / links to another website.
+I also added a link to the python scripting page, and fixed the Ogre links.
 * <<{baseurl}/folder-structure/index.adoc#,Folder Structure>> - Organizational pattern of the Rigs of Rods folders 
-* <<{baseurl}/command-line-arguments/index.adoc#,Command Line Arguments>> - very useful for testing vehicles and maps 
+* <<{baseurl}/command-line-arguments/index.adoc#,Command Line Arguments>> - very useful for testing vehicles and maps
+////
+* http://www.rigsofrods.com/wiki/pages/Folder_Structure[Folder Structure] - Organizational pattern of the Rigs of Rods folders
+* http://www.rigsofrods.com/wiki/pages/Command_Line_Arguments[Command Line Arguments] - very useful for testing vehicles and maps
 * *.truck / .load / .airplane / .boat / .train* - see <<{baseurl}/truck-description-file/index.adoc#,Truck Description File>>
 * *.terrn2* - see <<{baseurl}/terrain-system/index.adoc#,Terrain System>>
-* *.odef* - see <<{baseurl}/object-format/index.adoc#,Object Format>>
-* *.lua* - see <<{baseurl}/lua-system/index.adoc#,LUA System>>
+//* *.odef* - see <<{baseurl}/object-format/index.adoc#,Object Format>>
+* *.odef* - see http://www.rigsofrods.com/wiki/pages/Object_Format[Object Format]
+//* *.lua* - see <<{baseurl}/lua-system/index.adoc#,LUA System>>
+* *.lua* - see http://www.rigsofrods.com/wiki/pages/LUA_System[LUA System]
 * *.as* - see http://ror.ezzg.be/docs/angelscript/
-* *.skin* - see <<{baseurl}/skins/index.adoc#,Skins>>
-* *.soundscript* - see <<{baseurl}/soundscript-files/index.adoc#,Soundscript files>>
+* *.py* - see http://www.rigsofrods.com/wiki/pages/PythonInterface[PythonInterface]
+//* *.skin* - see <<{baseurl}/skins/index.adoc#,Skins>>
+* *.skin* - see http://www.rigsofrods.com/wiki/pages/Skins[Skins]
+//* *.soundscript* - see <<{baseurl}/soundscript-files/index.adoc#,Soundscript files>>
+* *.soundscript* - see http://www.rigsofrods.com/wiki/pages/Soundscript_files[Soundscript files]
 * *.os* - those files are ogre script files. They can contain anything from materials up to caelum sky configurations.
 * *.hdx* - see <<{baseurl}/hydrax-config/index.adoc#,Hydrax Config>> Hydrax Water Render config file
 
 == RoR Specific Files
 * <<{baseurl}/ror.cfg/index.adoc#,RoR.cfg>>
-* <<{baseurl}/ror.log/index.adoc#,RoR.log>>
-* <<{baseurl}/input.map/index.adoc#,input.map>>
-* <<{baseurl}/ogre.cfg/index.adoc#,ogre.cfg>>
-* <<{baseurl}/editor.cfg/index.adoc#,editor.cfg>>
-* <<{baseurl}/data-wavefield.cfg/index.adoc#,data/wavefield.cfg>>
-* <<{baseurl}/plugins-files/index.adoc#,Plugins_*.cfg>>
-* <<{baseurl}/resources.cfg/index.adoc#,resources.cfg>>
-* <<{baseurl}/truck-categories/index.adoc#,data/categories.cfg>>
+//* <<{baseurl}/ror.log/index.adoc#,RoR.log>>
+* http://www.rigsofrods.com/wiki/pages/RoR.log[RoR.log]
+//* <<{baseurl}/input.map/index.adoc#,input.map>>
+* http://www.rigsofrods.com/wiki/pages/Input.map[input.map]
+//* <<{baseurl}/ogre.cfg/index.adoc#,ogre.cfg>>
+* http://www.rigsofrods.com/wiki/pages/Ogre.cfg[ogre.cfg]
+//* <<{baseurl}/editor.cfg/index.adoc#,editor.cfg>>
+* http://www.rigsofrods.com/wiki/pages/Editor.cfg[editor.cfg]
+//* <<{baseurl}/data-wavefield.cfg/index.adoc#,data/wavefield.cfg>>
+* http://www.rigsofrods.com/wiki/pages/Data/wavefield.cfg[data/wavefield.cfg]
+//* <<{baseurl}/plugins-files/index.adoc#,Plugins_*.cfg>>
+* http://www.rigsofrods.com/wiki/pages/Plugins_*.cfg[Plugins_*.cfg]
+//* <<{baseurl}/resources.cfg/index.adoc#,resources.cfg>>
+* http://www.rigsofrods.com/wiki/pages/Resources.cfg[resources.cfg]
+//* <<{baseurl}/truck-categories/index.adoc#,data/categories.cfg>>
+* http://www.rigsofrods.com/wiki/pages/Truck_Categories[data/categories.cfg]
 
 == Ogre File Formats
  *.material::
 * http://www.ogre3d.org/docs/manual/manual_14.html
-* http://www.ogre3d.org/wiki/index.php/Getting_Started_With_Ogre_CG_Materials
+* http://www.ogre3d.org/tikiwiki/tiki-index.php?page=Getting+Started+With+Ogre+CG+Materials
 
  *.mesh::
 * http://www.ogre3d.org/docs/manual/manual_9.html
@@ -48,7 +67,7 @@ toc::[]
 * http://www.ogre3d.org/docs/manual/manual_12.html
 
 terrain.cfg::
-* http://www.ogre3d.org/wiki/index.php/Terrain_Scene_Manager
+* http://www.ogre3d.org/tikiwiki/tiki-index.php?page=Terrain+Scene+Manager <- This is the old terrain system. For information on the new one, see <<{baseurl}/terrain-system/index.adoc#,Terrain System>>.
 ** we have an additional keyword in that file:
 *** disable=1 will disable the terrain mesh and thus hide all the terrain. Collision will be still there.
 
