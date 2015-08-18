@@ -2,194 +2,198 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Artem Vorotnikov <artem@vorotnikov.me>, 2015.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-08-08 19:46+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2015-08-18 07:50+0300\n"
+"PO-Revision-Date: 2015-08-18 08:26+0300\n"
+"Last-Translator: Artem Vorotnikov <artem@vorotnikov.me>\n"
+"Language-Team: русский <>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #. type: Title =
 #: content/source/download/changelog/index.adoc:1
 #, no-wrap
 msgid "Changelog"
-msgstr ""
+msgstr "Список изменений"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:14
 msgid "Version updates are listed here."
-msgstr ""
+msgstr "Здесь указаны номера версий и их изменения."
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:16
 msgid "toc::[]"
-msgstr ""
+msgstr "toc::[]"
 
 #. type: Title ==
 #: content/source/download/changelog/index.adoc:17
 #, no-wrap
-msgid "0.4.5"
-msgstr ""
+msgid "0.4.5 \"NextStable\""
+msgstr "0.4.5 \"NextStable\""
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:19
-msgid ""
-"First major release by a new development team. All post-0.4.0.7changes found "
-"in this version, all other versions after 0.4.0.7 are skipped."
+msgid "First major release by a new development team after a two-year pause."
 msgstr ""
+"Первый крупный релиз от новой команды разработчиков после двухгодичной паузы."
 
 #. type: Labeled list
 #: content/source/download/changelog/index.adoc:20
 #, no-wrap
 msgid "Features"
-msgstr ""
+msgstr "Нововведения:"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:22
 msgid "Introduced main menu"
-msgstr ""
+msgstr "Добавлено главное меню"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:23
 msgid ""
 "Introduced pause menu with ability to change maps ingame without restarting"
-msgstr ""
+msgstr "Добавлено меню паузы с возможностью смены карты"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:24
 msgid "Introduced built-in rig editor"
-msgstr ""
+msgstr "Добавлен встроенный редактор транспортных средств"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:25
 msgid "Introduced ingame settings configurator"
-msgstr ""
+msgstr "Добавлено меню настроек"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:26
 msgid "Replaced .truck parser with new one designed from scratch"
-msgstr ""
+msgstr "Переписан с нуля парсер .truck-файлов."
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:27
 msgid "Improved console"
-msgstr ""
+msgstr "Улучшена командная строка"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:28
 msgid "Notification system (mainly used for races)"
-msgstr ""
+msgstr "Система оповещений (в основном используется для гонок)"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:29
-msgid "Added HP/Kw indicator on truck info box"
-msgstr ""
+msgid "Added HP/kW indicator on truck info box"
+msgstr "Добавлен индикатор ЛС / кВт в меню информации о ТС"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:30
-msgid "New dashboards (can switch between MPH/KPH and Digital/Analog)"
+msgid "New dashboards (can switch between MPH / km/h and Digital/Analog)"
 msgstr ""
+"Новые панели (возможно переключение между км/ч / миль/ч и цифровым/"
+"аналоговым)"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:31
 msgid "Refreshed & modern looking GUI Skin"
-msgstr ""
+msgstr "Обновлённая шкурка GUI"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:32
 msgid "New unedited wallpapers"
-msgstr ""
+msgstr "Новые оригинальные обои"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:33
 msgid "New and reworked character animations for RoRBot"
-msgstr ""
+msgstr "Переработаны анимации бота RoR"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:34
 msgid "Much faster startup time"
-msgstr ""
+msgstr "Ускоренный запуск"
 
 #. type: Labeled list
 #: content/source/download/changelog/index.adoc:35
 #, no-wrap
 msgid "Fixes"
-msgstr ""
+msgstr "Исправления"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:37
 msgid "Fixed Skidmarks"
-msgstr ""
+msgstr "Исправлены следы от шин"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:38
 msgid "Fixed Hydrax Water Rendering"
-msgstr ""
+msgstr "Исправлено отображение воды Hydrax"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:39
 msgid "Fixed PSSM Shadows"
-msgstr ""
+msgstr "Исправлены PSSM-тени"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:40
 msgid "Fixed vegetation/rocks lightning problem"
-msgstr ""
+msgstr "Устранена проблема освещения камней и растительности"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:41
 msgid "Fixed black wallpaper background on startup"
-msgstr ""
+msgstr "Исправлен фон при запуске"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:42
 msgid "Fixed many bugs"
-msgstr ""
+msgstr "Устранено множество других неполадок"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:43
 msgid "Fixed Linux build"
-msgstr ""
+msgstr "Исправлена сборка под Linux"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:44
 msgid ""
 "Fixed deactivated trucks not properly activating other deactivated trucks"
-msgstr ""
+msgstr "Исправлена активация неактивными ТС других неактивных ТС"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:45
 msgid "Fixed the crash when leaving a truck/load with no cinecam defined"
-msgstr ""
+msgstr "Устранено падение при выходе из ТС без определённого cinecam"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:46
 msgid "Fixed the crash when removing a vehicle in single player mode"
-msgstr ""
+msgstr "Устранено падение при удалении ТС в режиме одиночной игры"
 
 #. type: Labeled list
 #: content/source/download/changelog/index.adoc:47
 #, no-wrap
 msgid "Deprecations and obsoletions"
-msgstr ""
+msgstr "Устаревания"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:49
 msgid "Removed Stencil Shadows (deprecated)"
-msgstr ""
+msgstr "Удалены стенсильные тени"
 
 #. type: Title ==
 #: content/source/download/changelog/index.adoc:50
 #, no-wrap
 msgid "0.4.0.7"
-msgstr ""
+msgstr "0.4.0.7"
 
 #. type: Labeled list
 #: content/source/download/changelog/index.adoc:51
@@ -200,7 +204,7 @@ msgstr ""
 #: content/source/download/changelog/index.adoc:166
 #, no-wrap
 msgid "Changes"
-msgstr ""
+msgstr "Изменения"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:53
@@ -328,7 +332,7 @@ msgstr ""
 #: content/source/download/changelog/index.adoc:74
 #, no-wrap
 msgid "0.4.0.6"
-msgstr ""
+msgstr "0.4.0.6"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:77
@@ -464,7 +468,7 @@ msgstr ""
 #: content/source/download/changelog/index.adoc:99
 #, no-wrap
 msgid "0.4.0.5"
-msgstr ""
+msgstr "0.4.0.5"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:102
@@ -543,7 +547,7 @@ msgstr ""
 #: content/source/download/changelog/index.adoc:116
 #, no-wrap
 msgid "0.4.0.4"
-msgstr ""
+msgstr "0.4.0.4"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:119
@@ -623,7 +627,7 @@ msgstr ""
 #: content/source/download/changelog/index.adoc:133
 #, no-wrap
 msgid "0.4.0.3"
-msgstr ""
+msgstr "0.4.0.3"
 
 #. type: Labeled list
 #: content/source/download/changelog/index.adoc:134
@@ -715,7 +719,7 @@ msgstr ""
 #: content/source/download/changelog/index.adoc:152
 #, no-wrap
 msgid "0.4.0.2"
-msgstr ""
+msgstr "0.4.0.2"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:155
@@ -775,7 +779,7 @@ msgstr ""
 #: content/source/download/changelog/index.adoc:165
 #, no-wrap
 msgid "0.4.0.1"
-msgstr ""
+msgstr "0.4.0.1"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:168
@@ -793,3 +797,4 @@ msgid ""
 "New terrain format, old one is not supported anymore (see simple2-terrain."
 "zip)"
 msgstr ""
+"Новый формат карт, старый больше не поддерживается (см. simple2-terrain.zip)"

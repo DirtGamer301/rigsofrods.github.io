@@ -14,8 +14,8 @@ Version updates are listed here.
 
 toc::[]
 
-== 0.4.5
-First major release by a new development team. All post-0.4.0.7changes found in this version, all other versions after 0.4.0.7 are skipped.
+== 0.4.5 "NextStable"
+First major release by a new development team after a two-year pause.
 
 Features::
 * Introduced main menu
@@ -25,8 +25,8 @@ Features::
 * Replaced .truck parser with new one designed from scratch
 * Improved console
 * Notification system (mainly used for races)
-* Added HP/Kw indicator on truck info box
-* New dashboards (can switch between MPH/KPH and Digital/Analog)
+* Added HP/kW indicator on truck info box
+* New dashboards (can switch between MPH / km/h and Digital/Analog)
 * Refreshed & modern looking GUI Skin
 * New unedited wallpapers
 * New and reworked character animations for RoRBot

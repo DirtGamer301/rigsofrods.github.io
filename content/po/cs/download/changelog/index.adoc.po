@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-08-08 21:15+0300\n"
+"POT-Creation-Date: 2015-08-18 07:50+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,14 +35,12 @@ msgstr ""
 #. type: Title ==
 #: content/source/download/changelog/index.adoc:17
 #, no-wrap
-msgid "0.4.5"
+msgid "0.4.5 \"NextStable\""
 msgstr ""
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:19
-msgid ""
-"First major release by a new development team. All post-0.4.0.7changes found "
-"in this version, all other versions after 0.4.0.7 are skipped."
+msgid "First major release by a new development team after a two-year pause."
 msgstr ""
 
 #. type: Labeled list
@@ -89,12 +87,12 @@ msgstr ""
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:29
-msgid "Added HP/Kw indicator on truck info box"
+msgid "Added HP/kW indicator on truck info box"
 msgstr ""
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:30
-msgid "New dashboards (can switch between MPH/KPH and Digital/Analog)"
+msgid "New dashboards (can switch between MPH / km/h and Digital/Analog)"
 msgstr ""
 
 #. type: Plain text

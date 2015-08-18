@@ -34,14 +34,12 @@ msgstr ""
 #. type: Title ==
 #: content/source/download/changelog/index.adoc:17
 #, no-wrap
-msgid "0.4.5"
+msgid "0.4.5 \"NextStable\""
 msgstr ""
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:19
-msgid ""
-"First major release by a new development team. All post-0.4.0.7changes found "
-"in this version, all other versions after 0.4.0.7 are skipped."
+msgid "First major release by a new development team after a two-year pause."
 msgstr ""
 
 #. type: Labeled list
@@ -87,12 +85,12 @@ msgstr ""
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:29
-msgid "Added HP/Kw indicator on truck info box"
+msgid "Added HP/kW indicator on truck info box"
 msgstr ""
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:30
-msgid "New dashboards (can switch between MPH/KPH and Digital/Analog)"
+msgid "New dashboards (can switch between MPH / km/h and Digital/Analog)"
 msgstr ""
 
 #. type: Plain text
