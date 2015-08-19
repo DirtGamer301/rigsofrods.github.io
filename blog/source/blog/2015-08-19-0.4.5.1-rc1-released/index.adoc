@@ -1,0 +1,80 @@
+---
+
+title: "0.4.5.1 Release Candidate 1 released!"
+
+date: "2015-08-19"
+
+firstname: "Artem"
+
+lastname: "Vorotnikov"
+
+profile: "https://github.com/skybon"
+
+nick: "skybon"
+
+tags: ["Development", "Release"]
+
+---
+= 0.4.5.1 Release Candidate 1 released!
+:firstname: Artem
+:lastname: Vorotnikov
+:profile: https://github.com/skybon
+:nick: skybon
+:email: {profile}[@{nick}]
+:revdate: 2015-08-19
+:baseurl: fake/../..
+:imagesdir: {baseurl}/../images
+:doctype: article
+:icons: font
+:idprefix:
+:sectanchors:
+:sectlinks:
+:sectnums!:
+:skip-front-matter:
+:last-update-label!:
+
+image::http://i.imgur.com/ccvDMrb.jpg[role=""]
+
+Hello folks 
+
+The dev team is happy to announce Release Candidate build for the first bugfix release of the 0.4.5 NextStable series. It contains several fixes that didn't make it to 0.4.5.0 in time or were discovered after NextStable release.
+
+== 0.4.5.1 RC1
+
+Changelog::
+* Fixed crash on driving through railway switches.
+* Added shadows support to more default models.
+* Removed unneeded text from notice box.
+* Improved shadows quality.
+
+=== Get it:
+
+In line with our digital distribution policy there is no packaged archive release for test builds.
+
+Windows users can use the updater shipped with 0.4.5 to test out this build. In order to enable test releases change:
+
+[source]
+----
+DevBuilds = false
+----
+
+to
+
+[source]
+----
+DevBuilds = true
+----
+
+in _game directory / update.ini_
+
+Linux users can use <<{baseurl}/docs/linux-scripts/index.adoc#,automated scripts>> to download and build the latest snapshot.
+
+=== Disclaimer
+
+As usual, this is only a test build, do not use it if you're afraid to spoil gaming experience by sudden bugs. We tried to weed them out, though, I promise 
+
+
+
+Thank you for playing Rigs of Rods and we hope you enjoy the NextStable release series. 
+
+http://www.rigsofrods.com/threads/120125[*Discuss it here!*]
