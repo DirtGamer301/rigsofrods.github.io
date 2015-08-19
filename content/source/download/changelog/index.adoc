@@ -14,15 +14,27 @@ Version updates are listed here.
 
 toc::[]
 
+anchor:0_4_5[]
+anchor:NextStable[]
+
 == 0.4.5 "NextStable"
+
+anchor:0_4_5_1[]
+anchor:WIP[]
+
 === 0.4.5.1 (WIP)
+
 Features::
 * Fixed crash on driving through railway switches.
 * Added shadows support to more default models.
 * Removed unneeded text from notice box.
 * Improved shadows quality.
 
+anchor:0_4_5_0[]
+anchor:stable[]
+
 === 0.4.5.0 (current stable)
+
 First major release by a new development team after a two-year pause.
 
 Features::
