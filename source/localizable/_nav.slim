@@ -1,6 +1,16 @@
 ruby:
 	def nav_current
-		@entry_url == current_page.url ? {tag: 'li', class: 'active'} : {tag: 'li'}
+		url_decomp = current_page.url.split('/')
+		url_lang = ''
+		url_section = ''
+		if url_decomp[1] != nil
+			url_lang = url_decomp[1] + '/'
+		end
+		if url_decomp[2] != nil
+			url_section = url_decomp[2] + '/'
+		end
+		url_test = '/' + url_lang + url_section
+		@entry_url == url_test ? {tag: 'li', class: 'active', test: url_test} : {tag: 'li', test: url_test}
 	end
 
 .fixed.contain-to-grid.top-bar-margin
