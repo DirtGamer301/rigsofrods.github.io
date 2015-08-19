@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-08-19 09:30+0300\n"
+"POT-Creation-Date: 2015-08-19 09:40+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,21 +85,6 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:43
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:42
 msgid "Get your steel wheels ready! Thank you for playing RoR NextStable."
-msgstr ""
-
-#. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:45
-msgid "Regards,"
-msgstr ""
-
-#. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:47
-msgid "Artem Vorotnikov"
-msgstr ""
-
-#. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:48
-msgid "Rigs of Rods development team"
 msgstr ""

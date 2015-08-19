@@ -83,21 +83,6 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:43
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:42
 msgid "Get your steel wheels ready! Thank you for playing RoR NextStable."
-msgstr ""
-
-#. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:45
-msgid "Regards,"
-msgstr ""
-
-#. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:47
-msgid "Artem Vorotnikov"
-msgstr ""
-
-#. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:48
-msgid "Rigs of Rods development team"
 msgstr ""

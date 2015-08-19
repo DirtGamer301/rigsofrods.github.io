@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-08-19 09:30+0300\n"
+"POT-Creation-Date: 2015-08-19 09:40+0300\n"
 "PO-Revision-Date: 2015-08-19 09:35+0300\n"
 "Last-Translator: Artem Vorotnikov <artem@vorotnikov.me>\n"
 "Language-Team: русский <>\n"
@@ -92,21 +92,15 @@ msgstr ""
 "изменение]. Исправление будет включено в предстоящий релиз 0.4.5.1."
 
 #. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:43
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:42
 msgid "Get your steel wheels ready! Thank you for playing RoR NextStable."
 msgstr "Готовь стальные колёса! Спасибо за то, что играешь в RoR NextStable."
 
-#. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:45
-msgid "Regards,"
-msgstr "С уважением,"
+#~ msgid "Regards,"
+#~ msgstr "С уважением,"
 
-#. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:47
-msgid "Artem Vorotnikov"
-msgstr "Артём Воротников"
+#~ msgid "Artem Vorotnikov"
+#~ msgstr "Артём Воротников"
 
-#. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:48
-msgid "Rigs of Rods development team"
-msgstr "Команда разработчиков Rigs of Rods"
+#~ msgid "Rigs of Rods development team"
+#~ msgstr "Команда разработчиков Rigs of Rods"

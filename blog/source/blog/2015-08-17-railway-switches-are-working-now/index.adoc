@@ -39,10 +39,4 @@ Hello everyone,
 
 The annoying https://github.com/RigsOfRods/rigs-of-rods/issues/160[rail switch crash bug] has been fixed today. See https://github.com/RigsOfRods/rigs-of-rods/commit/130d222af07c671132b1485b31e1b4dc020ee0a5[this commit] for more information. The fix will be deployed as part of upcoming 0.4.5.1 release.
 
-Get your steel wheels ready! Thank you for playing RoR NextStable. 
-
-Regards,
-
-Artem Vorotnikov
-
-Rigs of Rods development team
+Get your steel wheels ready! Thank you for playing RoR NextStable.
