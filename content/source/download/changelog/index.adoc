@@ -15,6 +15,14 @@ Version updates are listed here.
 toc::[]
 
 == 0.4.5 "NextStable"
+=== 0.4.5.1 (WIP)
+Features::
+* Fixed crash on driving through railway switches.
+* Added shadows support to more default models.
+* Removed unneeded text from notice box.
+* Improved shadows quality.
+
+=== 0.4.5.0 (current stable)
 First major release by a new development team after a two-year pause.
 
 Features::
@@ -47,7 +55,10 @@ Fixes::
 Deprecations and obsoletions::
 * Removed Stencil Shadows (deprecated)
 
-== 0.4.0.7
+== 0.4
+Former development series. Stable release never happened because of old team leaving project.
+
+=== 0.4.0.7
 Changes::
 * physics computation and collision detection now multi-threaded
 * Flexbody-, FlexMesh- and FlexMeshWheel computation now multi-threaded
@@ -71,7 +82,7 @@ Changes::
 * fixed event SE_TRUCK_TOUCHED_WATER not being triggered on water contact
 * fixed procedural roads
 
-== 0.4.0.6
+=== 0.4.0.6
 Changes::
 * slidenodes now compatible with node2
 * min-/maxCamDist limit of the orbit camera can now be disabled/enabled (RShift + Space)
@@ -96,7 +107,7 @@ Changes::
 * fixed joystick input map loading no longer overwriting all previously loaded events
 04:32, 19 May 2013 (CEST)
 
-== 0.4.0.5
+=== 0.4.0.5
 Changes::
 * basic overview map functionality is back
 * added the ability to toggle forward- and importcommands on/off (default keys: CTRL+SHIFT+F, CTRL+SHIFT+I)
@@ -113,7 +124,7 @@ Changes::
 * fixed the network initialization
 00:45, 14 May 2013 (CEST)
 
-== 0.4.0.4
+=== 0.4.0.4
 Changes::
 * Graphics engine upgraded from Ogre 1.7.3 to Ogre 1.8.1
 * fixed particle emitter playing when particles are spawned ('ufo' on loading screen)
@@ -130,7 +141,7 @@ Changes::
 * fixed beacons visible at 0,0,0 before being used
 12:34, 6 September 2012 (UTC)
 
-== 0.4.0.3
+=== 0.4.0.3
 Improvements and fixes for the <<{baseurl}/docs/0.4-terrain-system/index.adoc#,0.4 Terrain System>>::
 * improved handling of terrain config option defaults
 * fixed pagesize being hardcoded
@@ -149,7 +160,7 @@ Other changes::
 * Fixed event callbacks.
 * Added a few script functions.
 
-== 0.4.0.2
+=== 0.4.0.2
 Changes::
 * added ability to provide no terrain heightmap: "Flat=1" 
 * added setting if one wants water on the terrain or not: "Water=0" 
@@ -162,7 +173,7 @@ Changes::
 * improved installer: added content and HQ packs
 * The game is portable now: the User folder is created during runtime, not through the installer anymore.
 
-== 0.4.0.1
+=== 0.4.0.1
 Changes::
 * Work on camera system: overall work, re-added garage cam
 * Work on DOF mode
