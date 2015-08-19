@@ -1,37 +1,36 @@
 = partial "header"
 
 .row.main-start
-  .small-12.columns
-    h1
-      = I18n.t('blog.archive.title')
-  hr
+	.small-12.columns
+		article
+			header
+				h1
+					= I18n.t('blog.archive.title')
+				.details
+			- blog.local_articles.each do |article|
+				.small-12.columns.archive_entry
+					.small-9.columns
+						h3
+							a href="#{article.url}"
+								= article.metadata[:page]['title']
+						.details
+							span.author#author
+								=> article.metadata[:page]['firstname']
+								=> article.metadata[:page]['lastname']
+							' -
+							span.email#email
+								a> href="#{article.metadata[:page]['profile']}"
+									| @#{article.metadata[:page]['nick']}
+							' -
+							span#revdate
+								= article.metadata[:page]['date']
+					.small-3.columns
+						- article.tags.each do |tag|
+							span.label>
+								= tag
+				hr
 
-  - blog.local_articles.each do |article|
-	  .small-9.columns.bloglist
-    	h3
-        a href="#{article.url}"
-          = article.metadata[:page]['title']
-      .details
-        span.author#author
-          = article.metadata[:page]['author']
-        br
-        span.email#email
-          a href="#{article.metadata[:page]['profile']}"
-            | @#{article.metadata[:page]['nick']}
-        br
-        span#revdate
-          = article.date.strftime("%d %B %Y")
-    
-      .small-3.columns
-        - article.tags.each do |tag|
-          span.label
-            = tag
-
-
-    	br
-    	br
-    	br
-
-      hr
-
+		a.previous href="/#{I18n.locale}/blog"
+			span.fa.fa-arrow-left>
+			b = I18n.t('blog.backtoindex')
 = partial "footer"

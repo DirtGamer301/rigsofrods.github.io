@@ -1,44 +1,43 @@
 = partial "header"
 
 .row.main-start
-  .small-12.columns.bloglist
-    article
-      header
-        h1
-          = I18n.t('blog.title')
+	.small-12.columns.bloglist
+		article
+			header
+				h1
+					= I18n.t('blog.title')
+			- blog.local_articles[0...10].each do |article|
+				.small-12.columns.blog-entry
+					header.bloglist
+						h2
+							= article.data.title
+						.details
+							span.author#author
+								=> article.data.firstname
+								= article.data.lastname
+							br
+							span.email#email
+								a href="#{article.data.profile}"
+									| @#{article.data.nick}
+							br
+							span#revdate
+								= article.data.date
 
-    - blog.local_articles[0...10].each do |article|
-      .small-12.columns.blog-entry
-        header.bloglist
-          h2
-            = article.metadata[:page]['title']
-          .details
-            span.author#author
-              => article.metadata[:page]['firstname']
-              = article.metadata[:page]['lastname']
-            br
-            span.email#email
-              a href="#{article.metadata[:page]['profile']}"
-                | @#{article.metadata[:page]['nick']}
-            br
-            span#revdate
-              = article.date.strftime("%d %B %Y")
+					div id="summary"
+						p
+							= article.summary
 
-        div id="summary"
-          p
-            = article.summary
+					- article.tags.each do |tag|
+						span.label>
+							= tag
 
-        - article.tags.each do |tag|
-          span.label>
-            = tag
+					.right
+						a href='#{article.url}'
+							=> I18n.t('blog.readmore')
+							| →
 
-        .right
-          a href='#{article.url}'
-            => I18n.t('blog.readmore')
-            | →
-
-    .small-12.columns
-      h4
-        = I18n.t('blog.archivelink')
+		.small-12.columns
+			h4
+				= I18n.t('blog.archivelink')
 
 = partial "footer"
