@@ -2,78 +2,82 @@
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Artem Vorotnikov <artem@vorotnikov.me>, 2015.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-08-19 09:30+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2015-08-19 09:37+0300\n"
+"Last-Translator: Artem Vorotnikov <artem@vorotnikov.me>\n"
+"Language-Team: русский <>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #. type: Plain text
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:1
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:19
 #, no-wrap
 msgid "---\n"
-msgstr ""
+msgstr "---\n"
 
 #. type: Plain text
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:4
 msgid "title: \"10th anniversary of Rigs of Rods, 0.4.5 NextStable released!\""
 msgstr ""
+"title: \"Десятилетие проекта Rigs of Rods, релиз версии 0.4.5 NextStable!\""
 
 #. type: Plain text
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:6
 msgid "date: \"2015-08-11\""
-msgstr ""
+msgstr "date: \"2015-08-11\""
 
 #. type: Plain text
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:8
 msgid "firstname: \"Moncef\""
-msgstr ""
+msgstr "firstname: \"Монсеф\""
 
 #. type: Plain text
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:10
 msgid "lastname: \"Ben Slimane\""
-msgstr ""
+msgstr "lastname: \"Бен Слимане\""
 
 #. type: Plain text
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:12
 msgid "profile: \"https://github.com/Max98\""
-msgstr ""
+msgstr "profile: \"https://github.com/Max98\""
 
 #. type: Plain text
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:14
 msgid "nick: \"Max98\""
-msgstr ""
+msgstr "nick: \"Max98\""
 
 #. type: Plain text
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:16
 msgid "tags: [\"News\", \"Development\", \"Release\"]"
-msgstr ""
+msgstr "tags: [\"Новости\", \"Разработка\", \"Релиз\"]"
 
 #. type: Plain text
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:18
 msgid "talk: http://www.rigsofrods.com/threads/120086"
-msgstr ""
+msgstr "talk: http://www.rigsofrods.com/threads/120086"
 
 #. type: Title =
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:20
 #, no-wrap
 msgid "10th anniversary of Rigs of Rods, 0.4.5 NextStable released!"
-msgstr ""
+msgstr "10th anniversary of Rigs of Rods, 0.4.5 NextStable released!"
 
 #. type: Target for macro image
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:38
 #, no-wrap
 msgid "http://i.imgur.com/UcwR08I.jpg"
-msgstr ""
+msgstr "http://i.imgur.com/UcwR08I.jpg"
 
 #. type: Plain text
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:41
@@ -240,24 +244,24 @@ msgstr ""
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:78
 #, no-wrap
 msgid "Rigs of Rods development team"
-msgstr ""
+msgstr "Команда разработчиков Rigs of Rods"
 
 #. type: Plain text
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:80
 msgid "Petr Ohlidal (@only-a-ptr)"
-msgstr ""
+msgstr "Петр Оглидал (@only-a-ptr)"
 
 #. type: Plain text
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:81
 msgid "Niklas Kersten (@Hiradur)"
-msgstr ""
+msgstr "Никлас Керстен (@Hiradur)"
 
 #. type: Plain text
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:82
 msgid "Moncef Ben Slimane (@max98)"
-msgstr ""
+msgstr "Монсеф Бен Слимане (@max98)"
 
 #. type: Plain text
 #: blog/source/blog/2015-08-11-10-years-nextstable-released/index.adoc:82
 msgid "Artem Vorotnikov (@skybon)"
-msgstr ""
+msgstr "Артём Воротников (@skybon)"
