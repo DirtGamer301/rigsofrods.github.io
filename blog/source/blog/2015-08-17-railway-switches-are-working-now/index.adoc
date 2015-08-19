@@ -14,6 +14,8 @@ nick: "skybon"
 
 tags: ["Development"]
 
+talk: "http://www.rigsofrods.com/threads/120112"
+
 ---
 = Railway switches are working now
 :firstname: Artem
@@ -44,5 +46,3 @@ Regards,
 Artem Vorotnikov
 
 Rigs of Rods development team
-
-http://www.rigsofrods.com/threads/120112[*Discuss it here!*]

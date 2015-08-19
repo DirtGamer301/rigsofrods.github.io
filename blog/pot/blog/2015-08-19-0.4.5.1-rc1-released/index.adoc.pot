@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:1 blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:17
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:1 blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:19
 #, no-wrap
 msgid "---\n"
 msgstr ""
@@ -56,25 +56,30 @@ msgstr ""
 msgid "tags: [\"Development\", \"Release\"]"
 msgstr ""
 
-#. type: Title =
+#. type: Plain text
 #: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:18
+msgid "talk: \"http://www.rigsofrods.com/threads/120125\""
+msgstr ""
+
+#. type: Title =
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:20
 #, no-wrap
 msgid "0.4.5.1 Release Candidate 1 released!"
 msgstr ""
 
 #. type: Target for macro image
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:36
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:38
 #, no-wrap
 msgid "http://i.imgur.com/ccvDMrb.jpg"
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:39
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:41
 msgid "Hello folks"
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:41
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:43
 msgid ""
 "The dev team is happy to announce Release Candidate build for the first "
 "bugfix release of the 0.4.5 NextStable series. It contains several fixes "
@@ -83,94 +88,94 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:42
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:44
 #, no-wrap
 msgid "0.4.5.1 RC1"
 msgstr ""
 
 #. type: Labeled list
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:44
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:46
 #, no-wrap
 msgid "Changelog"
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:46
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:48
 msgid "Fixed crash on driving through railway switches."
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:47
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:49
 msgid "Added shadows support to more default models."
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:48
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:50
 msgid "Removed unneeded text from notice box."
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:49
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:51
 msgid "Improved shadows quality."
 msgstr ""
 
 #. type: Title ===
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:50
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:52
 #, no-wrap
 msgid "Get it:"
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:53
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:55
 msgid ""
 "In line with our digital distribution policy there is no packaged archive "
 "release for test builds."
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:55
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:57
 msgid ""
 "Windows users can use the updater shipped with 0.4.5 to test out this "
 "build. In order to enable test releases change:"
 msgstr ""
 
 #. type: delimited block -
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:59
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:61
 #, no-wrap
 msgid "DevBuilds = false\n"
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:62
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:64
 msgid "to"
 msgstr ""
 
 #. type: delimited block -
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:66
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:68
 #, no-wrap
 msgid "DevBuilds = true\n"
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:69
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:71
 msgid "in _game directory / update.ini_"
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:71
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:73
 msgid ""
 "Linux users can use <<{baseurl}/docs/linux-scripts/index.adoc#,automated "
 "scripts>> to download and build the latest snapshot."
 msgstr ""
 
 #. type: Title ===
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:72
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:74
 #, no-wrap
 msgid "Disclaimer"
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:75
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:77
 msgid ""
 "As usual, this is only a test build, do not use it if you're afraid to spoil "
 "gaming experience by sudden bugs. We tried to weed them out, though, I "
@@ -178,13 +183,8 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:79
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:80
 msgid ""
 "Thank you for playing Rigs of Rods and we hope you enjoy the NextStable "
 "release series."
-msgstr ""
-
-#. type: Plain text
-#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:80
-msgid "http://www.rigsofrods.com/threads/120125[*Discuss it here!*]"
 msgstr ""

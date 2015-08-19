@@ -14,6 +14,8 @@ nick: "Max98"
 
 tags: ["News", "Development", "Release"]
 
+talk: http://www.rigsofrods.com/threads/120086
+
 ---
 = 10th anniversary of Rigs of Rods, 0.4.5 NextStable released!
 :firstname: Moncef
@@ -78,5 +80,3 @@ Rigs of Rods development team::
 * Niklas Kersten (@Hiradur)
 * Moncef Ben Slimane (@max98)
 * Artem Vorotnikov (@skybon)
-
-http://www.rigsofrods.com/threads/120086[*Discuss it here!*]

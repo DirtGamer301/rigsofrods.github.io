@@ -18,6 +18,12 @@
 		#content
 			= yield
 
-	a.previous href="/#{I18n.locale}/blog"
+	- if current_page.metadata[:page]['talk']
+		.discuss_link
+			a href="#{current_page.metadata[:page]['talk']}"
+				span.fa.fa-comments>
+				b => I18n.t('blog.discuss')
+
+	a.previous> href="/#{I18n.locale}/blog"
 		span.fa.fa-arrow-left>
 		b = I18n.t('blog.backtoindex')

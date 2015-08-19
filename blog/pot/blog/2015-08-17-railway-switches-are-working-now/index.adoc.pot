@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:1 blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:17
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:1 blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:19
 #, no-wrap
 msgid "---\n"
 msgstr ""
@@ -56,19 +56,24 @@ msgstr ""
 msgid "tags: [\"Development\"]"
 msgstr ""
 
-#. type: Title =
+#. type: Plain text
 #: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:18
+msgid "talk: \"http://www.rigsofrods.com/threads/120112\""
+msgstr ""
+
+#. type: Title =
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:20
 #, no-wrap
 msgid "Railway switches are working now"
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:37
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:39
 msgid "Hello everyone,"
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:39
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:41
 msgid ""
 "The annoying https://github.com/RigsOfRods/rigs-of-rods/issues/160[rail "
 "switch crash bug] has been fixed today. See "
@@ -78,26 +83,21 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:41
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:43
 msgid "Get your steel wheels ready! Thank you for playing RoR NextStable."
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:43
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:45
 msgid "Regards,"
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:45
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:47
 msgid "Artem Vorotnikov"
 msgstr ""
 
 #. type: Plain text
-#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:47
-msgid "Rigs of Rods development team"
-msgstr ""
-
-#. type: Plain text
 #: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:48
-msgid "http://www.rigsofrods.com/threads/120112[*Discuss it here!*]"
+msgid "Rigs of Rods development team"
 msgstr ""

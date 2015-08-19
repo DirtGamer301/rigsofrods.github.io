@@ -14,6 +14,8 @@ nick: "skybon"
 
 tags: ["Development", "Release"]
 
+talk: "http://www.rigsofrods.com/threads/120125"
+
 ---
 = 0.4.5.1 Release Candidate 1 released!
 :firstname: Artem
@@ -75,6 +77,4 @@ As usual, this is only a test build, do not use it if you're afraid to spoil gam
 
 
 
-Thank you for playing Rigs of Rods and we hope you enjoy the NextStable release series. 
-
-http://www.rigsofrods.com/threads/120125[*Discuss it here!*]
+Thank you for playing Rigs of Rods and we hope you enjoy the NextStable release series.
