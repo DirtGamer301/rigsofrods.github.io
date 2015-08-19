@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-08-11 21:08+0300\n"
+"POT-Creation-Date: 2015-08-19 06:48+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,191 +33,218 @@ msgstr ""
 msgid "RoR File Formats"
 msgstr ""
 
-#. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:17
-msgid ""
-"<<{baseurl}/folder-structure/index.adoc#,Folder Structure>> - Organizational "
-"pattern of the Rigs of Rods folders"
-msgstr ""
-
-#. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:18
-msgid ""
-"<<{baseurl}/command-line-arguments/index.adoc#,Command Line Arguments>> - "
-"very useful for testing vehicles and maps"
-msgstr ""
-
-#. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:19
-#, no-wrap
-msgid "*.truck / .load / .airplane / .boat / .train* - see <<{baseurl}/truck-description-file/index.adoc#,Truck Description File>>\n"
-msgstr ""
-
-#. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:20
-#, no-wrap
-msgid "*.terrn2* - see <<{baseurl}/terrain-system/index.adoc#,Terrain System>>\n"
-msgstr ""
-
-#. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:21
-#, no-wrap
-msgid "*.odef* - see <<{baseurl}/object-format/index.adoc#,Object Format>>\n"
-msgstr ""
-
-#. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:22
-#, no-wrap
-msgid "*.lua* - see <<{baseurl}/lua-system/index.adoc#,LUA System>>\n"
-msgstr ""
-
+#. Everything I comment out is because the pages do not yet exist. Anything orange is old / links to another website.
+#. I also added a link to the python scripting page, and fixed the Ogre links.
+#. * <<{baseurl}/folder-structure/index.adoc#,Folder Structure>> - Organizational pattern of the Rigs of Rods folders 
+#. * <<{baseurl}/command-line-arguments/index.adoc#,Command Line Arguments>> - very useful for testing vehicles and maps
 #. type: Plain text
 #: content/source/docs/file-formats-and-configuration-files/index.adoc:23
-#, no-wrap
-msgid "*.as* - see http://ror.ezzg.be/docs/angelscript/\n"
+msgid ""
+"http://www.rigsofrods.com/wiki/pages/Folder_Structure[Folder Structure] - "
+"Organizational pattern of the Rigs of Rods folders"
 msgstr ""
 
 #. type: Plain text
 #: content/source/docs/file-formats-and-configuration-files/index.adoc:24
-#, no-wrap
-msgid "*.skin* - see <<{baseurl}/skins/index.adoc#,Skins>>\n"
+msgid ""
+"http://www.rigsofrods.com/wiki/pages/Command_Line_Arguments[Command Line "
+"Arguments] - very useful for testing vehicles and maps"
 msgstr ""
 
 #. type: Plain text
 #: content/source/docs/file-formats-and-configuration-files/index.adoc:25
 #, no-wrap
-msgid "*.soundscript* - see <<{baseurl}/soundscript-files/index.adoc#,Soundscript files>>\n"
+msgid "*.truck / .load / .airplane / .boat / .train* - see <<{baseurl}/truck-description-file/index.adoc#,Truck Description File>>\n"
+msgstr ""
+
+#. * *.odef* - see <<{baseurl}/object-format/index.adoc#,Object Format>>
+#. type: Plain text
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:27
+#, no-wrap
+msgid "*.terrn2* - see <<{baseurl}/terrain-system/index.adoc#,Terrain System>>\n"
+msgstr ""
+
+#. * *.lua* - see <<{baseurl}/lua-system/index.adoc#,LUA System>>
+#. type: Plain text
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:29
+#, no-wrap
+msgid "*.odef* - see http://www.rigsofrods.com/wiki/pages/Object_Format[Object Format]\n"
 msgstr ""
 
 #. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:26
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:30
+#, no-wrap
+msgid "*.lua* - see http://www.rigsofrods.com/wiki/pages/LUA_System[LUA System]\n"
+msgstr ""
+
+#. type: Plain text
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:31
+#, no-wrap
+msgid "*.as* - see http://ror.ezzg.be/docs/angelscript/\n"
+msgstr ""
+
+#. * *.skin* - see <<{baseurl}/skins/index.adoc#,Skins>>
+#. type: Plain text
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:33
+#, no-wrap
+msgid "*.py* - see http://www.rigsofrods.com/wiki/pages/PythonInterface[PythonInterface]\n"
+msgstr ""
+
+#. * *.soundscript* - see <<{baseurl}/soundscript-files/index.adoc#,Soundscript files>>
+#. type: Plain text
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:35
+#, no-wrap
+msgid "*.skin* - see http://www.rigsofrods.com/wiki/pages/Skins[Skins]\n"
+msgstr ""
+
+#. type: Plain text
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:36
+#, no-wrap
+msgid "*.soundscript* - see http://www.rigsofrods.com/wiki/pages/Soundscript_files[Soundscript files]\n"
+msgstr ""
+
+#. type: Plain text
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:37
 #, no-wrap
 msgid "*.os* - those files are ogre script files. They can contain anything from materials up to caelum sky configurations.\n"
 msgstr ""
 
 #. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:27
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:38
 #, no-wrap
 msgid "*.hdx* - see <<{baseurl}/hydrax-config/index.adoc#,Hydrax Config>> Hydrax Water Render config file\n"
 msgstr ""
 
 #. type: Title ==
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:28
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:39
 #, no-wrap
 msgid "RoR Specific Files"
 msgstr ""
 
+#. * <<{baseurl}/ror.log/index.adoc#,RoR.log>>
 #. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:30
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:42
 msgid "<<{baseurl}/ror.cfg/index.adoc#,RoR.cfg>>"
 msgstr ""
 
+#. * <<{baseurl}/input.map/index.adoc#,input.map>>
 #. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:31
-msgid "<<{baseurl}/ror.log/index.adoc#,RoR.log>>"
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:44
+msgid "http://www.rigsofrods.com/wiki/pages/RoR.log[RoR.log]"
+msgstr ""
+
+#. * <<{baseurl}/ogre.cfg/index.adoc#,ogre.cfg>>
+#. type: Plain text
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:46
+msgid "http://www.rigsofrods.com/wiki/pages/Input.map[input.map]"
+msgstr ""
+
+#. * <<{baseurl}/editor.cfg/index.adoc#,editor.cfg>>
+#. type: Plain text
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:48
+msgid "http://www.rigsofrods.com/wiki/pages/Ogre.cfg[ogre.cfg]"
+msgstr ""
+
+#. * <<{baseurl}/data-wavefield.cfg/index.adoc#,data/wavefield.cfg>>
+#. type: Plain text
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:50
+msgid "http://www.rigsofrods.com/wiki/pages/Editor.cfg[editor.cfg]"
+msgstr ""
+
+#. * <<{baseurl}/plugins-files/index.adoc#,Plugins_*.cfg>>
+#. type: Plain text
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:52
+msgid ""
+"http://www.rigsofrods.com/wiki/pages/Data/wavefield.cfg[data/wavefield.cfg]"
+msgstr ""
+
+#. * <<{baseurl}/resources.cfg/index.adoc#,resources.cfg>>
+#. type: Plain text
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:54
+msgid "http://www.rigsofrods.com/wiki/pages/Plugins_*.cfg[Plugins_*.cfg]"
+msgstr ""
+
+#. * <<{baseurl}/truck-categories/index.adoc#,data/categories.cfg>>
+#. type: Plain text
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:56
+msgid "http://www.rigsofrods.com/wiki/pages/Resources.cfg[resources.cfg]"
 msgstr ""
 
 #. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:32
-msgid "<<{baseurl}/input.map/index.adoc#,input.map>>"
-msgstr ""
-
-#. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:33
-msgid "<<{baseurl}/ogre.cfg/index.adoc#,ogre.cfg>>"
-msgstr ""
-
-#. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:34
-msgid "<<{baseurl}/editor.cfg/index.adoc#,editor.cfg>>"
-msgstr ""
-
-#. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:35
-msgid "<<{baseurl}/data-wavefield.cfg/index.adoc#,data/wavefield.cfg>>"
-msgstr ""
-
-#. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:36
-msgid "<<{baseurl}/plugins-files/index.adoc#,Plugins_*.cfg>>"
-msgstr ""
-
-#. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:37
-msgid "<<{baseurl}/resources.cfg/index.adoc#,resources.cfg>>"
-msgstr ""
-
-#. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:38
-msgid "<<{baseurl}/truck-categories/index.adoc#,data/categories.cfg>>"
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:57
+msgid ""
+"http://www.rigsofrods.com/wiki/pages/Truck_Categories[data/categories.cfg]"
 msgstr ""
 
 #. type: Title ==
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:39
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:58
 #, no-wrap
 msgid "Ogre File Formats"
 msgstr ""
 
 #. type: Labeled list
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:40
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:59
 #, no-wrap
 msgid "*.material"
 msgstr ""
 
 #. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:42
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:61
 msgid "http://www.ogre3d.org/docs/manual/manual_14.html"
 msgstr ""
 
 #. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:43
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:62
 msgid ""
-"http://www.ogre3d.org/wiki/index.php/Getting_Started_With_Ogre_CG_Materials"
+"http://www.ogre3d.org/tikiwiki/tiki-index.php?page=Getting+Started+With+Ogre"
+"+CG+Materials"
 msgstr ""
 
 #. type: Labeled list
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:44
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:63
 #, no-wrap
 msgid "*.mesh"
 msgstr ""
 
 #. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:46
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:65
 msgid "http://www.ogre3d.org/docs/manual/manual_9.html"
 msgstr ""
 
 #. type: Labeled list
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:47
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:66
 #, no-wrap
 msgid "*.overlay"
 msgstr ""
 
 #. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:49
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:68
 msgid "http://www.ogre3d.org/docs/manual/manual_12.html"
 msgstr ""
 
 #. type: Labeled list
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:50
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:69
 #, no-wrap
 msgid "terrain.cfg"
 msgstr ""
 
 #. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:54
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:73
 msgid ""
-"http://www.ogre3d.org/wiki/index.php/Terrain_Scene_Manager ** we have an "
+"http://www.ogre3d.org/tikiwiki/tiki-index.php?page=Terrain+Scene+Manager <- "
+"This is the old terrain system. For information on the new one, see "
+"<<{baseurl}/terrain-system/index.adoc#,Terrain System>>.  ** we have an "
 "additional keyword in that file: *** disable=1 will disable the terrain mesh "
 "and thus hide all the terrain. Collision will be still there."
 msgstr ""
 
 #. type: Labeled list
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:55
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:74
 #, no-wrap
 msgid "*.particle"
 msgstr ""
 
 #. type: Plain text
-#: content/source/docs/file-formats-and-configuration-files/index.adoc:56
+#: content/source/docs/file-formats-and-configuration-files/index.adoc:75
 msgid "http://www.ogre3d.org/docs/manual/manual_31.html"
 msgstr ""

@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Artem Vorotnikov <artem@vorotnikov.me>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-08-19 08:13+0300\n"
+"PO-Revision-Date: 2015-08-19 09:10+0300\n"
+"Last-Translator: Artem Vorotnikov <artem@vorotnikov.me>\n"
+"Language-Team: русский <>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Gtranslator 2.91.7\n"
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:1
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:17
+#, no-wrap
+msgid "---\n"
+msgstr "---\n"
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:4
+msgid "title: \"0.4.5.1 Release Candidate 1 released!\""
+msgstr "title: \"Релиз 0.4.5.1 RC1!\""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:6
+msgid "date: \"2015-08-19\""
+msgstr "date: \"2015-08-19\""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:8
+msgid "firstname: \"Artem\""
+msgstr "firstname: \"Артём\""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:10
+msgid "lastname: \"Vorotnikov\""
+msgstr "lastname: \"Воротников\""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:12
+msgid "profile: \"https://github.com/skybon\""
+msgstr "profile: \"https://github.com/skybon\""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:14
+msgid "nick: \"skybon\""
+msgstr "nick: \"skybon\""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:16
+msgid "tags: [\"Development\", \"Release\"]"
+msgstr "tags: [\"Разработка\", \"Релиз\"]"
+
+#. type: Title =
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:18
+#, no-wrap
+msgid "0.4.5.1 Release Candidate 1 released!"
+msgstr "Релиз 0.4.5.1 RC1!"
+
+#. type: Target for macro image
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:36
+#, no-wrap
+msgid "http://i.imgur.com/ccvDMrb.jpg"
+msgstr "http://i.imgur.com/ccvDMrb.jpg"
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:39
+msgid "Hello folks"
+msgstr "Привет!"
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:41
+msgid ""
+"The dev team is happy to announce Release Candidate build for the first "
+"bugfix release of the 0.4.5 NextStable series. It contains several fixes "
+"that didn't make it to 0.4.5.0 in time or were discovered after NextStable "
+"release."
+msgstr ""
+"Команда разработчиков рада сообщить о выпуске кандидата в релизы первой "
+"порции исправлений ветки 0.4.5 NextStable. Она содержит изменения, которые "
+"не попали в 0.4.5.0 и которые исправляют баги, обнаруженные уже после релиза "
+"NextStable."
+
+#. type: Title ==
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:42
+#, no-wrap
+msgid "0.4.5.1 RC1"
+msgstr "0.4.5.1 RC1"
+
+#. type: Labeled list
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:44
+#, no-wrap
+msgid "Changelog"
+msgstr "Список изменений"
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:46
+msgid "Fixed crash on driving through railway switches."
+msgstr "Исправлено падение при пересечении ЖД-стрелок."
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:47
+msgid "Added shadows support to more default models."
+msgstr "Добавлены тени для ещё большего числа моделей."
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:48
+msgid "Removed unneeded text from notice box."
+msgstr "Убран лишний текст из окна оповещения."
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:49
+msgid "Improved shadows quality."
+msgstr "Улучшено качество теней"
+
+#. type: Title ===
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:50
+#, no-wrap
+msgid "Get it:"
+msgstr "Скачать:"
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:53
+msgid ""
+"In line with our digital distribution policy there is no packaged archive "
+"release for test builds."
+msgstr ""
+"В соответствии с политикой цифровой дистрибуции мы не выпускаем архивы с "
+"тестовыми сборками."
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:55
+msgid ""
+"Windows users can use the updater shipped with 0.4.5 to test out this build. "
+"In order to enable test releases change:"
+msgstr ""
+"Пользователи Windows могут пробовать сборку с помощью программу обновления, "
+"которая поставляется с 0.4.5. Для загрузки тестовых релизов нужно "
+"переключить:"
+
+#. type: delimited block -
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:59
+#, no-wrap
+msgid "DevBuilds = false\n"
+msgstr "DevBuilds = false\n"
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:62
+msgid "to"
+msgstr "на"
+
+#. type: delimited block -
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:66
+#, no-wrap
+msgid "DevBuilds = true\n"
+msgstr "DevBuilds = true\n"
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:69
+msgid "in _game directory / update.ini_"
+msgstr "по адресу _каталог игры / update.ini_"
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:71
+msgid ""
+"Linux users can use <<{baseurl}/docs/linux-scripts/index.adoc#,automated "
+"scripts>> to download and build the latest snapshot."
+msgstr ""
+"Пользователи Linux могут использовать <<{baseurl}/docs/linux-scripts/index."
+"adoc#,автоматические скрипты>> для загрузки и сборки последнего среза."
+
+#. type: Title ===
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:72
+#, no-wrap
+msgid "Disclaimer"
+msgstr "Отказ от ответственности"
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:75
+msgid ""
+"As usual, this is only a test build, do not use it if you're afraid to spoil "
+"gaming experience by sudden bugs. We tried to weed them out, though, I "
+"promise"
+msgstr ""
+"Как всегда: это всего лишь тестовая сборка, не используйте её если боитесь "
+"испортить впечатление от игры неожиданными багами. Впрочем, мы сделали всё "
+"возможное чтобы выкурить их, честно-честно! :)"
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:79
+msgid ""
+"Thank you for playing Rigs of Rods and we hope you enjoy the NextStable "
+"release series."
+msgstr ""
+"Спасибо за то что играешь в Rigs of Rods и надеемся, что ветка NextStable "
+"тебе понравится."
+
+#. type: Plain text
+#: blog/source/blog/2015-08-19-0.4.5.1-rc1-released/index.adoc:80
+msgid "http://www.rigsofrods.com/threads/120125[*Discuss it here!*]"
+msgstr "http://www.rigsofrods.com/threads/120125[*Обсуждение здесь!*]"

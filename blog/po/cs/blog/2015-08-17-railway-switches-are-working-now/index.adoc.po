@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-08-19 07:05+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:1
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:17
+#, no-wrap
+msgid "---\n"
+msgstr ""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:4
+msgid "title: \"Railway switches are working now\""
+msgstr ""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:6
+msgid "date: \"2015-08-17\""
+msgstr ""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:8
+msgid "firstname: \"Artem\""
+msgstr ""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:10
+msgid "lastname: \"Vorotnikov\""
+msgstr ""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:12
+msgid "profile: \"https://github.com/skybon\""
+msgstr ""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:14
+msgid "nick: \"skybon\""
+msgstr ""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:16
+msgid "tags: [\"Development\"]"
+msgstr ""
+
+#. type: Title =
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:18
+#, no-wrap
+msgid "Railway switches are working now"
+msgstr ""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:37
+msgid "Hello everyone,"
+msgstr ""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:39
+msgid ""
+"The annoying https://github.com/RigsOfRods/rigs-of-rods/issues/160[rail "
+"switch crash bug] has been fixed today. See https://github.com/RigsOfRods/"
+"rigs-of-rods/commit/130d222af07c671132b1485b31e1b4dc020ee0a5[this commit] "
+"for more information. The fix will be deployed as part of upcoming 0.4.5.1 "
+"release."
+msgstr ""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:41
+msgid "Get your steel wheels ready! Thank you for playing RoR NextStable."
+msgstr ""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:43
+msgid "Regards,"
+msgstr ""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:45
+msgid "Artem Vorotnikov"
+msgstr ""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:47
+msgid "Rigs of Rods development team"
+msgstr ""
+
+#. type: Plain text
+#: blog/source/blog/2015-08-17-railway-switches-are-working-now/index.adoc:48
+msgid "http://www.rigsofrods.com/threads/120112[*Discuss it here!*]"
+msgstr ""
