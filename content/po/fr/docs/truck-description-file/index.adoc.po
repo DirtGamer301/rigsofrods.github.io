@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-08-08 21:15+0300\n"
+"POT-Creation-Date: 2015-08-20 15:53+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -963,7 +963,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "*AuthorID*: ID of the author's RoR Forum account, so the user may write him or her a message or view his or her other trucks. Use \"-1\" if he or she does not have a RoR Forum account.\n"
-"** To get the AuthorID: Log into the forums and visit [http://repository.rigsofrods.com/ the Repository]. The AuthorID should be displayed on the left side.\n"
+"** To get the AuthorID: Log into the forums and visit http://repository.rigsofrods.com/[the Repository]. The AuthorID should be displayed on the left side.\n"
 msgstr ""
 
 #. type: Plain text

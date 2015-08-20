@@ -341,7 +341,7 @@ author <type> <authorid> <authorname> <email>
 
 * *type*: Tells what the author referenced in the next section did. Recommended types to put: chassis, texture, support, etc.
 * *AuthorID*: ID of the author's RoR Forum account, so the user may write him or her a message or view his or her other trucks. Use "-1" if he or she does not have a RoR Forum account.
-** To get the AuthorID: Log into the forums and visit [http://repository.rigsofrods.com/ the Repository]. The AuthorID should be displayed on the left side.
+** To get the AuthorID: Log into the forums and visit http://repository.rigsofrods.com/[the Repository]. The AuthorID should be displayed on the left side.
 * *authorname*: The author's name.
 * *email* [silver]#(optional)#: The author's e-mail.
 

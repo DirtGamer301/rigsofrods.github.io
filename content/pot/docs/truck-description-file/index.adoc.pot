@@ -984,7 +984,7 @@ msgid ""
 "or her a message or view his or her other trucks. Use \"-1\" if he or she "
 "does not have a RoR Forum account.\n"
 "** To get the AuthorID: Log into the forums and visit "
-"[http://repository.rigsofrods.com/ the Repository]. The AuthorID should be "
+"http://repository.rigsofrods.com/[the Repository]. The AuthorID should be "
 "displayed on the left side.\n"
 msgstr ""
 
