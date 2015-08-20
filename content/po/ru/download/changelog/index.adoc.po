@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-08-19 11:52+0300\n"
-"PO-Revision-Date: 2015-08-19 11:51+0300\n"
+"PO-Revision-Date: 2015-08-20 09:46+0300\n"
 "Last-Translator: Artem Vorotnikov <artem@vorotnikov.me>\n"
 "Language-Team: русский <>\n"
 "Language: \n"
@@ -62,7 +62,7 @@ msgstr "0.4.5.1 (в разработке)"
 #: content/source/download/changelog/index.adoc:40
 #, no-wrap
 msgid "Features"
-msgstr "Исправления:"
+msgstr "Нововведения"
 
 #. type: Plain text
 #: content/source/download/changelog/index.adoc:29
