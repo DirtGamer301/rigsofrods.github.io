@@ -1,6 +1,6 @@
 ---
 
-title: "0.4.5.1 Release Candidate 1 released!"
+title: "0.4.5.1a1 released!"
 
 date: "2015-08-19"
 
@@ -14,10 +14,10 @@ nick: "skybon"
 
 tags: ["Development", "Release"]
 
-talk: "http://www.rigsofrods.com/threads/120125"
+talk: "http://www.rigsofrods.com/threads/120112?p=1385836#post1385836"
 
 ---
-= 0.4.5.1 Release Candidate 1 released!
+= 0.4.5.1a1 released!
 :firstname: Artem
 :lastname: Vorotnikov
 :profile: https://github.com/skybon
@@ -39,9 +39,9 @@ image::http://i.imgur.com/ccvDMrb.jpg[role=""]
 
 Hello folks 
 
-The dev team is happy to announce Release Candidate build for the first bugfix release of the 0.4.5 NextStable series. It contains several fixes that didn't make it to 0.4.5.0 in time or were discovered after NextStable release.
+The dev team is happy to announce an alpha build for the first bugfix release of the 0.4.5 NextStable series. It contains several fixes that didn't make it to 0.4.5.0 in time or were discovered after NextStable release.
 
-== 0.4.5.1 RC1
+== 0.4.5.1a1
 
 Changelog::
 * Fixed crash on driving through railway switches.
