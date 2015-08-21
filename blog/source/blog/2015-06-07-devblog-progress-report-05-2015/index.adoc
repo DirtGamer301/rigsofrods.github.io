@@ -45,7 +45,7 @@ Hiradur worked hard to set up link:https://travis-ci.org/RigsOfRods/rigs-of-rods
 
 Max98 had a great idea to set up link:https://gitter.im/RigsOfRods/rigs-of-rods[Gitter] discussion board for RoR. Gitter is a browser based chat service directly linked to our repository. Great place for developers to meet each other and other community members to talk about technical aspects of RoR. And, it's already attracting new people who may contribute important knowledge to the project.
 
-== The 0.4.5-NextStable
+== 0.4.5 "NextStable"
 
 It's still in development, there's still no release date and the purpose has slowly and silently changed. Original plan was to only make RoR stable, content-compatible and crash-free while ignoring performance and not adding any features. However, volunteer-based development progresses slowly and players are equally concerned about performance, stability, graphics, performance and gameplay experience as a whole. And yes, I know I wrote "performance" twice. So, the new motto of 0.4.5 is "All kinds of improvements, as long as nothing gets broken and it runs at least a little faster than before".
 
