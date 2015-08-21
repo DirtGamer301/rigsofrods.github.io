@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-08-05 13:08+0300\n"
-"PO-Revision-Date: 2015-08-05 13:14+0300\n"
+"POT-Creation-Date: 2015-08-21 18:17+0300\n"
+"PO-Revision-Date: 2015-08-21 18:19+0300\n"
 "Last-Translator: Artem Vorotnikov <artem@vorotnikov.me>\n"
 "Language-Team: русский <>\n"
 "Language: ru\n"
@@ -132,8 +132,8 @@ msgstr ""
 #. type: Title ==
 #: blog/source/blog/2015-06-07-devblog-progress-report-05-2015/index.adoc:48
 #, no-wrap
-msgid "The 0.4.5-NextStable"
-msgstr "The 0.4.5-NextStable"
+msgid "0.4.5 \"NextStable\""
+msgstr "0.4.5 \"NextStable\""
 
 #. type: Plain text
 #: blog/source/blog/2015-06-07-devblog-progress-report-05-2015/index.adoc:51

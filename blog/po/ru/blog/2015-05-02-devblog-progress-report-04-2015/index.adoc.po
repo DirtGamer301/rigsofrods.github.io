@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-08-05 13:08+0300\n"
-"PO-Revision-Date: 2015-08-05 13:13+0300\n"
+"POT-Creation-Date: 2015-08-21 18:17+0300\n"
+"PO-Revision-Date: 2015-08-21 18:30+0300\n"
 "Last-Translator: Artem Vorotnikov <artem@vorotnikov.me>\n"
 "Language-Team: русский <>\n"
 "Language: \n"
@@ -71,7 +71,7 @@ msgstr "Отчёт о разработке за апрель 2015"
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:37
 #, no-wrap
 msgid "*Hello RoR fans!*\n"
-msgstr ""
+msgstr "*Привет фанатам RoR!*\n"
 
 #. type: Plain text
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:39
@@ -79,18 +79,24 @@ msgid ""
 "Another 2 months have passed and 1 new progress report is here! It turned "
 "out everyone (including me) was so busy in march that barely any development "
 "happenned and I had no time to write a blog post (plus, nothing new to write "
-"about, really ). Fortunately, April has been much more relaxed and I've been "
+"about, really). Fortunately, April has been much more relaxed and I've been "
 "able to do some very important progress. All of my latest changes are "
-"incorportated in link:http://www.rigsofrods.com/threads/119110-Test-Build-"
-"Rigs-of-rods-0-4-5-0-dev[0.4.5.0-dev test build 2] - I encourage everyone to "
-"test!"
+"incorportated in http://rigsofrods.com/threads/119110[0.4.5.0-dev test build "
+"2] - I encourage everyone to test!"
 msgstr ""
+"Прошло ещё 2 месяца, и вот - новый отчёт. Оказалось, что все (включая меня) "
+"были настолько заняты в марте, что разработка шла ни шатко ни валко, и у "
+"меня не было времени на написание девблога (да и не о чем). К счастью, "
+"апрель был гораздо более расслабленным, и я смог внести существенные "
+"улучшения. Все из моих последних изменений можно оценить в версии http://"
+"rigsofrods.com/threads/119110[0.4.5.0-dev, тестовой сборке 2] - поэтому я "
+"призываю всех скачать и присоединиться к тестированию!"
 
 #. type: Title ==
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:40
 #, no-wrap
 msgid "Vehicle compatibility status"
-msgstr ""
+msgstr "Совместимость ТС"
 
 #. type: Plain text
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:43
@@ -107,6 +113,17 @@ msgid ""
 "by means of RoR v0.38/v0.4.0.7 - unsafe, but mostly workable. So far, "
 "\"nodes/nodes2\" were augumented this way."
 msgstr ""
+"...улучшена! По итогам тестирования многих транспортных средств, я "
+"переосмыслил подход к дизайну анализатора. Для начала я снизил требования к "
+"синтаксису, из-за которых ТС появлялись в нерабочем состоянии и засоряли "
+"окно \"отчёта о появлении\" предупреждениями. Частые ошибки (напр. лишние "
+"запятые на концах линий, хвостовые комментарии (да, они были запрещены), "
+"левые флаги и неправильный регистр ключевых слов) теперь допускаются, часто "
+"молча, без предупреждения. Кроме того, я начал добавлять \"запасной\" метод "
+"разбора для линий, которые не проходят проверку - в этом случае, анализатор "
+"выдаст предупреждение и обработает линию как RoR v0.38 / v0.4.0.7 - это "
+"небезопасно, но работоспособно. Пока таким образом доработаны \"nodes / "
+"nodes2\"."
 
 #. type: Plain text
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:45
@@ -123,13 +140,29 @@ msgid ""
 "finally concluded the parser I wrote suits my needs, but it will never fit "
 "together with existing content. After realizing this, it was obvious what I "
 "have to do: <<{baseurl}/docs/truck-description-file/index."
-"adoc#Fileformatversion,Declare a new fileformatversion>> for future content, "
+"adoc#fileformatversion,Declare a new fileformatversion>> for future content, "
 "and write an importer component for content with lower fileformatversion. "
 "For the new fileformatversion number, I chose \"450\", to resemble version "
 "number 0.4.5.0 and also to signify it works differently than older numbers "
 "(1,2,3) - those were just informational and the parser ignored them. My "
 "fileformatversion actually makes a big difference."
 msgstr ""
+"Но самое главное - я изменил свой философский подход к обработке формата ."
+"truck. С самого начала я знал, что парсинг, используемый в 0.4.0.7, должен "
+"измениться, как для дальнейшего развития физики в RoR (а старый анализатор "
+"серьезно блокирует его), так и для включения в состав игры редактора ТС. В "
+"то же время, важно сохранить совместимость с существующим контентом. До сих "
+"пор, я пытался написать парсер, который удовлетворял бы обоим требованиям. "
+"Получилось криво, большинство ТС сломалось, а я начал плакаться о качестве "
+"как кода, так и truck-файлов. Наконец, неделю назад я пришёл к выводу, что "
+"парсер, который удовлетворяет моим потребностям, безнадёжно сломает "
+"совместимость с существующими ТС. Понимая это, очевидны и дальнейшие шаги: "
+"<<{baseurl}/docs/truck-description-file/index.adoc#fileformatversion,"
+"объявить новую версию формата>>, и написать конвертер для старой. Новая "
+"версия формата будет именоваться \"450\" (ибо для версии 0.4.5.0), а также "
+"для обозначения нового поколения после прежних (1,2,3). Если раньше версия "
+"формата с точки зрения анализатора была пустяком, то теперь при парсинге "
+"имеет огромное значение."
 
 #. type: Plain text
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:47
@@ -140,20 +173,27 @@ msgid ""
 "it'll take some time to create a working dev version for testing and "
 "investigation. I'll try my best, but no promises at this point."
 msgstr ""
+"Тем не менее, начали вылезать нестыковки v0.38 -> v0.4.0.7, например, эта. "
+"Их будет сложнее решать, потому что коду версии 0.38, на секундочку, 4 года "
+"и он основан на устаревших библиотеках, так что создание рабочей беты займёт "
+"некоторое время. Я буду стараться изо всех сил, но ничего обещать не могу."
 
 #. type: Plain text
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:49
 msgid ""
-"Again, I encourage everyone to link:http://www.rigsofrods.com/threads/119110-"
-"Test-Build-Rigs-of-rods-0-4-5-0-dev[download a test build and check his "
-"favourite vehicles]. They should work a lot better now."
+"Again, I encourage everyone to http://rigsofrods.com/threads/119110[download "
+"a test build and check his favourite vehicles]. They should work a lot "
+"better now."
 msgstr ""
+"Опять же, я призываю всех http://rigsofrods.com/threads/119110[скачать "
+"тестовую сборку и проверить свои любимые автомобили]. Они должны работать "
+"намного лучше."
 
 #. type: Title ==
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:50
 #, no-wrap
 msgid "Rig editor status"
-msgstr ""
+msgstr "Редактор ТС"
 
 #. type: Plain text
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:53
@@ -171,6 +211,18 @@ msgid ""
 "were created as generic, so there will soon be similarly implemented support "
 "for flares, props, wings and more features."
 msgstr ""
+"Редактор всё ещё не работает, но есть успехи в разработке. На этот раз я "
+"добавил поддержку колёс (на данный момент meshwheels2 + flexbodywheels). Там "
+"же меню выбора в верхней строке меню и панели, которые могут изменить "
+"параметры колеса. Изменения в размере колёс или числа лучей отображаются "
+"сразу, и вы можете выбрать + изменить несколько колёс одновременно. Также "
+"есть возможность создать новое ТС с нуля, а на панели \"двигатель\" теперь "
+"есть кнопки [добавить двигатель] / [удалить двигатель]. Инструменты "
+"редактирования узлов/рёбер по-прежнему не готовы (можно удалить рёбра, но "
+"пока нельзя добавить), но работа ведётся. Кроме того, компоненты колёсной "
+"подсистемы (меню выбора, поля выделения, панели) были созданы как общие, так "
+"что в ближайшее время будет аналогично реализована поддержка вспышек, "
+"винтов, крыльев и других функций."
 
 #. type: Plain text
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:55
@@ -178,18 +230,25 @@ msgid ""
 "Anyway, at this point, some of you may legitimately question my efforts to "
 "create the rig editor. Although it's a nice thing to have, it doesn't seem "
 "to be really needed, modders have been happily creating content using "
-"existing methods and without any apparent issues, as link:http://www."
-"rigsofrods.com/threads/118966-Prop-placement-Program[this forum thread] "
-"shows. So, do I have good reason to burn a lot of time working on the editor "
-"when there are much more serious flaws to tackle? I believe so, and you "
-"deserve to know it."
+"existing methods and without any apparent issues, as http://rigsofrods.com/"
+"threads/118966[this forum thread] shows. So, do I have good reason to burn a "
+"lot of time working on the editor when there are much more serious flaws to "
+"tackle? I believe so, and you deserve to know it."
 msgstr ""
+"Во всяком случае, на данный момент, некоторые из вас могут законно "
+"сомневаться в моих усилиях по созданию редактора ТС. Хотя это полезная вещь, "
+"она, на первый взгляд, не является крайней необходимостью, поскольку моддеры "
+"годами создавали контент, используя существующие методы без каких-либо "
+"существенных проблем, http://rigsofrods.com/threads/118966[эта тема на "
+"форуме] тому подтверждение. Так а вообще есть ли смысл работать над "
+"редактором когда есть уйма более серьёзных проблем? Есть, и вам стоит его "
+"знать."
 
 #. type: Title ==
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:56
 #, no-wrap
 msgid "Physics of the future"
-msgstr ""
+msgstr "Физика будущего"
 
 #. type: Plain text
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:59
@@ -202,6 +261,14 @@ msgid ""
 "RoR handles only enough N/B to create a grid-like chassis where 3d models "
 "can be attached (props, flexbodies)."
 msgstr ""
+"Сейчас RoR может обрабатывать около 500 узлов + 3000 рёбер на каждое ТС. С "
+"таким небольшим числом элементов разумно моделировать ТС вручную. Тем не "
+"менее, эта система оставляет желать лучшего - человеку трудно работать с "
+"моделью мягких тел (с взвешенными узлами, действующими как суставы + "
+"невесомые рёбра + требования устойчивости) - она очень трудна и "
+"неестественна. Кроме того, RoR обрабатывает только столько У/Р сколько надо "
+"для создания сеточного кузова, к которому прикрепляются 3D-модели (винты, "
+"гибкие узлы)."
 
 #. type: Plain text
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:61
@@ -218,6 +285,18 @@ msgid ""
 "heavy rigid engine, outer chassis components, possibly a rollcage) and then "
 "join them to create more reallistic deformation behavior."
 msgstr ""
+"Теперь представьте себе, что мы создали совершенно новый физический движок, "
+"который может обрабатывать примерно в *10-раз больше У/Р* (например, *5 000 "
+"узлов* и *30 000 рёбер*). Думаете, эти цифры - бред сумасшедшего? У меня "
+"есть серьёзные технические основания полагать, что такая производительность "
+"достижима. Если отбросить детали, то мы понимаем, что создание настолько "
+"подробной У/Р вручную (или в Blender, или Editorizer или другим аналогичным "
+"методом) станет по-человечески невозможно. Кроме того, такое увеличение "
+"производительности повлечёт переход к новой архитектуре У/Р - от "
+"моделирования целой платформы мы перейдём к созданию отдельных деталей "
+"(жёсткая рама, мягкая обивка, тяжелый жесткий двигатель, внешние компоненты "
+"кузова, возможно, каркас безопасности), которые потом соединятся и будут "
+"иметь более реалистичное поведение при деформации."
 
 #. type: Plain text
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:63
@@ -232,6 +311,15 @@ msgid ""
 "current modders + current content. But I'm really looking into the future, "
 "and the future is CAD."
 msgstr ""
+"Существует только один способ справиться с таким вызовом - с помощью CAD-"
+"подобного редактора, где транспортное средство создаётся так, как это делают "
+"настоящие инженеры - путём определения реальных форм компонентов, материалов "
+"и средств соединения компонентов вместе. Редактор затем вычисляет наиболее "
+"пригодный У/Р, чтобы имитировать такой автомобиль. Именно это и есть "
+"нынешнее направление разработки редактора ТС. В настоящее время, конструктор "
+"имеет лишь частичную поддержку ручного редактирования У/Р, но это всего лишь "
+"начало, и кость для текущих моддеров + текущего контента. Но я с нетерпением "
+"смотрю в будущее, а будущее - за CAD."
 
 #. type: Plain text
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:65
@@ -241,8 +329,12 @@ msgid ""
 "implementation complexity among members of the comunnity, so everything will "
 "be achievable. I'm optimistic."
 msgstr ""
+"Конечно, это проект на голом энтузиазме, который я делаю в свободное от "
+"работы время. Он может провалиться. Но я включю поддержку сценариев, "
+"достаточную для распространения реализации среди членов сообщества, так что "
+"всё будет достижимо. Я настроен оптимистично."
 
 #. type: Plain text
 #: blog/source/blog/2015-05-02-devblog-progress-report-04-2015/index.adoc:66
 msgid "Until then, please bear with me."
-msgstr ""
+msgstr "А пока, не стреляйте в пианиста."
