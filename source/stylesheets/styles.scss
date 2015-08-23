@@ -430,3 +430,9 @@ h5, h6 {
 #media-slider .item-video {
 	height: 600px
 }
+
+@media only screen and (max-width:999px) {
+	.nav-entry-text {
+		display: none;
+	}
+}
