@@ -1,0 +1,187 @@
+<!DOCTYPE html><html class="no-js" lang="en"><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><title>DevBlog: Progress report 04/2015 - Rigs of Rods</title><link href="/images/favicon.png" rel="icon" /><link href="/stylesheets/styles.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.carousel.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.theme.default.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CUbuntu+Mono:400%7CUbuntu:300,300italic,300bold,400,400italic,400bold,600,600italic,600bold" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.5/jquery.smooth-scroll.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script><script src="/stylesheets/owl-carousel/owl.carousel.min.js"></script><script>hljs.initHighlightingOnLoad();</script><script>(function(){
+    var WebP = new Image();
+    WebP.onload = WebP.onerror = function(){
+        if(WebP.height != 2){
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            var s = document.getElementsByTagName('script')[0];
+            sc.src = 'http://webpjs.appspot.com/js/webpjs-0.0.2.min.js';
+            s.parentNode.insertBefore(sc,s);
+        }
+    };
+    WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+})();</script><script>$(document).foundation();</script><script>$(document).ready(function() {
+    $('a').smoothScroll();
+    $('').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+            scrollTarget: link.hash
+        });
+    });
+});</script><script>$(document).ready(function() {
+  $("#media-slider").owlCarousel({
+    items: 1,
+    nav: true,
+    merge: true,
+    loop: true,
+    video: true,
+    lazyLoad: true,
+    center: true,
+    videoHeight: 720,
+    responsive: {
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+    }
+  });
+});</script></head><body><div class="fixed contain-to-grid top-bar-margin"><nav class="top-bar" data-topbar="" role="navigation"><ul class="title-area"><li class="name"><h1><a href="/en/">Rigs of Rods</a></h1></li></ul><section class="top-bar-section"><ul class="left"><li test="/blog/2015-05-02-devblog-progress-report-04-2015/"><a href="/en/"><span class='fa fa-home'></span>  <span class="nav-entry-text">Home</span></a></li><li test="/blog/2015-05-02-devblog-progress-report-04-2015/"><a href="/en/download/"><span class='fa fa-download'></span>  <span class="nav-entry-text">Download</span></a></li><li test="/blog/2015-05-02-devblog-progress-report-04-2015/"><a href="/en/repository/"><span class='fa fa-plus'></span>  <span class="nav-entry-text">Repository</span></a></li><li test="/blog/2015-05-02-devblog-progress-report-04-2015/"><a href="/en/forum/"><span class='fa fa-comments'></span>  <span class="nav-entry-text">Forum</span></a></li><li test="/blog/2015-05-02-devblog-progress-report-04-2015/"><a href="/en/blog/"><span class='fa fa-pencil'></span>  <span class="nav-entry-text">Blog</span></a></li><li test="/blog/2015-05-02-devblog-progress-report-04-2015/"><a href="/en/docs/"><span class='fa fa-lightbulb-o'></span>  <span class="nav-entry-text">Docs</span></a></li><li test="/blog/2015-05-02-devblog-progress-report-04-2015/"><a href="/en/races/"><span class='fa fa-users'></span>  <span class="nav-entry-text">Multiplayer</span></a></li></ul></section></nav></div></body></html><div class="row main-start"><div class="small-12 columns"><article><header><h1>DevBlog: Progress report 04/2015</h1><div class="details"></div></header><div id="content"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Hello RoR fans!</strong></p>
+</div>
+<div class="paragraph">
+<p>Another 2 months have passed and 1 new progress report is here! It turned
+out everyone (including me) was so busy in march that barely any development
+happenned and I had no time to write a blog post (plus, nothing new to write
+about, really). Fortunately, April has been much more relaxed and I&#8217;ve been
+able to do some very important progress. All of my latest changes are
+incorportated in <a href="http://rigsofrods.com/threads/119110">0.4.5.0-dev test build
+2</a> - I encourage everyone to test!</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="vehicle_compatibility_status"><a class="anchor" href="#vehicle_compatibility_status"></a>Vehicle compatibility status</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>&#8230;&#8203;has improved! I tested with many more vehicles and I re-thought my
+approach to parser design. For one thing, I began loosening the very strict
+syntax checking which was causing vehicles to spawn crippled and littered
+the "spawner report" window with loads of warning messages. Very common
+mistakes, such as extra commas at the ends of lines, trailing comments (yes,
+they weren&#8217;t legit), invalid flags and bad lettercase of keywords is now
+tolerated, often silently without warning message. Further, I began adding
+"fallback" method of parsing for lines which don&#8217;t make it through the
+syntax check - in this case, parser will emit a warning and process the line
+by means of RoR v0.38/v0.4.0.7 - unsafe, but mostly workable. So far,
+"nodes/nodes2" were augumented this way.</p>
+</div>
+<div class="paragraph">
+<p>But most importantly, I changed my philosophical approach to processing the
+.truck format. From the very start, I knew that the parsing process used in
+0.4.0.7 has to change, both to clear the way for further development of
+RoR&#8217;s physics (the old parser was seriously blocking it), and also because I
+wanted to equip RoR with a built-in rig editor. However, at the same time, I
+needed to maintain compatibility with existing content. Until now, I&#8217;ve been
+trying to write a parser which would satisfy both requirements. It didn&#8217;t
+really work, most vehicles got broken and I wasted a lot of words rambling
+about how bad was both the code and the truckfiles. But about a week ago, I
+finally concluded the parser I wrote suits my needs, but it will never fit
+together with existing content. After realizing this, it was obvious what I
+have to do:
+<a href="fake/../../docs/truck-description-file/index.html#fileformatversion">Declare
+a new fileformatversion</a> for future content, and write an importer
+component for content with lower fileformatversion. For the new
+fileformatversion number, I chose "450", to resemble version number 0.4.5.0
+and also to signify it works differently than older numbers (1,2,3) - those
+were just informational and the parser ignored them. My fileformatversion
+actually makes a big difference.</p>
+</div>
+<div class="paragraph">
+<p>Nonetheless, I began bumping into prevailing v0.38 &#8594; v0.4.0.7
+incompatibilities, such as this one. Those will be harder to tackle because
+the code of version 0.38 is 4 years old and uses outdated dependencies, so
+it&#8217;ll take some time to create a working dev version for testing and
+investigation. I&#8217;ll try my best, but no promises at this point.</p>
+</div>
+<div class="paragraph">
+<p>Again, I encourage everyone to <a href="http://rigsofrods.com/threads/119110">download
+a test build and check his favourite vehicles</a>. They should work a lot
+better now.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="rig_editor_status"><a class="anchor" href="#rig_editor_status"></a>Rig editor status</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The editor is still not usable, but it&#8217;s progressing steadily. This time, I
+added support for wheels (meshwheels2 + flexbodywheels so far). There&#8217;s a
+selection menu in the top menubar and panels which can alter wheel
+parameters. Changes to wheel size or number of rays are displayed
+immediately and you can select + edit multiple wheels at the same
+time. There&#8217;s also an option to create a new rig from scratch and the
+"engine" panel was equipped with [add engine]/[remove engine] buttons which
+were missing before. The N/B editing controls are still not complete (you
+can delete beams, but you can&#8217;t add them yet), but work is being
+done. Further, the wheel-subsystem components (selection menu, highlight
+boxes, panels) were created as generic, so there will soon be similarly
+implemented support for flares, props, wings and more features.</p>
+</div>
+<div class="paragraph">
+<p>Anyway, at this point, some of you may legitimately question my efforts to
+create the rig editor. Although it&#8217;s a nice thing to have, it doesn&#8217;t seem
+to be really needed, modders have been happily creating content using
+existing methods and without any apparent issues, as
+<a href="http://rigsofrods.com/threads/118966">this forum thread</a> shows. So, do I have
+good reason to burn a lot of time working on the editor when there are much
+more serious flaws to tackle? I believe so, and you deserve to know it.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="physics_of_the_future"><a class="anchor" href="#physics_of_the_future"></a>Physics of the future</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Currently, RoR can handle roughly 500 nodes + 3000 beams per vehicle. With
+so few elements, it&#8217;s reasonable to do this work manually. However, this
+system leaves a lot to be desired - the soft body physics model (with
+weighted nodes acting like joints + weightless beams + stability
+requirements) is very hard and unnatural for a human to work with. Also, the
+RoR handles only enough N/B to create a grid-like chassis where 3d models
+can be attached (props, flexbodies).</p>
+</div>
+<div class="paragraph">
+<p>Now imagine I created a completely new physics engine which could handle
+roughly <strong>ten times more N/B</strong> than the current engine (think <strong>5 000 nodes</strong>
+and <strong>30 000 beams</strong>). These numbers must sound insane to RoR veterans, but I
+have good technical reasons to believe such performance can be
+achieved. Further details aside, you&#8217;ll agree with me that creating so
+detailed N/B by hand (or in Blender, or Editorizer, or any other similar
+method) will become humanly impossible. Further, such performance increase
+will deserve new approach to N/B architecture - instead of modelling a
+vehicle as a whole, it will be possible to model individual components
+(rigid frame, soft interior, heavy rigid engine, outer chassis components,
+possibly a rollcage) and then join them to create more reallistic
+deformation behavior.</p>
+</div>
+<div class="paragraph">
+<p>There is only one way to deal with such a modding challenge - using a
+CAD-like editor where the vehicle can be modelled the way technical
+engineers do - by defining real-world shapes of components, materials and
+means of joining components together. The editor would then compute the best
+fit N/B to simulate such vehicle. And THAT is precisely where I&#8217;m headed in
+my rig-editor efforts. Currently, the editor has only partial support for
+hand-editing the N/B, but that&#8217;s just something to start with and an utility
+for current modders + current content. But I&#8217;m really looking into the
+future, and the future is CAD.</p>
+</div>
+<div class="paragraph">
+<p>Naturally, this is only an enthusiast project done in people&#8217;s free time. It
+may not succeed. But I&#8217;ll incorporate enough scripting support to spread the
+implementation complexity among members of the comunnity, so everything will
+be achievable. I&#8217;m optimistic.</p>
+</div>
+<div class="paragraph">
+<p>Until then, please bear with me.</p>
+</div>
+</div>
+</div></div></article></div></div><footer><div class="row"><div class="small-12 medium-4 columns"><h4>We are open</h4>Rigs of Rods is free and open source, available under the <a href='https://www.gnu.org/Copyleft/' title='Copyleft licensing'>copyleft</a>-style <a href='http://www.gnu.org/licenses/gpl-3.0.html' title='The GPLv3 license'>GPLv3</a> license.</div><div class="small-12 medium-2 columns"><h4>Home</h4><ul><li><a href="/en/download" title="Get the game">Download</a></li><li><a href="/en/blog" title="Read the blog">Blog</a></li><li><a href="/en/docs" title="Read the docs">Docs</a></li></ul></div><div class="small-12 medium-2 columns"><h4>Forum</h4><ul><li><a href="http://rigsofrods.com/forum" title="Talk to the community">Index</a></li><li><a href="http://rigsofrods.com/sso" title="Register at the forum">Register</a></li><li><a href="http://rigsofrods.com/search.php" title="Find what you need">Search</a></li></ul></div><div class="small-12 medium-4 columns"><h4>Follow us</h4><ul class="home-social"><li><a class="fa fa-vk" href="https://vk.com/rigsofrods.official"></a><a class="fa fa-facebook" href="https://facebook.com/rigsofrods.official"></a><a class="fa fa-twitter" href="https://twitter.com/rigsofrods_game"></a><a class="fa fa-youtube" href="https://youtube.com/OfficialRigsOfRods"></a></li></ul></div></div></footer>

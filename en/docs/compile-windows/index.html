@@ -1,0 +1,282 @@
+<!DOCTYPE html><html class="no-js" lang="en"><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><title>Compiling on Windows - Rigs of Rods</title><link href="/images/favicon.png" rel="icon" /><link href="/stylesheets/styles.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.carousel.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.theme.default.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CUbuntu+Mono:400%7CUbuntu:300,300italic,300bold,400,400italic,400bold,600,600italic,600bold" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.5/jquery.smooth-scroll.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script><script src="/stylesheets/owl-carousel/owl.carousel.min.js"></script><script>hljs.initHighlightingOnLoad();</script><script>(function(){
+    var WebP = new Image();
+    WebP.onload = WebP.onerror = function(){
+        if(WebP.height != 2){
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            var s = document.getElementsByTagName('script')[0];
+            sc.src = 'http://webpjs.appspot.com/js/webpjs-0.0.2.min.js';
+            s.parentNode.insertBefore(sc,s);
+        }
+    };
+    WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+})();</script><script>$(document).foundation();</script><script>$(document).ready(function() {
+    $('a').smoothScroll();
+    $('').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+            scrollTarget: link.hash
+        });
+    });
+});</script><script>$(document).ready(function() {
+  $("#media-slider").owlCarousel({
+    items: 1,
+    nav: true,
+    merge: true,
+    loop: true,
+    video: true,
+    lazyLoad: true,
+    center: true,
+    videoHeight: 720,
+    responsive: {
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+    }
+  });
+});</script></head><body><div class="fixed contain-to-grid top-bar-margin"><nav class="top-bar" data-topbar="" role="navigation"><ul class="title-area"><li class="name"><h1><a href="/en/">Rigs of Rods</a></h1></li></ul><section class="top-bar-section"><ul class="left"><li test="/en/docs/"><a href="/en/"><span class='fa fa-home'></span>  <span class="nav-entry-text">Home</span></a></li><li test="/en/docs/"><a href="/en/download/"><span class='fa fa-download'></span>  <span class="nav-entry-text">Download</span></a></li><li test="/en/docs/"><a href="/en/repository/"><span class='fa fa-plus'></span>  <span class="nav-entry-text">Repository</span></a></li><li test="/en/docs/"><a href="/en/forum/"><span class='fa fa-comments'></span>  <span class="nav-entry-text">Forum</span></a></li><li test="/en/docs/"><a href="/en/blog/"><span class='fa fa-pencil'></span>  <span class="nav-entry-text">Blog</span></a></li><li class="active" test="/en/docs/"><a href="/en/docs/"><span class='fa fa-lightbulb-o'></span>  <span class="nav-entry-text">Docs</span></a></li><li test="/en/docs/"><a href="/en/races/"><span class='fa fa-users'></span>  <span class="nav-entry-text">Multiplayer</span></a></li></ul></section></nav></div></body></html><div class="row main-start"><div class="small-12 columns"><article><header><h1>Compiling on Windows</h1><div class="details"></div></header><div id="content"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can download and compile the Rigs of Rods sources completely with tools that are available for free.</p>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#required_software">1. Required Software</a></li>
+<li><a href="#setting_up_the_environment">2. Setting up the environment</a></li>
+<li><a href="#preparing_the_source_code">3. Preparing the source code</a></li>
+<li><a href="#using_cmake">4. Using CMake</a></li>
+<li><a href="#compiling_the_source_code">5. Compiling the source code</a></li>
+<li><a href="#troubleshooting">6. Troubleshooting</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="required_software"><a class="anchor" href="#required_software"></a>1. Required Software</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Download and install all required software first:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://microsoft.com/express">Visual Studio C++ Express 2013</a></p>
+</li>
+<li>
+<p><a href="http://microsoft.com/downloads/en/details.aspx?displaylang=en&amp;FamilyID=3021d52b-514e-41d3-ad02-438a3ba730ba">DirectX SDK June 2010</a></p>
+</li>
+<li>
+<p><a href="http://cmake.org/cmake/resources/software.html">CMake</a></p>
+</li>
+<li>
+<p><a href="http://sourceforge.net/projects/rigsofrods/files/rigsofrods/0.4-dev/">Latest RoR dependencies</a> (download ror-dependencies-XX.zip) (replace XX with the highest number available, download and store the zip, we will unpack it later on). (Note: 64 bit prepackaged dependencies are not available at the moment; see <a href="http://www.rigsofrods.com/threads/85875-Boost-missing-from-pre-packaged-dependencies">here</a>)</p>
+</li>
+<li>
+<p><a href="https://github.com/RigsOfRods/rigs-of-rods/archive/master.zip">Latest RoR sources</a> (alternatively you can clone them with git from <a href="https://github.com/RigsOfRods/rigs-of-rods.git" class="bare">https://github.com/RigsOfRods/rigs-of-rods.git</a>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>(restart your computer after installing all above tools)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="setting_up_the_environment"><a class="anchor" href="#setting_up_the_environment"></a>2. Setting up the environment</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Since 0.39.2 it is possible to build Rigs of Rods under Windows with precompiled dependencies for 32 bit and 64 bit. Depending on what you compile, some steps might slightly differ. Also, you can only build x64 (64 bit version) on a real 64 bit platform. However, you can still build x86 (32 bit) on a 64 bit platform due to backwards compatibility.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="preparing_the_source_code"><a class="anchor" href="#preparing_the_source_code"></a>3. Preparing the source code</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Create an empty directory anywhere where you have enough free disk space (~3 GB) for example, we chose this now: <code>C:\dev\</code></p>
+</li>
+<li>
+<p>unpack the file <code>master.zip</code> into that directory. It will create a new directory called "master"</p>
+</li>
+<li>
+<p>rename unpacked "master" to "rigsofrods-source"</p>
+</li>
+<li>
+<p>unpack <code>ror-dependencies-*.zip</code> into <code>C:\dev\rigsofrods-source</code> as directory "dependencies" so that it is beside the "bin" and "source" directories.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/compile-windows-dependencies.png" alt="Dependencies directory location">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="using_cmake"><a class="anchor" href="#using_cmake"></a>4. Using CMake</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Start cmake from the Windows start menu: <code>Start</code> &#8594; <code>Programs</code> &#8594; <code>CMake</code> &#8594; <code>cmake-gui</code></p>
+</li>
+<li>
+<p>"Where is the source code": <code>C:\dev\rigsofrods-source\</code></p>
+</li>
+<li>
+<p>"Where to build the binaries":</p>
+<div class="ulist">
+<ul>
+<li>
+<p>for a 32 bit build: <code>C:\dev\rigsofrods-source\build_x86</code></p>
+</li>
+<li>
+<p>for a 64 bit build: <code>C:\dev\rigsofrods-source\build_x64</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock ">
+<div class="content">
+<img src="/images/compile-windows-cmake-1.png" alt="compile windows cmake 1">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click the "Configure" button.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>for a <strong>32 bit</strong> build choose <strong>Visual Studio 10</strong> and "Use default native compilers" (first option).</p>
+</li>
+<li>
+<p>for a <strong>64 bit</strong> build choose <strong>Visual Studio 10 Win64</strong> and "Use default native compilers" (first option).</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock ">
+<div class="content">
+<img src="/images/compile-windows-cmake-2.png" alt="compile windows cmake 2">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Say "yes" if it asked if the directory should be created.</p>
+</li>
+<li>
+<p>Click "Configure" twice until all entries are white</p>
+</li>
+</ul>
+</div>
+<div class="imageblock ">
+<div class="content">
+<img src="/images/compile-windows-cmake-3.png" alt="compile windows cmake 3">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click "Generate" and close CMake</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="compiling_the_source_code"><a class="anchor" href="#compiling_the_source_code"></a>5. Compiling the source code</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Navigate in Windows explorer to the folder <code>C:\dev\rigsofrods-source\build_x86</code> (or build_x64 for 64 bit) and open the file RoR.sln. Visual Studio should open. (if you are asked, open with Visual Studio for C++)</p>
+</li>
+</ul>
+</div>
+<div class="imageblock ">
+<div class="content">
+<img src="/images/compile-windows-visual-studio-1.png" alt="compile windows visual studio 1">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In Visual Studio, do the following: from the menu: Build &#8594; build Solution (this can take some time, around 15 minutes on an average dualcore/ i7-2600K : 9min)</p>
+</li>
+</ul>
+</div>
+<div class="imageblock ">
+<div class="content">
+<img src="/images/compile-windows-visual-studio-2.png" alt="compile windows visual studio 2">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The compilation is done when you can read something like the following in the bottom text output window:
+<code>========== Build: * succeeded * ==========</code></p>
+</li>
+</ul>
+</div>
+<div class="imageblock ">
+<div class="content">
+<img src="/images/compile-windows-visual-studio-3.png" alt="compile windows visual studio 3">
+</div>
+</div>
+<div class="paragraph">
+<p>Done! After building you will find RoR ready to use in the bin\Release directory.
+You can navigate with the Windows explorer to <code>C:\dev\rigsofrods-source\bin\Release\</code> and use it the same way as game directory if it was installed there.</p>
+</div>
+<div class="paragraph">
+<p>Note: the only difference is that the resources will reside one directory higher, but RoR should figure that out itself.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="troubleshooting"><a class="anchor" href="#troubleshooting"></a>6. Troubleshooting</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>If the compile step is ok but you don&#8217;t see any executable or the log writes some missing libs, it may be something wrong with the linking step. Some common issues are the DirectX libraries. To include them manually to the project, right-click on RoR "folder" (the folder on the left in Visual Studio, where the project is) and click Properties. A popup window should appear, then go to Configuration properties and then to VC++ directories. Please add to <strong>Libraries directory</strong> this path (note: use ";" to separate the various paths): <code>C:\Program Files\Microsoft DirectX SDK (&lt;your version&gt;)\Lib\x86</code>. You have to change your version with the version that&#8217;s installed on your machine. The simplest way to do it is to browse the program file folder. <strong>Don&#8217;t remove or add anything else</strong></p>
+</li>
+<li>
+<p>If you are unable to compile RoR at all or strange errors comes up (like RPC errors), you missed to update to latest version both Boost or DirectX SDK. This is an important step before continue.</p>
+</li>
+<li>
+<p>If you are unable to compile RoR, ensure your build is set to Release mode, not debug mode (see <a href="http://www.rigsofrods.com/threads/85875-Boost-missing-from-pre-packaged-dependencies" class="bare">http://www.rigsofrods.com/threads/85875-Boost-missing-from-pre-packaged-dependencies</a>)</p>
+</li>
+<li>
+<p>It may happen that RoR wont start in the bin directory. Simply put the new executable into main release folder and try launch from there. If it doesn&#8217;t, you simply missed something.</p>
+</li>
+<li>
+<p>If you receive an error such as "fatal error C1083: Cannot open include file: 'stdint.h': No such file or directory " Your dependencies folder may be 'read only'. To fix, right click the dependencies folder, un-tick read only, and apply to all files and sub-directories.</p>
+</li>
+<li>
+<p>If you try to run the compiled RoR Configurator it will tell you that you are missing some .dll files. You then know that you chose the wrong compilation options when compiling wxidgets. We normally link statically against the libs.</p>
+</li>
+<li>
+<p>These compile steps and hints are valid <strong>only</strong> under Visual C++ 2010 and Windows, although they may be similar for other configurations.</p>
+</li>
+</ul>
+</div>
+</div>
+</div></div></article></div></div><footer><div class="row"><div class="small-12 medium-4 columns"><h4>We are open</h4>Rigs of Rods is free and open source, available under the <a href='https://www.gnu.org/Copyleft/' title='Copyleft licensing'>copyleft</a>-style <a href='http://www.gnu.org/licenses/gpl-3.0.html' title='The GPLv3 license'>GPLv3</a> license.</div><div class="small-12 medium-2 columns"><h4>Home</h4><ul><li><a href="/en/download" title="Get the game">Download</a></li><li><a href="/en/blog" title="Read the blog">Blog</a></li><li><a href="/en/docs" title="Read the docs">Docs</a></li></ul></div><div class="small-12 medium-2 columns"><h4>Forum</h4><ul><li><a href="http://rigsofrods.com/forum" title="Talk to the community">Index</a></li><li><a href="http://rigsofrods.com/sso" title="Register at the forum">Register</a></li><li><a href="http://rigsofrods.com/search.php" title="Find what you need">Search</a></li></ul></div><div class="small-12 medium-4 columns"><h4>Follow us</h4><ul class="home-social"><li><a class="fa fa-vk" href="https://vk.com/rigsofrods.official"></a><a class="fa fa-facebook" href="https://facebook.com/rigsofrods.official"></a><a class="fa fa-twitter" href="https://twitter.com/rigsofrods_game"></a><a class="fa fa-youtube" href="https://youtube.com/OfficialRigsOfRods"></a></li></ul></div></div></footer>

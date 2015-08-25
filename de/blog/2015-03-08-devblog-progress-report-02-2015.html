@@ -1,0 +1,146 @@
+<!DOCTYPE html><html class="no-js" lang="de"><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><title>DevBlog: Progress report 02/2015 - Rigs of Rods</title><link href="/images/favicon.png" rel="icon" /><link href="/stylesheets/styles.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.carousel.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.theme.default.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CUbuntu+Mono:400%7CUbuntu:300,300italic,300bold,400,400italic,400bold,600,600italic,600bold" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.5/jquery.smooth-scroll.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script><script src="/stylesheets/owl-carousel/owl.carousel.min.js"></script><script>hljs.initHighlightingOnLoad();</script><script>(function(){
+    var WebP = new Image();
+    WebP.onload = WebP.onerror = function(){
+        if(WebP.height != 2){
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            var s = document.getElementsByTagName('script')[0];
+            sc.src = 'http://webpjs.appspot.com/js/webpjs-0.0.2.min.js';
+            s.parentNode.insertBefore(sc,s);
+        }
+    };
+    WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+})();</script><script>$(document).foundation();</script><script>$(document).ready(function() {
+    $('a').smoothScroll();
+    $('').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+            scrollTarget: link.hash
+        });
+    });
+});</script><script>$(document).ready(function() {
+  $("#media-slider").owlCarousel({
+    items: 1,
+    nav: true,
+    merge: true,
+    loop: true,
+    video: true,
+    lazyLoad: true,
+    center: true,
+    videoHeight: 720,
+    responsive: {
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+    }
+  });
+});</script></head><body><div class="fixed contain-to-grid top-bar-margin"><nav class="top-bar" data-topbar="" role="navigation"><ul class="title-area"><li class="name"><h1><a href="/de/">Rigs of Rods</a></h1></li></ul><section class="top-bar-section"><ul class="left"><li test="/de/blog/"><a href="/de/"><span class='fa fa-home'></span>  <span class="nav-entry-text">Startseite</span></a></li><li test="/de/blog/"><a href="/de/download/"><span class='fa fa-download'></span>  <span class="nav-entry-text">Herunterladen</span></a></li><li test="/de/blog/"><a href="/de/repository/"><span class='fa fa-plus'></span>  <span class="nav-entry-text">Repository</span></a></li><li test="/de/blog/"><a href="/de/forum/"><span class='fa fa-comments'></span>  <span class="nav-entry-text">Forum</span></a></li><li class="active" test="/de/blog/"><a href="/de/blog/"><span class='fa fa-pencil'></span>  <span class="nav-entry-text">Blog</span></a></li><li test="/de/blog/"><a href="/de/docs/"><span class='fa fa-lightbulb-o'></span>  <span class="nav-entry-text">Dokumentation</span></a></li><li test="/de/blog/"><a href="/de/races/"><span class='fa fa-users'></span>  <span class="nav-entry-text">Mehrspieler</span></a></li></ul></section></nav></div></body></html><div class="row main-start"><div class="small-12 columns"><article><header><h1>DevBlog: Progress report 02/2015</h1><div class="details"><span class="author" id="author">Petr Ohlídal</span><br /><span class="email" id="email"><a href="https://github.com/only-a-ptr">@only_a_ptr</a></span><br /><span id="revdate">2015-03-08</span></div></header><div id="content"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Hi all RoR fans!</p>
+</div>
+<div class="paragraph">
+<p>Another month has passed and it&#8217;s time for me to write a progress report. In
+fact, the report is already slightly overdue because I&#8217;ve been really busy
+lately and I could only hardly follow RoR development. However, there are
+several other active developers and a growing number of testers and
+bug-reporters, so the project is steadily improving.</p>
+</div>
+<div class="paragraph">
+<p>To shortly iterate what&#8217;s been hapenning: I&#8217;ve been working on rig editor,
+specifically adding panels to edit properties of nodes/beams and other beam
+types. Currently I&#8217;m adding support for all types of wheels, including the
+possibility to add/edit/delete wheels. I&#8217;ve also started several
+experimental dev branches oriented on performance and more maintainable
+code.  Hiradur continues to improve linux compatibility and maintains the
+multitude of RoR dependencies.  Aperion has returned to what he&#8217;s good at -
+improving the very core of the gameplay, the physics simulation. So far,
+he&#8217;s only been doing careful cleanups not to disrupt the upcoming stable
+release, but there seems to be a lot to look forward to.  Max98 is
+simultaneously improving many player-oriented aspects of the game, ranging
+from UI and HUD through enviromental improvements like skies and water to
+signifficant gameplay fixes.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="status_of_planned_0_4_5_release"><a class="anchor" href="#status_of_planned_0_4_5_release"></a>Status of planned 0.4.5 release</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Current development effort aims towards a stable release with version number
+0.4.5. This long-awaited release will fix many long-standing bugs, bring UI
+improvements and generally enhance player experience.</p>
+</div>
+<div class="paragraph">
+<p>The major development problem regarding this project is vehicle support. In
+the past, version 0.4.0.x broke compatibility with older vehicles and forced
+modders to double-release their new content. Then I came and broke things
+further, despite I claimed to improve it. Up to now I wasn&#8217;t able to
+completely restore all broken features, although situation is
+improving. Recently, RoR got a new window which displays all errors and
+warnings about about loaded vehicles. Thanks to Max98, the messages are also
+colored. This window will inform players what&#8217;s wrong with their favorite
+vehicles and also help modders to avoid risky or unsupported practices.</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;d like to explain the cause of the current situation. When I analyzed
+RoR&#8217;s vehicle loading code back in 2013, I discovered that the problem is in
+the design of the format - modders can define various parts of the vehicle
+(beams, nodes, wheels, cinecam, rotators, triggers, more wheels, more beams)
+in an arbitrary order, possibly interleaving things, and the parser will
+process all of it in the exact order. A software like this is a programmer&#8217;s
+inferno because it&#8217;s impossible to tell how exactly things are going depend
+on each other, how they will interact and what side effects may arise. Since
+RoR&#8217;s vehicles were quite feature rich and features were built on top of one
+another, the amout of possible scenarios was astronomic. To name a few
+cases, I&#8217;ve seen vehicles defining some nodes, then defining wheels (which
+generate nodes) and then define more nodes. But hey, nodes have numbers, and
+if you auto-generate nodes in between, are you sure your numbering will
+continue correctly? Further, some modders attached beams to nodes before
+those were defined, or to nodes which were auto-generated by different
+sections (or possibly never generated). How is a programmer supposed to
+check if the connection is correct? To make things worse, there&#8217;s the
+half-baked 'named nodes' feature (nodes2). More than half of truckfile
+sections don&#8217;t support them, but at the same time, named nodes can still be
+reffered to with numbers, so modders did it that way. As a result, a
+programmer sees code trying to look for node 123 and he has no idea where
+that node will come from. Impossible to work with. Despite all these
+alarming facts, RoR vehicles have been working happily&#8230;&#8203; until original
+authors left, along with the knowledge of all quirks and obscure mechanisms
+of the vehicle support. Un-involved coder didn&#8217;t stand a chance. That&#8217;s why
+0.4.0x became incompatible with 0.38, and only problems followed.</p>
+</div>
+<div class="paragraph">
+<p>My solution to this issue was developing new vehicle parser: one that would
+read all data first and only then process them, in a given order, to avoid
+all unexpected results. From software design standpoint, this is an only
+plausible solution. Unfortunately, this approach broke all vehicles which
+relied on the quirky nature of the old parser. In addition of that, many
+bugs were introducted in the process, because RoR&#8217;s vehicle format is very
+feature-rich and I was a new coder to the project. So far, I&#8217;ve been able to
+track and fix many of those bugs and also detect and work-around many legacy
+requirements of older vehicles. I had been hoping to work around everything,
+however, I&#8217;ve arrived to a point where some vehicles directly conflict with
+my parser&#8217;s architecture. And even thoug I&#8217;d really love to make everything
+work, I&#8217;m not willing to compromise future development by making
+compatibility hacks into my code. Some content will just have to go.</p>
+</div>
+<div class="paragraph">
+<p>In a near future, I&#8217;ll publish a new test build of NextStable, along with
+all latest fixes and compatibility enhancements, and I&#8217;ll begin to sort out
+supported vs. unsupported content. I&#8217;ll be in touch with modders, discussing
+the do&#8217;s and dont&#8217;s which 0.4.5 will impose.</p>
+</div>
+<div class="paragraph">
+<p>Stay tuned.</p>
+</div>
+</div>
+</div></div></article><a class="previous" href="/de/blog"><span class="fa fa-arrow-left"></span> <b>Zurückkehren zur Blog-Startseite</b></a> </div></div><footer><div class="row"><div class="small-12 medium-4 columns"><h4>Wir sind offen</h4>Rigs of Rods ist kostenlos und Open Source, lizensiert unter der <a href='https://de.wikipedia.org/wiki/Copyleft' title='Copyleft Lizensierung'>copyleft</a>-style <a href='http://www.gnu.org/licenses/gpl-3.0.html' title='GPLv3'>GPLv3+</a> Lizenz.</div><div class="small-12 medium-2 columns"><h4>Startseite</h4><ul><li><a href="/de/download" title="Das Spiel herunterladen">Herunterladen</a></li><li><a href="/de/blog" title="Blog lesen">Blog</a></li><li><a href="/de/docs" title="Dokumentation studieren">Dokumentation</a></li></ul></div><div class="small-12 medium-2 columns"><h4>Forum</h4><ul><li><a href="http://rigsofrods.com/forum" title="Sprich mit der Community">Index</a></li><li><a href="http://rigsofrods.com/sso" title="Erstelle ein Konto für das Forum">Anmelden</a></li><li><a href="http://rigsofrods.com/search.php" title="Finde was du brauchst">Suche</a></li></ul></div><div class="small-12 medium-4 columns"><h4>Folge uns</h4><ul class="home-social"><li><a class="fa fa-vk" href="https://vk.com/rigsofrods.official"></a><a class="fa fa-facebook" href="https://facebook.com/rigsofrods.official"></a><a class="fa fa-twitter" href="https://twitter.com/rigsofrods_game"></a><a class="fa fa-youtube" href="https://youtube.com/OfficialRigsOfRods"></a></li></ul></div></div></footer>

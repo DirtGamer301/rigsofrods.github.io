@@ -1,0 +1,1337 @@
+<!DOCTYPE html><html class="no-js" lang="en"><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><title>RoRBook - Rigs of Rods</title><link href="/images/favicon.png" rel="icon" /><link href="/stylesheets/styles.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.carousel.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.theme.default.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CUbuntu+Mono:400%7CUbuntu:300,300italic,300bold,400,400italic,400bold,600,600italic,600bold" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.5/jquery.smooth-scroll.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script><script src="/stylesheets/owl-carousel/owl.carousel.min.js"></script><script>hljs.initHighlightingOnLoad();</script><script>(function(){
+    var WebP = new Image();
+    WebP.onload = WebP.onerror = function(){
+        if(WebP.height != 2){
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            var s = document.getElementsByTagName('script')[0];
+            sc.src = 'http://webpjs.appspot.com/js/webpjs-0.0.2.min.js';
+            s.parentNode.insertBefore(sc,s);
+        }
+    };
+    WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+})();</script><script>$(document).foundation();</script><script>$(document).ready(function() {
+    $('a').smoothScroll();
+    $('').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+            scrollTarget: link.hash
+        });
+    });
+});</script><script>$(document).ready(function() {
+  $("#media-slider").owlCarousel({
+    items: 1,
+    nav: true,
+    merge: true,
+    loop: true,
+    video: true,
+    lazyLoad: true,
+    center: true,
+    videoHeight: 720,
+    responsive: {
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+    }
+  });
+});</script></head><body><div class="fixed contain-to-grid top-bar-margin"><nav class="top-bar" data-topbar="" role="navigation"><ul class="title-area"><li class="name"><h1><a href="/en/">Rigs of Rods</a></h1></li></ul><section class="top-bar-section"><ul class="left"><li test="/en/docs/"><a href="/en/"><span class='fa fa-home'></span>  <span class="nav-entry-text">Home</span></a></li><li test="/en/docs/"><a href="/en/download/"><span class='fa fa-download'></span>  <span class="nav-entry-text">Download</span></a></li><li test="/en/docs/"><a href="/en/repository/"><span class='fa fa-plus'></span>  <span class="nav-entry-text">Repository</span></a></li><li test="/en/docs/"><a href="/en/forum/"><span class='fa fa-comments'></span>  <span class="nav-entry-text">Forum</span></a></li><li test="/en/docs/"><a href="/en/blog/"><span class='fa fa-pencil'></span>  <span class="nav-entry-text">Blog</span></a></li><li class="active" test="/en/docs/"><a href="/en/docs/"><span class='fa fa-lightbulb-o'></span>  <span class="nav-entry-text">Docs</span></a></li><li test="/en/docs/"><a href="/en/races/"><span class='fa fa-users'></span>  <span class="nav-entry-text">Multiplayer</span></a></li></ul></section></nav></div></body></html><div class="row main-start"><div class="small-12 columns"><article><header><h1>RoRBook</h1><div class="details"></div></header><div id="content"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is a big tutorial that will help you create your very own vehicle.</p>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#introduction">1. Introduction</a>
+<ul class="sectlevel2">
+<li><a href="#description">1.1. Description</a></li>
+<li><a href="#nodes">1.2. Nodes</a></li>
+<li><a href="#beams">1.3. Beams</a></li>
+<li><a href="#issues">1.4. Issues</a></li>
+</ul>
+</li>
+<li><a href="#set_up_a_working_environment">2. Set up a working environment</a>
+<ul class="sectlevel2">
+<li><a href="#editorizer">2.1. Editorizer</a></li>
+<li><a href="#blender">2.2. Blender</a></li>
+<li><a href="#ac3d">2.3. AC3D</a></li>
+<li><a href="#text_editor">2.4. Text editor</a></li>
+</ul>
+</li>
+<li><a href="#land_based_vehicles_and_basics">3. Land-based Vehicles and Basics</a>
+<ul class="sectlevel2">
+<li><a href="#basic_vehicle_requirements">3.1. Basic Vehicle Requirements</a>
+<ul class="sectlevel3">
+<li><a href="#introduction_2">3.1.1. Introduction</a></li>
+<li><a href="#file_format">3.1.2. File Format</a></li>
+<li><a href="#directory">3.1.3. Directory</a>
+<ul class="sectlevel4">
+<li><a href="#vehicles_folder">Vehicles Folder</a></li>
+<li><a href="#zip_files">Zip Files</a></li>
+</ul>
+</li>
+<li><a href="#title">3.1.4. Title</a></li>
+<li><a href="#globals">3.1.5. Globals</a></li>
+<li><a href="#engine">3.1.6. Engine</a></li>
+<li><a href="#nodes_beams">3.1.7. Nodes &amp; Beams</a></li>
+<li><a href="#cameras_cinecam">3.1.8. Cameras &amp; Cinecam</a>
+<ul class="sectlevel4">
+<li><a href="#cameras">Cameras</a></li>
+<li><a href="#cinecam">Cinecam</a></li>
+</ul>
+</li>
+<li><a href="#the_end">3.1.9. The End</a></li>
+</ul>
+</li>
+<li><a href="#first_beams_and_nodes">3.2. First beams and nodes</a>
+<ul class="sectlevel3">
+<li><a href="#introduction_3">3.2.1. Introduction</a></li>
+<li><a href="#nodes_2">3.2.2. Nodes</a>
+<ul class="sectlevel4">
+<li><a href="#set_node_defaults">set_node_defaults</a></li>
+</ul>
+</li>
+<li><a href="#beams_2">3.2.3. Beams</a>
+<ul class="sectlevel4">
+<li><a href="#set_beam_defaults">set_beam_defaults</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#rigidity">3.3. Rigidity</a>
+<ul class="sectlevel3">
+<li><a href="#introduction_4">3.3.1. Introduction</a></li>
+<li><a href="#preparing_your_chassis">3.3.2. Preparing your chassis</a></li>
+<li><a href="#conclusion">3.3.3. Conclusion</a></li>
+</ul>
+</li>
+<li><a href="#wheels">3.4. Wheels</a>
+<ul class="sectlevel3">
+<li><a href="#wheel">3.4.1. wheel</a></li>
+<li><a href="#wheel2">3.4.2. wheel2</a></li>
+<li><a href="#meshwheels">3.4.3. Meshwheels</a>
+<ul class="sectlevel4">
+<li><a href="#notes">Notes</a></li>
+</ul>
+</li>
+<li><a href="#axles">3.4.4. Axles</a></li>
+<li><a href="#problems">3.4.5. Problems?</a></li>
+</ul>
+</li>
+<li><a href="#engine_2">3.5. Engine</a>
+<ul class="sectlevel3">
+<li><a href="#engine_3">3.5.1. engine</a>
+<ul class="sectlevel4">
+<li><a href="#syntax">Syntax</a>
+<ul class="sectlevel5">
+<li><a href="#detailed_syntax">Detailed Syntax</a></li>
+</ul>
+</li>
+<li><a href="#more_information">More information</a></li>
+</ul>
+</li>
+<li><a href="#engoption">3.5.2. engoption</a>
+<ul class="sectlevel4">
+<li><a href="#syntax_2">Syntax</a>
+<ul class="sectlevel5">
+<li><a href="#detailed_syntax_2">Detailed syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#torque_curve">3.5.3. Torque curve</a></li>
+</ul>
+</li>
+<li><a href="#suspension">3.6. Suspension</a>
+<ul class="sectlevel3">
+<li><a href="#suspension_types">3.6.1. Suspension types</a>
+<ul class="sectlevel4">
+<li><a href="#coilovers">Coilovers</a></li>
+<li><a href="#leaf_springs">Leaf springs</a></li>
+</ul>
+</li>
+<li><a href="#suspension_geometries">3.6.2. Suspension geometries</a>
+<ul class="sectlevel4">
+<li><a href="#dependent_suspension">Dependent suspension</a>
+<ul class="sectlevel5">
+<li><a href="#beam_axle">Beam axle</a></li>
+<li><a href="#de_dion_tube">De Dion tube</a></li>
+<li><a href="#walking_beam">Walking beam</a></li>
+</ul>
+</li>
+<li><a href="#independent_suspension">Independent suspension</a>
+<ul class="sectlevel5">
+<li><a href="#swing_axle">Swing axle</a></li>
+<li><a href="#double_wishbone">Double wishbone</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="introduction"><a class="anchor" href="#introduction"></a>1. Introduction</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="description"><a class="anchor" href="#description"></a>1.1. Description</h3>
+<div class="paragraph">
+<p><strong>Rigs of Rods</strong> (RoR) is not your typical vehicle simulator. Other vehicle simulators use fake suspension, mesh-based vehicles with no mass distribution, predetermined damage from collisions, and approximated fuzzy-dice sway models.</p>
+</div>
+<div class="paragraph">
+<p>RoR does not do this. In RoR, all vehicles are based on only two elements:
+<a href="fake/../../truck-description-file/index.html#nodes">nodes</a> and <a href="fake/../../truck-description-file/index.html#beams">beams</a>. Using these nodes and beams, an almost infinite variety of vehicles and contraptions can be constructed. For instance, real world <a href="#suspension">suspension</a> can be created using these nodes and beams. Through the use of <a href="fake/../../truck-description-file/index.html#flexbodies">flexbodies</a>, realistic vehicles with dynamic deformation can be created. And with some extremely simple node/beam magic, fuzzy dice can be made to sway exactly as in real life.</p>
+</div>
+<div class="paragraph">
+<p>So what are these nodes and beams, then?</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="nodes"><a class="anchor" href="#nodes"></a>1.2. Nodes</h3>
+<div class="paragraph">
+<p><strong>Nodes</strong> are essentially zero-dimensional ball joints. They occupy no space, but they do have mass. By themselves they can do very little. They exist to provide beams with two points to connect. (They also control collision, but we&#8217;ll get into that later.)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="beams"><a class="anchor" href="#beams"></a>1.3. Beams</h3>
+<div class="paragraph">
+<p><strong>Beams</strong> are the visible connections between nodes. Beams do not have any mass and do not interact with anything but the two nodes they are connected to. Beams can stretch, compress, and break based on the forces applied to them. The initial length of a beam is the space between two nodes. As a vehicle moves and flexes, the movement of these two nodes forms the force against the beams.</p>
+</div>
+<div class="paragraph">
+<p>If you have ever played that old game Pontifex, you should be familiar with these concepts.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="issues"><a class="anchor" href="#issues"></a>1.4. Issues</h3>
+<div class="paragraph">
+<p>This is, of course, not a perfect simulation, and there are some issues with it.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Much like atoms, nodes are constantly in movement. Nodes in RoR behave much like atoms in a solid. They are generally in a fixed position, but tend to vibrate. In normal conditions and situations, we do not notice atoms vibrating due to the scale. However, nodes in RoR tend to vibrate noticeably. As a consequence, vehicles will sometimes move around a bit with no input. (This is less noticeable with heavier vehicles).</p>
+</li>
+<li>
+<p>Because nodes occupy no space, they tend to exert a high amount of force to a small surface area. Consequently, nodes tend to penetrate a <a href="#submeshes">face</a> rather easily. This issue is currently being addressed.</p>
+</li>
+<li>
+<p>Nodes act as ball joints to the beams that are connected to them. In order to get any kind of coherent and stable structure out of them, it is necessary to use a lot of triangles.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="set_up_a_working_environment"><a class="anchor" href="#set_up_a_working_environment"></a>2. Set up a working environment</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Building vehicles for RoR can be done with several applications. No application is better than the other, it really comes down to what you feel most comfortable with.</p>
+</div>
+<div class="paragraph">
+<p>There does not exist, at this time, a totally compatible editing application which will produce a usable truck file on export. This is under development.</p>
+</div>
+<div class="sect2">
+<h3 id="editorizer"><a class="anchor" href="#editorizer"></a>2.1. Editorizer</h3>
+<div class="paragraph">
+<p><a href="fake/../../editorizer/index.html"><strong>Editorizer</strong></a> is a free, custom piece of software made by forum member Ben. It is a simple 3D working environment tailored to RoR. At the moment you can only create nodes/beams with the Editorizer.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="blender"><a class="anchor" href="#blender"></a>2.2. Blender</h3>
+<div class="paragraph">
+<p><a href="fake/../../blender-plugins/index.html"><strong>Blender</strong></a> is a free 3D graphics program. With the RoR exporter, it supports node/beam placement along with UV facing and submeshing.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ac3d"><a class="anchor" href="#ac3d"></a>2.3. AC3D</h3>
+<div class="paragraph">
+<p><a href="fake/../../ac3d-plugins/index.html"><strong>AC3D</strong></a> is a non-free software for modeling.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="text_editor"><a class="anchor" href="#text_editor"></a>2.4. Text editor</h3>
+<div class="paragraph">
+<p>It is entirely possible to create a truck for RoR entirely in text editor. See the <a href="fake/../../truck-description-file/index.html">Truck Description File documentation</a> for more details.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="land_based_vehicles_and_basics"><a class="anchor" href="#land_based_vehicles_and_basics"></a>3. Land-based Vehicles and Basics</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="basic_vehicle_requirements"><a class="anchor" href="#basic_vehicle_requirements"></a>3.1. Basic Vehicle Requirements</h3>
+<div class="sect3">
+<h4 id="introduction_2"><a class="anchor" href="#introduction_2"></a>3.1.1. Introduction</h4>
+<div class="paragraph">
+<p>There are certain necessities for a truck that you need to have in place in order for it to function within Rigs of Rods. Not including certain sections can yield different results, from making the vehicle explode upon spawning, to its nonappearance in the selection menu, to crashing the game outright. Thus, it is important you get all the necessary sections in order before you go about putting in the optional ones. Read through every section of this because they&#8217;re all necessary (except the cinecam and cameras sections when dealing with loads/trailers).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="file_format"><a class="anchor" href="#file_format"></a>3.1.2. File Format</h4>
+<div class="paragraph">
+<p>Your vehicle should have a file format/suffix depending on its type. The following table shows the types of vehicle and their formats.</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Vehicle Type</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>File Format</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ground Vehicle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.truck</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Train</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.train</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Air Vehicle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.airplane</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sea Vehicle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.boat</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trailer Load</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.trailer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Other Load</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.load</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Machine/fixed object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">.fixed</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For example, if I&#8217;m making a truck for Rigs of Rods, I might call it mytruck.truck, although obviously, what comes before the suffix is entirely up to you.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="directory"><a class="anchor" href="#directory"></a>3.1.3. Directory</h4>
+<div class="paragraph">
+<p>There are two different places to put your vehicle files.</p>
+</div>
+<div class="sect4">
+<h5 id="vehicles_folder"><a class="anchor" href="#vehicles_folder"></a>Vehicles Folder</h5>
+<div class="paragraph">
+<p>While editing your vehicle, it is best to put it in the "vehicles" folder (<code>C:\Documents and Settings\Rigs of Rods\vehicles</code> on Windows systems). If, for example, one were creating <code>mytruck.truck</code>, then one would create a folder within the <code>vehicles</code> folder called <code>mytruck</code>. Within this folder, one would place "mytruck.truck" as well as all files associated with it. (meshes, material files, etc.)</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="zip_files"><a class="anchor" href="#zip_files"></a>Zip Files</h5>
+<div class="paragraph">
+<p>When one is preparing to release a vehicle, one ought to transfer it to a zip file. This makes the file more portable and easier to release on the Rigs of Rods Repository. To make a zip file for <code>mytruck.truck</code>, one would take all the files contained within <code>mytruck</code> and place them in a zip archive called <code>mytruck.zip</code>. This zip can then be moved to the <code>Packs</code> folder (<code>C:\Documents and Settings\Rigs of Rods\Packs</code> on Windows systems).</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="title"><a class="anchor" href="#title"></a>3.1.4. Title</h4>
+<div class="paragraph">
+<p>You should name your vehicle before you go about doing anything else. The title must go on the very first line of the file. For example, if I want my vehicle to be called <code>My Truck</code>, on Line 1 of my vehicle&#8217;s file I put <code>My Truck</code>. Type it in as you want it to appear on the menu - there is no special syntax to worry about.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="globals"><a class="anchor" href="#globals"></a>3.1.5. Globals</h4>
+<div class="paragraph">
+<p>Here, we set our vehicle&#8217;s mass, the mass of the load nodes and the material to be used on your vehicle. If you&#8217;re planning on using a mesh, then you can just use <code>tracks/semi</code> for the material, but if you&#8217;re going to use a <a href="fake/../../truck-description-file/index.html#submesh">Submesh</a> to give your vehicle its appearance, it&#8217;s a requirement.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>globals
+;dry mass, cargo mass, material
+ 10000.0,  1000.0,     tracks/semi</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The globals section comes before the nodes and beams. The first number, <strong>dry mass</strong>, defines the mass, in kilograms, our vehicle will attempt to be. (each node has a minimum mass of 50kg.) The second number, called the "cargo mass", defines the mass of the nodes whose flag (see <a href="#First Beams and Nodes">[First Beams and Nodes]</a>) is <code>l</code>. These nodes are also known as the load nodes. The material, as stated above, defines the material and texture that is to be used on the submesh sections of your truck. This part of the globals is not important if you are going to make it fully out of a mesh (or multiple meshes), in which case you may simply use the material <code>tracks/semi</code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="engine"><a class="anchor" href="#engine"></a>3.1.6. Engine</h4>
+<div class="paragraph">
+<p>This section is not necessary for a trailer or other load (unless you want to be able to get in your trailer or load [to activate custom flares on the trailer, for example]). It is also not necessary in airplanes or boats. In order to get into your vehicle, you will need an engine, so it&#8217;s necessary for all the other vehicle types. You can find out how to use the engine section here: <a href="#engine">Engine</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="nodes_beams"><a class="anchor" href="#nodes_beams"></a>3.1.7. Nodes &amp; Beams</h4>
+<div class="paragraph">
+<p>You&#8217;ll need nodes and beams - these are what make up any vehicle you see in-game. See <a href="#First Beams and Nodes">[First Beams and Nodes]</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="cameras_cinecam"><a class="anchor" href="#cameras_cinecam"></a>3.1.8. Cameras &amp; Cinecam</h4>
+<div class="paragraph">
+<p>These two sections are not at all needed if you&#8217;re making a trailer or other load, unless you need to be able to enter the trailer (for example, to activate custom flares on it).</p>
+</div>
+<div class="paragraph">
+<p>However, all the other types of vehicle do need these sections.</p>
+</div>
+<div class="sect4">
+<h5 id="cameras"><a class="anchor" href="#cameras"></a>Cameras</h5>
+<div class="imageblock thumb">
+<div class="content">
+<img src="/images/cameras.png" alt="cameras">
+</div>
+<div class="title">Figure 1. Cameras location</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>cameras
+;center, rear, left
+ 0,      1,    2</code></pre>
+</div>
+</div>
+<hr>
+<div class="paragraph">
+<p>The above guide image and example should prove quite helpful in creating cameras. The cameras section has to come after the nodes and beam sections, and it consists of 3 numbers. These 3 numbers are nodes that have been defined in the nodes section, and are used to define the position of the vehicle. The pitch and roll indicators (and the similar attitude indicators in aircraft), for example, use these camera nodes to get the orientation of the vehicle. It also, as the name suggests, orients the camera views.</p>
+</div>
+<div class="paragraph">
+<p>The first node is the centre node, and it must be aligned with both the rear and the left nodes, as is visible in the guide image. The rear node must be behind the centre node, so that if you look at the vehicle from the front, the rear node is hidden by the centre node. The left node should be to the left of thecentre node, so that if you look at the vehicle from the right, the left node is hidden by the centre node.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="cinecam"><a class="anchor" href="#cinecam"></a>Cinecam</h5>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>cinecam
+;x,   y,   z,   8 bindings,              spring, damping
+0.66, 2.0, 1.8, 75,76,77,78,73,74,53,54, 8000.0, 800.0</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The cinecam node is a node suspended with 8 beams used to define the position of the interior/first-person camera of your vehicle. Like the cameras section it must come after the nodes &amp; beam sections.</p>
+</div>
+<div class="paragraph">
+<p>The first 3 values define the position of the cinecam node, and are fairly self-explanatory. Like the nodes section, these values are in metres.</p>
+</div>
+<div class="paragraph">
+<p>The next 8 values are nodes. Rigs of Rods will create beams from each of these nodes to your cinecam, in order to hold it in place.</p>
+</div>
+<div class="paragraph">
+<p>The final 2 values define the spring and the damping factors of the beams that support your camera. The spring factor defines how stiff the beams are - the higher this number, the more stiff your camera is in terms of its position. The damping factor defines the beams' resistance to motion.</p>
+</div>
+<div class="paragraph">
+<p>Those 2 values are <strong>optional</strong>, and if you don&#8217;t include them the values will default to a spring rate of 8000.00 and a damping factor of 800.00.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="the_end"><a class="anchor" href="#the_end"></a>3.1.9. The End</h4>
+<div class="paragraph">
+<p>The final requirement for the file is a simple three-letter word, "end". This is the very last line of your file and simply closes your vehicle file. If you don&#8217;t have this, Rigs of Rods may crash or have other issues (for example, sometimes the lack of the "end" means that physics will never be calculated upon the vehicle).</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="first_beams_and_nodes"><a class="anchor" href="#first_beams_and_nodes"></a>3.2. First beams and nodes</h3>
+<div class="sect3">
+<h4 id="introduction_3"><a class="anchor" href="#introduction_3"></a>3.2.1. Introduction</h4>
+<div class="paragraph">
+<p>Nodes and beams are the building blocks of vehicles and loads in Rigs of Rods. Anything can be simulated with nodes and beams if the right settings are put in. Nodes and beams are what you will be using to create your vehicles.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="nodes_2"><a class="anchor" href="#nodes_2"></a>3.2.2. Nodes</h4>
+<div class="paragraph">
+<p>Think back to geometry class. Remember points? Nodes are essentially points. All beams are simply defined as a link between two nodes. A node is defined by the following code:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>;number,    x,    y,    z, options
+      0, 0.00, 0.75, 0.66,       n</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Number</strong>: Each node has a number, starting from zero.</p>
+</li>
+<li>
+<p><strong>X</strong>: The x-position of the node on a Cartesian coordinate system.</p>
+</li>
+<li>
+<p><strong>Y</strong>: The y-position of the node on a Cartesian coordinate system.</p>
+</li>
+<li>
+<p><strong>Z</strong>: The z-position of the node on a Cartesian coordinate system.</p>
+</li>
+<li>
+<p><strong>Options</strong>: Options can change the way nodes behave. Valid options are:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>f</code>: Nodes with this option will not produce sparks when contacting hard surfaces.</p>
+</li>
+<li>
+<p><code>x</code>: Nodes with this option will emit smoke.</p>
+</li>
+<li>
+<p><code>y</code>: This is the exhaust reference point- the direction that smoke is emitted is opposite the direction of this node relative to the exhaust point.</p>
+</li>
+<li>
+<p><code>c</code>: Nodes with this option will not contact the ground or collision meshes.</p>
+</li>
+<li>
+<p><code>h</code>: A node with this option will lock onto another node when the "L" key is pressed ingame.</p>
+</li>
+<li>
+<p><code>e</code>: A node with this option will become a point by which objects can be added to the terrain. (try out the terrain editor truck for an example of how this works.)</p>
+</li>
+<li>
+<p><code>b</code>: Nodes with this option will have extra buoyancy.</p>
+</li>
+<li>
+<p><code>p</code>: Nodes with this option will not emit particles of any kind.</p>
+</li>
+<li>
+<p><code>L</code>: Nodes with this option will have information about them recorded to the RoR.log file.
+You can have multiple options on a node. See <a href="fake/../../truck-description-file/index.html#nodes">Nodes</a> for more information.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="set_node_defaults"><a class="anchor" href="#set_node_defaults"></a>set_node_defaults</h5>
+<div class="paragraph">
+<p>set_node_defaults is a command which can be inserted anywhere within the nodes section to change the way nodes following the command behave. For syntax, see <a href="fake/../../truck-description-file/index.html#set_node_defaults">TDF documentation</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="beams_2"><a class="anchor" href="#beams_2"></a>3.2.3. Beams</h4>
+<div class="paragraph">
+<p>Beams are the structural components of your truck/airplane/boat/hovering death machine. These are like those line segments you learned about in geometry class. (aren&#8217;t you glad that you paid attention?). See <a href="fake/../../truck-description-file/index.html#beams">TDF documentation</a> for more information.</p>
+</div>
+<div class="sect4">
+<h5 id="set_beam_defaults"><a class="anchor" href="#set_beam_defaults"></a>set_beam_defaults</h5>
+<div class="paragraph">
+<p>set_beam_defaults is a command which can be inserted anywhere within the beams section to change the way beams following the command behave. The settings are shown in their default state below. To return a setting to its default state, one can simply put "-1" as the setting.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>                 ;springiness, damping, deformation threshold constant, breaking threshold constant, beam diameter, beam material, plastic deformation coefficient
+set_beam_defaults     9000000,   12000,                         400000,                     1000000,          0.05,   tracks/beam,                             0.0</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Springiness</strong>: Defines the stiffness of the beam. Higher values make the beam stiffer.</p>
+</div>
+<div class="paragraph">
+<p><strong>Damping</strong>: Defines the beam&#8217;s resistance to motion. Higher values make the beam less likely to deform.</p>
+</div>
+<div class="paragraph">
+<p><strong>Deformation Threshold Constant</strong>: The amount of force which must be applied to a beam before it does not return to its original length. The lower the value, the easier it is to deform.</p>
+</div>
+<div class="paragraph">
+<p><strong>Breaking Threshold Constant</strong>: The amount of force which must be applied to a beam for it to break. The lower the value, the easier it is to break.</p>
+</div>
+<div class="paragraph">
+<p><strong>Beam Diameter</strong>: The size of the beam, visually speaking. Measured in meters. <strong>Beam Material</strong>: The material used to color the beam. It must be defined in a separate material file.</p>
+</div>
+<div class="paragraph">
+<p><strong>Plastic Deformation Coefficient</strong>: The amount of force (a factor) to deform a geometrical shape (i.e. a vehicle made of nodes and beams). For example, if a cube made of nodes and beams is crashed to a wall, then the placement of the nodes are displaced, altering the original shape to an irregular one. This also affects the length of beams, if nodes are displaced, the beams may conform to a new shorter or longer length, and staying that way until another outside force is applied.</p>
+</div>
+<div class="paragraph">
+<p>For more information, see <a href="fake/../../truck-description-file/index.html#set_beam_defaults">set_beam_defaults</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="rigidity"><a class="anchor" href="#rigidity"></a>3.3. Rigidity</h3>
+<div class="sect3">
+<h4 id="introduction_4"><a class="anchor" href="#introduction_4"></a>3.3.1. Introduction</h4>
+<div class="paragraph">
+<p>Welcome to the guide to Rigidity in Rigs of Rods,  This guide is to making a sturdy vehicle for Rigs of Rods, by interconnecting the nodes in a "X" to create a strong chassis.</p>
+</div>
+<div class="paragraph">
+<p>If you do not have a "X" shape interconnecting your beams, your chassis will be very Flimsy, Which in turn is bad, right?</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="preparing_your_chassis"><a class="anchor" href="#preparing_your_chassis"></a>3.3.2. Preparing your chassis</h4>
+<div class="paragraph">
+<p>Once you have completed your <a href="#first_beams_and_nodes">First beams and nodes</a>, your chassis should be a basic chassis, that is easy to work with.</p>
+</div>
+<div class="imageblock thumb">
+<div class="content">
+<img src="/images/chassis-box-1.png" alt="chassis box 1">
+</div>
+<div class="title">Figure 2. Basic chassis</div>
+</div>
+<div class="paragraph">
+<p>After that, you will begin the process of interconnecting the beams.</p>
+</div>
+<div class="imageblock thumb">
+<div class="content">
+<img src="/images/chassis-box-2.png" alt="chassis box 2">
+</div>
+<div class="title">Figure 3. Chassis with interconnected beams</div>
+</div>
+<div class="paragraph">
+<p>Just do that with the box/chassis/creation until you have it all covered.</p>
+</div>
+<div class="paragraph">
+<p>(DO NOT use <code>Interconnect</code> in the Editorizer on large objects, it will interconnect every node to each other, which in turn will double, or even triple the reccomended amount of beams in your structure)</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="conclusion"><a class="anchor" href="#conclusion"></a>3.3.3. Conclusion</h4>
+<div class="paragraph">
+<p>After you have completed that task, you should go continue on to the <a href="#wheels">Wheels</a> section, that is where you will learn to add wheels to your newly formed, Rigid structure!</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="wheels"><a class="anchor" href="#wheels"></a>3.4. Wheels</h3>
+<div class="paragraph">
+<p>Wheels are simply structures that the game creates automatically out of standard features to make creating vehicles easier. They are simply <a href="fake/../../truck-description-file/index.html#nodes">Nodes</a> connected by <a href="fake/../../truck-description-file/index.html#beams">Beams</a> with a contactable <a href="fake/../../truck-description-file/index.html#submesh">Submesh</a>. They are unique in that they will rotate when given input to accelerate.</p>
+</div>
+<div class="sect3">
+<h4 id="wheel"><a class="anchor" href="#wheel"></a>3.4.1. wheel</h4>
+<div class="paragraph">
+<p><a href="fake/../../truck-description-file/index.html#wheels">Wheels</a> are the most basic wheels in the game. The width of a wheel is determined by the distance between the two reference nodes and is composed of pie slices known as rays. The more rays a wheel has, the smoother it will be but will also contain more nodes and beams and consequently lower performance. It is considered good form to keep your rays between 10 and 20.</p>
+</div>
+<div class="imageblock thumb">
+<div class="content">
+<img src="/images/wheel-geometry-1.png" alt="wheel geometry 1">
+</div>
+<div class="title">Figure 4. Rim geometry</div>
+</div>
+<div class="paragraph">
+<p>The optional snode option allows for game-managed <a href="fake/../../axle-rigidity/index.html">Axle Rigidity</a>. This will keep the two wheel reference nodes in line under normal conditions. If snode is NOT used, you must enter 9999.</p>
+</div>
+<div class="imageblock ">
+<div class="content">
+<img src="/images/wheel-geometry-2.png" alt="wheel geometry 2">
+</div>
+</div>
+<div class="paragraph">
+<p>Nodes 2 and 3 would be mounted to the chassis with wheels mounted on nodes 1,2 and 3,4</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>wheels
+;radius, width, numrays, node1, node2, snode, braked, propulsed, arm, mass,  spring,   damping,   facemat          bandmat
+ 0.54,   1,  12,       1,     2,   9999,    1,      1,         25,  400.0, 800000.0, 4000.0, tracks/wheelface tracks/wheelband2
+ 0.54,   1,  12,       3,     4,   9999,    1,      1,         23,  400.0, 800000.0, 4000.0, tracks/wheelface tracks/wheelband2</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>First step: The snode is Disabled (The data is 9999), the nodes 1 and 4 are hanging just down.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>wheels
+;radius, width, numrays, node1, node2, snode, braked, propulsed, arm, mass,  spring,   damping,   facemat          bandmat
+ 0.54,   1,  12,       1,     2,      3,    1,      1,         25,  400.0, 800000.0, 4000.0, tracks/wheelface tracks/wheelband2
+ 0.54,   1,  12,       3,     4,   9999,    1,      1,         23,  400.0, 800000.0, 4000.0, tracks/wheelface tracks/wheelband2</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Second step: You type 3 to the snode option of the wheel 1,2. Now node 1 will always have the ambition to be at the same "line" like the nodes 2 and 3.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>wheels
+;radius, width, numrays, node1, node2, snode, braked, propulsed, arm, mass,  spring,   damping,   facemat          bandmat
+ 0.54,   1,  12,       1,     2,      3,    1,      1,         25,  400.0, 800000.0, 4000.0, tracks/wheelface tracks/wheelband2
+ 0.54,   1,  12,       3,     4,      2,    1,      1,         23,  400.0, 800000.0, 4000.0, tracks/wheelface tracks/wheelband2</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Third step: You type 2 to the snode option of the wheel 3,4.
+Now all nodes will be on one level / line even node 1 and 4 aren&#8217;t mounted primary to the chassis.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="wheel2"><a class="anchor" href="#wheel2"></a>3.4.2. wheel2</h4>
+<div class="paragraph">
+<p>This feature improves the default wheels section by splitting wheels into rims and tires. This allows the player to set tire pressure with the keyboard.</p>
+</div>
+<div class="paragraph">
+<p><a href="fake/../../truck-description-file/index.html#wheels2">Wheels2</a> (also known as the "complex wheel model") allows you to separate the wheel [rim] from the tire. This requires extra syntax, namely specifying the characteristics of the wheel versus the tire. Traditionally the wheel will be very rigid with the tire being much less so. The rigidity of wheels2 tires can be altered by holding [ and ] ingame, resulting in this:</p>
+</div>
+<div class="openblock float-group">
+<div class="content">
+<div class="imageblock thumb">
+<div class="content">
+<img src="/images/wheel-tire-inflated.jpg" alt="wheel tire inflated">
+</div>
+<div class="title">Figure 5. Inflated tire</div>
+</div>
+<div class="imageblock thumb">
+<div class="content">
+<img src="/images/wheel-tire-deflated.jpg" alt="wheel tire deflated">
+</div>
+<div class="title">Figure 6. Deflated tire</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>The adjustable tire pressure allows you to adjust handling in real-time. Lower pressure creates more grip while higher pressure creates more stability.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="meshwheels"><a class="anchor" href="#meshwheels"></a>3.4.3. Meshwheels</h4>
+<div class="paragraph">
+<p><a href="fake/../../truck-description-file/index.html#meshwheels">Meshwheels</a> takes advantage of a mesh&#8217;s static nature. It also creates a smoother tire. The wheel rim is a standard Ogre3D mesh.</p>
+</div>
+<div class="paragraph">
+<p>Meshwheels are very similar to normal wheels, but require specification of the wheel rim radius. Likewise, the direction the wheel is facing must be specified in order for the mesh to be rotated properly.<sup>1</sup></p>
+</div>
+<div class="imageblock thumb">
+<div class="content">
+<img src="/images/mesh-rim.jpg" alt="mesh rim">
+</div>
+<div class="title">Figure 7. Correct rim mesh</div>
+</div>
+<div class="imageblock thumb">
+<div class="content">
+<img src="/images/mesh-wheel-mapping.jpg" alt="mesh wheel mapping">
+</div>
+<div class="title">Figure 8. Tire texture</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Important</div>
+</td>
+<td class="content">
+There is no need to model a tire. The actual one will be added dynamically and will still flex.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Important</div>
+</td>
+<td class="content">
+Tire material should be slightly different to other tire materials as it covers both the tire face and the tire wall.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect4">
+<h5 id="notes"><a class="anchor" href="#notes"></a>Notes</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The mesh should be centered (Where should the wheel be placed in the L/R direction? Should it face left or right?) and of the right size for the wheel you want to do: its outer diameter should be as the "rim_radius" parameter, and its width should be the same as the distance between node1 and node2.</p>
+</li>
+<li>
+<p>All wheels are able to do skid steering. See the <a href="#braked_steering">steering</a> chapter.</p>
+</li>
+<li>
+<p>It is considered good form to keep your rays between 10 and 20.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="axles"><a class="anchor" href="#axles"></a>3.4.4. Axles</h4>
+<div class="paragraph">
+<p>This section defines axles on a vehicle, allowing more accurate distribution of torque among the wheels.</p>
+</div>
+<div class="paragraph">
+<p>Sample axle section</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>axles
+w1(1 2), w2(3 4), d(ol) ; axle 1
+w1(5 6), w2(7 8), d(l) ; axle 2</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The axle section introduces open differentials, and Spooled (aka locked) differentials. By adding axles to your vehicle file you override the propulsed property for the tires. Only wheels connected to an axle are powered, if multiple axles are defined the axles are interconnected in a locked manner. If no axle section is defined the old model of equal power distribution is used. Because the axle sections looks up already defined wheels, it must be defined <strong>AFTER</strong> the wheels have been defined.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="problems"><a class="anchor" href="#problems"></a>3.4.5. Problems?</h4>
+<div class="paragraph">
+<p>Wheel weight has a big effect on top speed since heavy wheels have lots of rolling resistance in RoR. Try to make the wheels as light as possible. If the wheels explode, they probably have too high damping for the weight. If the wheels and rpm needle start shaking, set lower clutch torque in the engoption section. This can take some tweaking, but it&#8217;s worth it.</p>
+</div>
+<div class="paragraph">
+<p>Used together with fusedrag and realistic truck weight, real torque is often enough so there&#8217;s no need to have several thousand hp engines. That makes the trucks easier to drive and better handling.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="engine_2"><a class="anchor" href="#engine_2"></a>3.5. Engine</h3>
+<div class="paragraph">
+<p>The engine sections are used for vehicles which are driven through their wheels (trucks). Together, they specify the type of engine being used (truck or car), the power of that engine and the gear ratios for the truck.</p>
+</div>
+<div class="sect3">
+<h4 id="engine_3"><a class="anchor" href="#engine_3"></a>3.5.1. engine</h4>
+<div class="paragraph">
+<p>This section specifies torque, gearing and RPM ranges of the engine being used.</p>
+</div>
+<div class="sect4">
+<h5 id="syntax"><a class="anchor" href="#syntax"></a>Syntax</h5>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>engine
+;min rpm, max rpm, torque, differential, reverse, neutral, 1st,   2nd,  3rd,  4th,  5th,  6th...                  Terminator
+ 1000.0,  1500.0,  8000.0, 2.00,         10.85,   10.00,   13.86, 9.52, 6.56, 5.48, 4.58, 3.83, 3.02, 2.53, 2.08, -1.0</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Minimum RPM</strong> - The engine speed in which the automatic transmission downshifts and the clutch engages.</p>
+</li>
+<li>
+<p><strong>Maximum RPM</strong> - The engine speed in which the automatic transmission upshifts. Actual redline is 120% of this speed.</p>
+</li>
+<li>
+<p><strong>Torque</strong> - A number representing the 'torque' of the engine. The higher the value, the faster a truck will accelerate.</p>
+</li>
+<li>
+<p><strong>Differential ratio</strong> - A global gear conversion ratio. (Final gear reduction ratio)</p>
+</li>
+<li>
+<p><strong>Rear gear ratio</strong> - Gear ratio of reverse. For every turn of the wheel the engine will have to turn this many times (not counting the differential ratio).</p>
+</li>
+<li>
+<p><strong>Neutral gear ratio</strong> - Gear ratio of neutral gear. 1.0 is a good one as it helps to distinguish between reverse and forward gears</p>
+</li>
+<li>
+<p><strong>First gear ratio</strong> - Gear ratio of 1st gear</p>
+</li>
+<li>
+<p><strong>Second/etc gear ratio</strong> - Gear ratio of second/etc gears.
+There must be between 3 and 15 forward gears. The last gear <strong>must be followed by a -1 value</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="sect5">
+<h6 id="detailed_syntax"><a class="anchor" href="#detailed_syntax"></a>Detailed Syntax</h6>
+<div class="paragraph">
+<p><strong>Torque</strong></p>
+</div>
+<div class="paragraph">
+<p>RoR uses a Flat torque model, usually correct for large intercooled turbo diesels. The unit is unknown: Neither N.m nor ft.lbf Tuning torque in RoR is a tricky topic, since the current air resistance simulation is overstrong. Setting torque to provide realistic acceleration at low speeds results in severely stunted top speeds. Setting it to provide higher top speeds results in very strong acceleration.</p>
+</div>
+<div class="paragraph">
+<p>Engine Inertia also has a <strong>VERY</strong> important role in engine behavior since this value also determines how fast a vehicle can accelerate.</p>
+</div>
+<div class="paragraph">
+<p><strong>Differential ratio</strong></p>
+</div>
+<div class="paragraph">
+<p>Differential ratio represents gear reduction ratio between input pinion gear and the ring gear of the differential. This parameter acts as global gear conversion ratio. It means that if, let&#8217;s say first gear has ratio 13.86 and differential ratio is 2.0, actual first gear reduction is 27.72 (2.0 * 13.86). If you are using real gearbox parameters, bear this in mind and look for real differential ratios too.</p>
+</div>
+<div class="paragraph">
+<p><strong>Gear ratios</strong></p>
+</div>
+<div class="paragraph">
+<p>Gear ratios of forward gears. For every turn of the wheel must engine turn this many times (not counting the differential ratio). When setting various gear ratios, try to make smaller difference between higher gears. Pleas note that in sample gear setting the difference (ratio) between first and second gear is approx. 45 %, but difference between the fifth and sixth gear is about 19 %. This allows smoother gearbox performance. There must be between 3 and 15 forward gears. <strong>The last gear must be followed by a -1 value.</strong></p>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="more_information"><a class="anchor" href="#more_information"></a>More information</h5>
+<div class="paragraph">
+<p>A great source of practical gear ratios is from <a href="http://roadranger.com/Roadranger/productssolutions/transmissions/index.htm">Eaton Fuller</a>. To see the ratios, click the name of the transmission and find <strong>Product Specifications Guide</strong>. If your vehicle decelerates in a gear you may not have enough power, or too high a gear. NOTE: the value of this site is unknown. RoR&#8217;s poor air resistance simulation probably invalidates the use of any real life gear ratios: It&#8217;s always best to make sure a truck can sensibly use all the gears it has.</p>
+</div>
+<div class="paragraph">
+<p>If you know a little about vehicles there is a <a href="http://grimmjeeper.com/gears.html">Gear Ratio Guide</a>, but a decent knowledge of transmissions, transfer cases, underdrives and correct rear end gears is highly recommended.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="engoption"><a class="anchor" href="#engoption"></a>3.5.2. engoption</h4>
+<div class="paragraph">
+<p>This optional section allows the user to specify whether the engine is for a car or heavy truck and the engine inertia of the vehicle.</p>
+</div>
+<div class="sect4">
+<h5 id="syntax_2"><a class="anchor" href="#syntax_2"></a>Syntax</h5>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>engoption
+0.5, c</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Engine inertia</strong>: the engines resistance to change in RPM.</p>
+</li>
+<li>
+<p><strong>Engine type</strong>: the type of engine inside the vehicle. Use (c) for car engines and (t) for truck engines.</p>
+</li>
+</ul>
+</div>
+<div class="sect5">
+<h6 id="detailed_syntax_2"><a class="anchor" href="#detailed_syntax_2"></a>Detailed syntax</h6>
+<div class="paragraph">
+<p><strong>Engine inertia</strong></p>
+</div>
+<div class="imageblock thumb">
+<div class="content">
+<img src="/images/engine-inertia-models.png" alt="engine inertia models">
+</div>
+<div class="title">Figure 9. Different inertia models.</div>
+</div>
+<div class="paragraph">
+<p>The default game value is 10.0, which is correct for a large diesel engine, Use higher values to make engines accelerate more slowly and stall more difficultly, which may be useful for vehicles towing large masses. This value should be lowered for smaller, light engines (Is the multiplier different for car and truck engines?)</p>
+</div>
+<div class="paragraph">
+<p>With a high value of inertia the engines RPM is not likely to change when resistance is met. As an example, when changing gears a high inertia will cause the wheels to slip, while a lower value will cause the engine RPM to change and prevent the wheels from slipping. However, with a low inertia and a high brake value, the engine will stall more easily since the brakes can change the RPMs more easily.</p>
+</div>
+<div class="paragraph">
+<p>If your engine doesn&#8217;t change its RPM&#8217;s during gear change, your engine inertia is too high</p>
+</div>
+<div class="paragraph">
+<p>If a vehicle is feeling sluggish, and hard to brake, it is better to decrease the inertia than increase the brake force, and torque.</p>
+</div>
+<div class="paragraph">
+<p><strong>Engine type</strong></p>
+</div>
+<div class="paragraph">
+<p>Using <code>c</code> for cars or <code>t</code> for trucks specifies characteristics of the engines. Car engines use a different sound to truck engines and have no turbocharger. They also have less inertia by default. <code>t</code> is the default.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="torque_curve"><a class="anchor" href="#torque_curve"></a>3.5.3. Torque curve</h4>
+<div class="imageblock thumb">
+<div class="content">
+<img src="/images/engine-torque-curve.png" alt="engine torque curve">
+</div>
+<div class="title">Figure 10. Torque curve for a small diesel engine.</div>
+</div>
+<div class="paragraph">
+<p>This section allows you to define a torque curve for your vehicle. It is optional.</p>
+</div>
+<div class="paragraph">
+<p>This allows you to assign predefined torque curves or your own custom curves to a truck. Predefined options are: <code>default</code>, <code>diesel</code>, <code>turbodiesel</code>, <code>gas</code>, <code>turbogas</code>, <code>wheelloader</code>, <code>compacttractor</code>, <code>tractor</code>, <code>hydrostatic</code>.</p>
+</div>
+<div class="paragraph">
+<p>Predefined Curve Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>torquecurve
+turbogas</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The first number is RPM where the power begins, and the second defines power as a percent of total torque.</p>
+</div>
+<div class="paragraph">
+<p>It&#8217;s suitable to define the torque to the engine RPM set in the engine definition plus 25% ( multiply the value with 1.25) to get the overev area defined.</p>
+</div>
+<div class="paragraph">
+<p>The following example would be good for a maximum engine RPM set to 2800.</p>
+</div>
+<div class="paragraph">
+<p>Custom curve example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>torquecurve
+0,0
+1000,0.79
+1500,0.9
+2000,0.97
+2500,0.99
+3000,0.9
+3500,0.77</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Engine dying in idle and first gear? Just define a single higher peak value where you want the engine to idle&#8230;&#8203;  like adding</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>...
+700, 0.2
+800, 0.6
+900, 0.4
+...</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>to the example above in the right spot will result the engine idle a little bit higher then 800 rpm in first gear.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="suspension"><a class="anchor" href="#suspension"></a>3.6. Suspension</h3>
+<div class="paragraph">
+<p>Suspension is a flexible component which connects a car&#8217;s body to its wheels. because of its flexibility, suspension components soften out bumps in the road and make the truck&#8217;s ride smoother.</p>
+</div>
+<div class="sect3">
+<h4 id="suspension_types"><a class="anchor" href="#suspension_types"></a>3.6.1. Suspension types</h4>
+<div class="sect4">
+<h5 id="coilovers"><a class="anchor" href="#coilovers"></a>Coilovers</h5>
+<div class="paragraph">
+<p>Coilover springs (standing for 'coil-over-oil') are extremely simple to model in RoR, since the game&#8217;s shocks simulate them directly.</p>
+</div>
+<div class="paragraph">
+<p>Things to keep in mind:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Spring</strong> is the measure of resistance change to the shock&#8217;s of position, or how 'stiff' the suspension is. The shorter or longer a shock is compared to its original length, the more force it will exert to try to get back to its original length.</p>
+</li>
+<li>
+<p><strong>Damping</strong> is a measure of how fast the shocks can change their length: the faster a shock tries to change its length (by compression or extension of the suspension), the more resistance the shock will apply. Too little damping will make the suspension too bouncy. Too much damping and the suspension will not be able to move well enough in response to bumps.
+So, for soft suspension you would want low spring and relatively low damp, and the opposite for stiff suspension (high spring and relatively high damp). Shocks behave differently based on the force acted upon them. So a shock that is good for a truck weighing several tonnes will be much too 'stiff' for the same shock on a street car. For syntax, see <a href="fake/../../truck-description-file/index.html#shocks">TDF documentation</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="leaf_springs"><a class="anchor" href="#leaf_springs"></a>Leaf springs</h5>
+<div class="paragraph">
+<p>Leaf spring suspension is a very simple (in real life; it is much harder to model in RoR) and efficient design found on almost all trucks using beam axles.</p>
+</div>
+<div class="paragraph">
+<p>The design consists of a spring and a shackle, the spring is a long metal arc that bend when a force is exerted on the spring. One end of the spring is securely mounted to the frame and the other to a shackle. The shackle allows for one end of the spring to move back and forth as the spring straightens out under force.</p>
+</div>
+<div class="paragraph">
+<p>A fully working <a href="http://www.rigsofrods.com/repository/repo_files/view/674">concept vehicle</a> is available in the repository.</p>
+</div>
+<div class="imageblock thumb" style="float: left">
+<div class="content">
+<img src="/images/Leafspring_ingame.jpg" alt="200" width="200">
+</div>
+<div class="title">Figure 11. Leaf spring concept</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="suspension_geometries"><a class="anchor" href="#suspension_geometries"></a>3.6.2. Suspension geometries</h4>
+<div class="sect4">
+<h5 id="dependent_suspension"><a class="anchor" href="#dependent_suspension"></a>Dependent suspension</h5>
+<div class="paragraph">
+<p>The wheels of each axle are securely connected to each other using non independent suspension systems. The force from every bump that a wheel on one side goes over is transmitted into the other wheel too. These systems do not tend produce very good handling, and therefore are not often used on sports cars. Non independent suspension is much more commonly found on heavy duty vehicles, where the link between the wheels makes axles much stronger.</p>
+</div>
+<div class="sect5">
+<h6 id="beam_axle"><a class="anchor" href="#beam_axle"></a>Beam axle</h6>
+<div class="paragraph">
+<p>Beam axles are an extremely simple form of suspension, almost always seen on the back axles of vans and semi trailers. The wheels are directly attached to the axles, and cannot change their angle to it.</p>
+</div>
+<div class="paragraph">
+<p>The easiest way to create a beam axle is to use <a href="axle-rigidity/index.html">Axle Rigidity</a> nodes.</p>
+</div>
+<div class="paragraph">
+<p>The lateral location of a beam axle can be controlled in a number of ways; the easiest way in RoR simply to weakly truss the two arms that hold the axle, but this is generally not possible in real life and limits how much the axle can roll.</p>
+</div>
+<div class="imageblock thumb">
+<div class="content">
+<img src="/images/beam-axle-simple.jpg" alt="200" width="200">
+</div>
+<div class="title">Figure 12. Simple beam axle</div>
+</div>
+<div class="imageblock thumb">
+<div class="content">
+<img src="/images/beam-axle-panhard-rod.jpg" alt="200" width="200">
+</div>
+<div class="title">Figure 13. Panhard rod</div>
+</div>
+<div class="imageblock thumb">
+<div class="content">
+<img src="/images/beam-axle-watts-linkage.jpg" alt="200" width="200">
+</div>
+<div class="title">Figure 14. Watt&#8217;s linkage</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Legend</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="blue">Axle.</span></p>
+</li>
+<li>
+<p><span class="olive">Frame and trailing arms.</span></p>
+</li>
+<li>
+<p><span class="lime">Simple truss for lateral location / Watt&#8217;s Linkage / Panhard rod</span></p>
+</li>
+<li>
+<p><span class="fuchsia">Holder</span></p>
+</li>
+<li>
+<p><span class="yellow">Trusses and A-arms to hold linkage in place</span></p>
+</li>
+<li>
+<p><span class="red">Connector for Watt&#8217;s linkage and axle</span></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Example trucks</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="fake/../../../examples/beam-axle-demo.truck">An example truck using a beam axle on the rear, with simple truss for lateral location</a></p>
+</li>
+<li>
+<p><a href="fake/../../../examples/panhard-rod-demo.truck">Panhard rod method of lateral location</a></p>
+</li>
+<li>
+<p><a href="fake/../../../examples/watts-linkage-demo.truck">Watt&#8217;s linkage method of laterial location</a></p>
+</li>
+<li>
+<p>A truck which uses the Four Link method of of laterial location is <a href="http://rigsofrods.com/repository/repo_files/view/852">Box5Diesel&#8217;s F650 Crawler</a>.</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect5">
+<h6 id="de_dion_tube"><a class="anchor" href="#de_dion_tube"></a>De Dion tube</h6>
+<div class="imageblock thumb" style="float: right">
+<div class="content">
+<img src="/images/de-dion-tube.jpg" alt="230" width="230">
+</div>
+<div class="title">Figure 15. De Dion tube</div>
+</div>
+<div class="paragraph">
+<p>De Dion tube suspension is a relatively complex form of suspension, which falls in between the categories of independent and non independent suspension: The wheels are directly connected to each other using a sliding tube, forcing them to stay parallel to each other, but this tube is not connected to any other part of the vehicle. each wheel is actually held to the truck by a single A-arm</p>
+</div>
+<div class="paragraph">
+<p>The wheels connected to the tube are kept parallel, regardless of body roll or suspension travel on either side&#8230;&#8203; The tube&#8217;s length can change.</p>
+</div>
+<div class="paragraph">
+<p>Due to their complexity, De Dion tubes are uncommon on modern vehicles.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Legend</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="blue">A-arms</span></p>
+</li>
+<li>
+<p><span class="lime">De Dion tube</span></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Example truck</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="fake/../../../examples/de-dion-tube-demo.truck">An example truck using a de Dion tube on the rear.</a> Since a telescoping tube cannot be directly modeled in RoR, a Sarrus Linkage has been used instead. It provides exactly the same effect.</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect5">
+<h6 id="walking_beam"><a class="anchor" href="#walking_beam"></a>Walking beam</h6>
+<div class="paragraph">
+<p>Walking beam is a special form of suspension: It solidly links two axles together, meaning that all four wheels on those axles must move in unison. Indeed, the setup is know as walking beam due to the way that trucks are see to 'walk' over obstacles. This design allows the tires to conform to the landscape, evening out the pressure on each tire.</p>
+</div>
+<div class="imageblock thumb" style="text-align: right">
+<div class="content">
+<img src="/images/walking-beam.png" alt="200" width="200">
+</div>
+<div class="title">Figure 16. Back of a truck</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Legend</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="blue">Axles</span></p>
+</li>
+<li>
+<p><span class="lime">Simple truss for lateral location</span></p>
+</li>
+<li>
+<p><span class="olive">Frame and trailing arms</span></p>
+</li>
+<li>
+<p><span class="yellow">Frame for walking beam</span></p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="imageblock thumb" style="text-align: right">
+<div class="content">
+<img src="/images/walking-beam-diagram.jpg" alt="200" width="200">
+</div>
+<div class="title">Figure 17. Walking beam diagram</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Legend</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="black">Structural beams</span></p>
+</li>
+<li>
+<p><span class="lime">Suspension</span></p>
+</li>
+<li>
+<p><span class="blue">Shocks</span></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Example trucks</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="fake/../../../examples/walking-beam-demo.truck">An example truck using simple walking beam suspension on the rear.</a></p>
+</li>
+<li>
+<p><a href="http://repository.rigsofrods.com/show/walking.zip">A fully working concept vehicle is also available in the repository.</a></p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="independent_suspension"><a class="anchor" href="#independent_suspension"></a>Independent suspension</h5>
+<div class="paragraph">
+<p>There are no significant connections between wheels in independent suspension setups. They are therefore much more suited to vehicles where roadholding is especially important.</p>
+</div>
+<div class="sect5">
+<h6 id="swing_axle"><a class="anchor" href="#swing_axle"></a>Swing axle</h6>
+<div class="paragraph">
+<p>The swing axle is a small step up from the beam axle. Although it is the most common form of suspension on Pricorde&#8217;s trucks, it probably produces the worst handling vehicles in the game, due to the way the camber changes when going over bumps.</p>
+</div>
+<div class="paragraph">
+<p>Because of its strange handling characteristics, swing axle suspension is uncommon in modern trucks.</p>
+</div>
+<div class="imageblock thumb" style="text-align: right">
+<div class="content">
+<img src="/images/swing-axle.jpg" alt="200" width="200">
+</div>
+<div class="title">Figure 18. Swing axle</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Legend</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="blue">Axles.</span></p>
+</li>
+<li>
+<p><span class="olive">Trusses and A-arm for axles.</span></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Example truck</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="fake/../../../examples/swing-axle-demo.truck">An example truck using swing axles on the rear.</a> The axles on this truck are quite short, which encourages the inside wheel to tuck under when cornering.</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect5">
+<h6 id="double_wishbone"><a class="anchor" href="#double_wishbone"></a>Double wishbone</h6>
+<div class="paragraph">
+<p>Double wishbone suspension is most common in racing cars and larger passenger cars. The wheels are kept perpendicular to the road through the use of two A-arms, one above the other. It is relatively easy to tune for handling.</p>
+</div>
+<div class="imageblock thumb" style="text-align: right">
+<div class="content">
+<img src="/images/double-wishbone.jpg" alt="200" width="200">
+</div>
+<div class="title">Figure 19. Double wishbone</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Legend</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="lime">Upper wishbones.</span></p>
+</li>
+<li>
+<p><span class="blue">Lower wishbones.</span></p>
+</li>
+<li>
+<p><span class="olive">Extra truss arms. Hydros could go here when modelling steering axles.</span></p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Example truck</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="fake/../../../examples/double-wishbone-demo.truck">An example truck using double wishbone suspension on the rear.</a> The front axles also carry double wishbone suspension and are used for steering. The front wheels have also been rotated to place them inside the wishbones, which makes them much stronger; any object they collide with exerts less leverage on them.</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></article></div></div><footer><div class="row"><div class="small-12 medium-4 columns"><h4>We are open</h4>Rigs of Rods is free and open source, available under the <a href='https://www.gnu.org/Copyleft/' title='Copyleft licensing'>copyleft</a>-style <a href='http://www.gnu.org/licenses/gpl-3.0.html' title='The GPLv3 license'>GPLv3</a> license.</div><div class="small-12 medium-2 columns"><h4>Home</h4><ul><li><a href="/en/download" title="Get the game">Download</a></li><li><a href="/en/blog" title="Read the blog">Blog</a></li><li><a href="/en/docs" title="Read the docs">Docs</a></li></ul></div><div class="small-12 medium-2 columns"><h4>Forum</h4><ul><li><a href="http://rigsofrods.com/forum" title="Talk to the community">Index</a></li><li><a href="http://rigsofrods.com/sso" title="Register at the forum">Register</a></li><li><a href="http://rigsofrods.com/search.php" title="Find what you need">Search</a></li></ul></div><div class="small-12 medium-4 columns"><h4>Follow us</h4><ul class="home-social"><li><a class="fa fa-vk" href="https://vk.com/rigsofrods.official"></a><a class="fa fa-facebook" href="https://facebook.com/rigsofrods.official"></a><a class="fa fa-twitter" href="https://twitter.com/rigsofrods_game"></a><a class="fa fa-youtube" href="https://youtube.com/OfficialRigsOfRods"></a></li></ul></div></div></footer>

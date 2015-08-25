@@ -1,0 +1,140 @@
+<!DOCTYPE html><html class="no-js" lang="en"><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><title>Отчёт о разработке за май 2015 - Rigs of Rods</title><link href="/images/favicon.png" rel="icon" /><link href="/stylesheets/styles.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.carousel.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.theme.default.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CUbuntu+Mono:400%7CUbuntu:300,300italic,300bold,400,400italic,400bold,600,600italic,600bold" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.5/jquery.smooth-scroll.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script><script src="/stylesheets/owl-carousel/owl.carousel.min.js"></script><script>hljs.initHighlightingOnLoad();</script><script>(function(){
+    var WebP = new Image();
+    WebP.onload = WebP.onerror = function(){
+        if(WebP.height != 2){
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            var s = document.getElementsByTagName('script')[0];
+            sc.src = 'http://webpjs.appspot.com/js/webpjs-0.0.2.min.js';
+            s.parentNode.insertBefore(sc,s);
+        }
+    };
+    WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+})();</script><script>$(document).foundation();</script><script>$(document).ready(function() {
+    $('a').smoothScroll();
+    $('').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+            scrollTarget: link.hash
+        });
+    });
+});</script><script>$(document).ready(function() {
+  $("#media-slider").owlCarousel({
+    items: 1,
+    nav: true,
+    merge: true,
+    loop: true,
+    video: true,
+    lazyLoad: true,
+    center: true,
+    videoHeight: 720,
+    responsive: {
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+    }
+  });
+});</script></head><body><div class="fixed contain-to-grid top-bar-margin"><nav class="top-bar" data-topbar="" role="navigation"><ul class="title-area"><li class="name"><h1><a href="/en/">Rigs of Rods</a></h1></li></ul><section class="top-bar-section"><ul class="left"><li test="/blog/2015-06-07-devblog-progress-report-05-2015/"><a href="/en/"><span class='fa fa-home'></span>  <span class="nav-entry-text">Home</span></a></li><li test="/blog/2015-06-07-devblog-progress-report-05-2015/"><a href="/en/download/"><span class='fa fa-download'></span>  <span class="nav-entry-text">Download</span></a></li><li test="/blog/2015-06-07-devblog-progress-report-05-2015/"><a href="/en/repository/"><span class='fa fa-plus'></span>  <span class="nav-entry-text">Repository</span></a></li><li test="/blog/2015-06-07-devblog-progress-report-05-2015/"><a href="/en/forum/"><span class='fa fa-comments'></span>  <span class="nav-entry-text">Forum</span></a></li><li test="/blog/2015-06-07-devblog-progress-report-05-2015/"><a href="/en/blog/"><span class='fa fa-pencil'></span>  <span class="nav-entry-text">Blog</span></a></li><li test="/blog/2015-06-07-devblog-progress-report-05-2015/"><a href="/en/docs/"><span class='fa fa-lightbulb-o'></span>  <span class="nav-entry-text">Docs</span></a></li><li test="/blog/2015-06-07-devblog-progress-report-05-2015/"><a href="/en/races/"><span class='fa fa-users'></span>  <span class="nav-entry-text">Multiplayer</span></a></li></ul></section></nav></div></body></html><div class="row main-start"><div class="small-12 columns"><article><header><h1>Отчёт о разработке за май 2015</h1><div class="details"></div></header><div id="content"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Привет фанатам RoR!</strong></p>
+</div>
+<div class="paragraph">
+<p>Хоть и с опозданием, но публикуем обзор разработки RoR за май.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Оргвопросы"><a class="anchor" href="#Оргвопросы"></a>Оргвопросы</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Рад сказать, что у проекта здоровый
+<a href="https://github.com/RigsOfRods/rigs-of-rods/pulse">пульс</a>. Это заслуга
+нашего центра разработки на GitHub. Багтрекер ежедневно пополняется вашими
+отчётами, а мы, в свою очередь, исправляем ошибки по мере сил. Кроме того,
+ваши лайки на GitHub дают проекту видимость и новых разработчиков.</p>
+</div>
+<div class="paragraph">
+<p>Hiradur настроил для нас тестирование на
+<a href="https://travis-ci.org/RigsOfRods/rigs-of-rods">Travis CI</a>. Это сервис
+постоянной интеграции - он собирает RoR под Linux и выводит ошибки при
+неудаче. Это особенно важно т.к. ваш покорный слуга пишет и тестирует RoR
+только под Windows, хотя кросс-платформенность - краеугольный камень
+разработки.</p>
+</div>
+<div class="paragraph">
+<p>Max98 создал <a href="https://gitter.im/RigsOfRods/rigs-of-rods">комнату на
+Gitter</a>: чат-сервисе, привязанном к хранилищам на GitHub. Отличное место для
+встречи разработчиков RoR и обсуждения всех технических вопросов. Она сама
+по себе привлекает новых людей, готовых внести вклад в разработку игры.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="0_4_5_nextstable"><a class="anchor" href="#0_4_5_nextstable"></a>0.4.5 "NextStable"</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Новая версия всё ещё в разработке, сроков пока нет, а планы немного
+изменились. Сначала мы лишь хотели исправить текущие ошибки,
+"стабилизировать" код и выпустить 0.4.5. Однако разработка идёт медленно (мы
+все добровольцы, пишем игру в свободное время), а для игроков важно всё:
+скорость, стабильность, графика, скорость, геймплей в целом. Да, я упомянул
+слово "скорость" дважды. По этой причине новый слоган версии 0.4.5: "Любые
+улучшения, ничего не ломающие и не тормозящие движок".</p>
+</div>
+<div class="paragraph">
+<p>Исправление месяца - безусловно, мягкие тела. Где-то по дороге к 0.4.0x их
+сломали (см. <a href="https://github.com/RigsOfRods/rigs-of-rods/issues/16">отчёт
+об ошибке</a>). Исправлены и ускорены в тестовой сборке 3, спасибо Max98.</p>
+</div>
+<div class="paragraph">
+<p>Далее, скорость загрузки транспорта. Терпеть такие тормоза при загрузке ТС
+выше моих сил, поэтому для диагностики был встроен
+<a href="https://floodyberry.wordpress.com/2009/10/07/high-performance-cplusplus-profiling">профилировщик</a>.
+Затыком оказались подробные логи, после чего я сделал их настраиваемыми и
+выключил по умолчанию. Дальше больше. Обнаружились тормоза, связанные с
+мягкими телами, но не их генерацией, а поиском LOD-файлов в ресурсной
+системе OGRE (супер-тормознутой - кандидат на вылет из движка). Эту
+<a href="http://www.rigsofrods.com/threads/119482-Flexbodies-LODs-really">лишнюю</a>
+опцию теперь можно отключить по умолчанию. Наконец, узким местом оказалась
+сама генерация мягких тел, но удалось обойти и его - я добавил кэширование,
+благодаря которому мягкие тела создаются лишь при первой загрузке ТС. При
+дальнейшей загрузке того же транспорта загружается готовый двоичный файл из
+кэша. Сейчас данная опция отключена по умолчанию, см. инструкции по
+использованию в /resources/skeleton/conf/README.txt. Скажу вам, я горжусь
+данным улучшением и планирую использовать его для оптимизации загрузки
+других частей RoR в дальнейшем.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Будущее"><a class="anchor" href="#Будущее"></a>Будущее</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Для мечтаний хватило прошлого блога, настало время фиксить баги. А именно,
+совместимость карт и транспорта. В разработке: объекты на карте.</p>
+</div>
+<div class="paragraph">
+<p>Но не могу же я сопротивляться порывам работать над редактором ТС! В
+разработке: вспышки.</p>
+</div>
+<div class="paragraph">
+<p>Наконец, идёт работа и над производительностью. В разработке: график
+производительности для выявления узкких мест на различных конфигурациях ПК.</p>
+</div>
+<div class="paragraph">
+<p>Да, это размывает фокус разработки, но таковы запросы сообщества.</p>
+</div>
+<div class="paragraph">
+<p>Приятной игры в RoR!</p>
+</div>
+</div>
+</div></div></article></div></div><footer><div class="row"><div class="small-12 medium-4 columns"><h4>We are open</h4>Rigs of Rods is free and open source, available under the <a href='https://www.gnu.org/Copyleft/' title='Copyleft licensing'>copyleft</a>-style <a href='http://www.gnu.org/licenses/gpl-3.0.html' title='The GPLv3 license'>GPLv3</a> license.</div><div class="small-12 medium-2 columns"><h4>Home</h4><ul><li><a href="/en/download" title="Get the game">Download</a></li><li><a href="/en/blog" title="Read the blog">Blog</a></li><li><a href="/en/docs" title="Read the docs">Docs</a></li></ul></div><div class="small-12 medium-2 columns"><h4>Forum</h4><ul><li><a href="http://rigsofrods.com/forum" title="Talk to the community">Index</a></li><li><a href="http://rigsofrods.com/sso" title="Register at the forum">Register</a></li><li><a href="http://rigsofrods.com/search.php" title="Find what you need">Search</a></li></ul></div><div class="small-12 medium-4 columns"><h4>Follow us</h4><ul class="home-social"><li><a class="fa fa-vk" href="https://vk.com/rigsofrods.official"></a><a class="fa fa-facebook" href="https://facebook.com/rigsofrods.official"></a><a class="fa fa-twitter" href="https://twitter.com/rigsofrods_game"></a><a class="fa fa-youtube" href="https://youtube.com/OfficialRigsOfRods"></a></li></ul></div></div></footer>

@@ -1,0 +1,146 @@
+<!DOCTYPE html><html class="no-js" lang="fr"><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><title>Test Build 3 released! - Rigs of Rods</title><link href="/images/favicon.png" rel="icon" /><link href="/stylesheets/styles.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.carousel.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.theme.default.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CUbuntu+Mono:400%7CUbuntu:300,300italic,300bold,400,400italic,400bold,600,600italic,600bold" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.5/jquery.smooth-scroll.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script><script src="/stylesheets/owl-carousel/owl.carousel.min.js"></script><script>hljs.initHighlightingOnLoad();</script><script>(function(){
+    var WebP = new Image();
+    WebP.onload = WebP.onerror = function(){
+        if(WebP.height != 2){
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            var s = document.getElementsByTagName('script')[0];
+            sc.src = 'http://webpjs.appspot.com/js/webpjs-0.0.2.min.js';
+            s.parentNode.insertBefore(sc,s);
+        }
+    };
+    WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+})();</script><script>$(document).foundation();</script><script>$(document).ready(function() {
+    $('a').smoothScroll();
+    $('').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+            scrollTarget: link.hash
+        });
+    });
+});</script><script>$(document).ready(function() {
+  $("#media-slider").owlCarousel({
+    items: 1,
+    nav: true,
+    merge: true,
+    loop: true,
+    video: true,
+    lazyLoad: true,
+    center: true,
+    videoHeight: 720,
+    responsive: {
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+    }
+  });
+});</script></head><body><div class="fixed contain-to-grid top-bar-margin"><nav class="top-bar" data-topbar="" role="navigation"><ul class="title-area"><li class="name"><h1><a href="/fr/">Rigs of Rods</a></h1></li></ul><section class="top-bar-section"><ul class="left"><li test="/fr/blog/"><a href="/fr/"><span class='fa fa-home'></span>  <span class="nav-entry-text">Accueil</span></a></li><li test="/fr/blog/"><a href="/fr/download/"><span class='fa fa-download'></span>  <span class="nav-entry-text">Télécharger</span></a></li><li test="/fr/blog/"><a href="/fr/repository/"><span class='fa fa-plus'></span>  <span class="nav-entry-text">Dépot de mods</span></a></li><li test="/fr/blog/"><a href="/fr/forum/"><span class='fa fa-comments'></span>  <span class="nav-entry-text">Forum</span></a></li><li class="active" test="/fr/blog/"><a href="/fr/blog/"><span class='fa fa-pencil'></span>  <span class="nav-entry-text">Blog</span></a></li><li test="/fr/blog/"><a href="/fr/docs/"><span class='fa fa-lightbulb-o'></span>  <span class="nav-entry-text">Docs</span></a></li><li test="/fr/blog/"><a href="/fr/races/"><span class='fa fa-users'></span>  <span class="nav-entry-text">Multi-joueur</span></a></li></ul></section></nav></div></body></html><div class="row main-start"><div class="small-12 columns"><article><header><h1>Test Build 3 released!</h1><div class="details"><span class="author" id="author">Moncef Ben Slimane</span><br /><span class="email" id="email"><a href="https://github.com/Max98">@max98</a></span><br /><span id="revdate">2015-05-31</span></div></header><div id="content"><div class="paragraph">
+<p>Say hello to the new test build! Changelog:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">only_a_ptr</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>fixed 0.4.0.7&#8217;s malformed flexbodies bug. Flexbodies were spawned deformed,
+see screenshots in
+<a href="https://github.com/RigsOfRods/rigs-of-rods/issues/16">this ticket</a>. I
+fixed it by simply backporting flexbody code from 0.38.67 (last stable
+release). However, I&#8217;m a little worried about performance impact, the code
+uses precise but expensive calculations.</p>
+</li>
+<li>
+<p>Added built-in profiler. I incorporated
+<a href="https://floodyberry.wordpress.com/2009/10/07/high-performance-cplusplus-profiling/">this
+library</a> into RoR. It works by putting tracking macros in the code (so
+called instrumentation) and generates a very nice HTML output. I&#8217;ve added
+instrumentation for RigSpawner class (per-function) and FlexBody generation
+(constructor, detailed). Profiling configuration is found in header
+RigLoadingProfilerControl.h. Feel free to add your own instrumentation and
+control headers.</p>
+</li>
+<li>
+<p>Added ror.cfg option to disable flexbody LODs By profiling, I discovered
+that the slowest part of vehicle loading are flexbodies, but not their
+generation, but seeking flexbody-LOD files in OGRE&#8217;s resource system (mega
+slow, scheduled for elimination by OGRE team). I added a ror.cfg option to
+disable this.</p>
+</li>
+<li>
+<p>Added flexbody cache support After disabling the flexbody LODs, the slowest
+part of rig loading was flexbody generation. To speed things up, I
+implemented a caching support for flexbodies - first time the vehicle is
+loaded, a file "flexbodies_mod_MODNUMBER.dat" is generated in cache, and
+subsequent spawns of the same vehicle load it.</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Other than that:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>I have improved flexbodies calculation, they are faster, even faster than
+0.4.0.7:</p>
+</li>
+</ul>
+</div>
+<div class="imageblock ">
+<div class="content">
+<img src="http://www.rigsofrods.com/attachment.php?attachmentid=534555&d=1433028432" alt="attachment">
+</div>
+</div>
+<div class="imageblock ">
+<div class="content">
+<img src="http://www.rigsofrods.com/attachment.php?attachmentid=534557&d=1433028471" alt="attachment">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>RoRConfig is also updated to support 0.4.5.0&#8217;s features. (like Skidmarks)</p>
+</li>
+<li>
+<p>PSSM shadows are included in this release but they are badly glitched.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock ">
+<div class="content">
+<img src="http://i.imgur.com/oB0vf4Q.jpg" alt="oB0vf4Q">
+</div>
+</div>
+<div class="paragraph">
+<p>We hope you can enjoy this and help us improve RoR!</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Download Test Build 3 from</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://yadi.sk/d/EwlR835egzbnM">Yandex.Disk</a></p>
+</li>
+<li>
+<p><a href="http://www.mediafire.com/download/lxuxtl6szx9t6b7/Rigs+of+rods+0.4.5.0-dev+Test+Build+3.zip">MediaFire</a></p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div></div></article><a class="previous" href="/fr/blog"><span class="fa fa-arrow-left"></span> <b>Retourner au blog</b></a> </div></div><footer><div class="row"><div class="small-12 medium-4 columns"><h4>On est Open!</h4>Rigs of Rods est gratuit et open source, disponible sous le style de la license <a href='https://www.gnu.org/Copyleft/' title='Copyleft licensing'>copyleft</a> <a href='http://www.gnu.org/licenses/gpl-3.0.html' title='La license GPLv3'>GPLv3</a>.</div><div class="small-12 medium-2 columns"><h4>Accueil</h4><ul><li><a href="/fr/download" title="Obtenir le jeu">Télécharger</a></li><li><a href="/fr/blog" title="Read the blog">Blog</a></li><li><a href="/fr/docs" title="Read the docs">Docs</a></li></ul></div><div class="small-12 medium-2 columns"><h4>Forum</h4><ul><li><a href="http://rigsofrods.com/forum" title="Rester en contact avec la communauté">Index</a></li><li><a href="http://rigsofrods.com/sso" title="s'inscrire au forum">Inscription</a></li><li><a href="http://rigsofrods.com/search.php" title="Rechercher ce que vous voulez">Rechercher</a></li></ul></div><div class="small-12 medium-4 columns"><h4>Suivez-nous!</h4><ul class="home-social"><li><a class="fa fa-vk" href="https://vk.com/rigsofrods.official"></a><a class="fa fa-facebook" href="https://facebook.com/rigsofrods.official"></a><a class="fa fa-twitter" href="https://twitter.com/rigsofrods_game"></a><a class="fa fa-youtube" href="https://youtube.com/OfficialRigsOfRods"></a></li></ul></div></div></footer>

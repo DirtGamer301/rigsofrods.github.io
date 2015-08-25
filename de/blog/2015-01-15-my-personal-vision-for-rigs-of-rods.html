@@ -1,0 +1,135 @@
+<!DOCTYPE html><html class="no-js" lang="de"><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><title>My personal vision for Rigs of Rods - Rigs of Rods</title><link href="/images/favicon.png" rel="icon" /><link href="/stylesheets/styles.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.carousel.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.theme.default.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CUbuntu+Mono:400%7CUbuntu:300,300italic,300bold,400,400italic,400bold,600,600italic,600bold" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.5/jquery.smooth-scroll.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script><script src="/stylesheets/owl-carousel/owl.carousel.min.js"></script><script>hljs.initHighlightingOnLoad();</script><script>(function(){
+    var WebP = new Image();
+    WebP.onload = WebP.onerror = function(){
+        if(WebP.height != 2){
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            var s = document.getElementsByTagName('script')[0];
+            sc.src = 'http://webpjs.appspot.com/js/webpjs-0.0.2.min.js';
+            s.parentNode.insertBefore(sc,s);
+        }
+    };
+    WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+})();</script><script>$(document).foundation();</script><script>$(document).ready(function() {
+    $('a').smoothScroll();
+    $('').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+            scrollTarget: link.hash
+        });
+    });
+});</script><script>$(document).ready(function() {
+  $("#media-slider").owlCarousel({
+    items: 1,
+    nav: true,
+    merge: true,
+    loop: true,
+    video: true,
+    lazyLoad: true,
+    center: true,
+    videoHeight: 720,
+    responsive: {
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+    }
+  });
+});</script></head><body><div class="fixed contain-to-grid top-bar-margin"><nav class="top-bar" data-topbar="" role="navigation"><ul class="title-area"><li class="name"><h1><a href="/de/">Rigs of Rods</a></h1></li></ul><section class="top-bar-section"><ul class="left"><li test="/de/blog/"><a href="/de/"><span class='fa fa-home'></span>  <span class="nav-entry-text">Startseite</span></a></li><li test="/de/blog/"><a href="/de/download/"><span class='fa fa-download'></span>  <span class="nav-entry-text">Herunterladen</span></a></li><li test="/de/blog/"><a href="/de/repository/"><span class='fa fa-plus'></span>  <span class="nav-entry-text">Repository</span></a></li><li test="/de/blog/"><a href="/de/forum/"><span class='fa fa-comments'></span>  <span class="nav-entry-text">Forum</span></a></li><li class="active" test="/de/blog/"><a href="/de/blog/"><span class='fa fa-pencil'></span>  <span class="nav-entry-text">Blog</span></a></li><li test="/de/blog/"><a href="/de/docs/"><span class='fa fa-lightbulb-o'></span>  <span class="nav-entry-text">Dokumentation</span></a></li><li test="/de/blog/"><a href="/de/races/"><span class='fa fa-users'></span>  <span class="nav-entry-text">Mehrspieler</span></a></li></ul></section></nav></div></body></html><div class="row main-start"><div class="small-12 columns"><article><header><h1>My personal vision for Rigs of Rods</h1><div class="details"><span class="author" id="author">Niklas Kersten</span><br /><span class="email" id="email"><a href="https://github.com/Hiradur">@Hiradur</a></span><br /><span id="revdate">2015-01-15</span></div></header><div id="content"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>With the blog section now being back alive I though I&#8217;d give it a shot and
+write about my personal goals for Rigs of Rods. Every developer working on
+an open source project usually has his own vision for what the project could
+become and works on things that bring it closer to that vision.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="my_vision_of_rigs_of_rods"><a class="anchor" href="#my_vision_of_rigs_of_rods"></a>My vision of Rigs of Rods</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I would like to see RoR going much faster than it currently does. RoR is
+usually limited by the CPU as it has to do a lot of floating point math to
+simulate the behaviour of beams and nodes. Other limiting factors probably
+are memory latency and bandwidth since structures for beams and nodes are
+quite large in size and there are hundreds of them per vehicle. Besides the
+fact that the whole phsyics core could use a cleanup it is also required
+that we increase accuracy (discussion:
+<a href="http://www.rigsofrods.com/threads/118051-Discussion-Moving-to-double-precision-for-physics">Discussion-Moving-to-double-precision-for-physics</a>)
+to improve the quality of the simulation. When we do that a major overhaul
+of the physics core is needed which would be a great chance to improve
+performance as well. I believe that there is more room for parallelization
+and that we should use it whenever possible. In the best case RoR should be
+able to max out any number of CPU cores while still running significantly
+faster on a single core than it does now.</p>
+</div>
+<div class="paragraph">
+<p>Besides a speedup in performance I would also like to see the physics
+calculations being moved to the server. The details are unclear yet because
+it would suddenly increase server hardware requirements a lot. Maybe we will
+have an option to toggle serverside physics on and off.  The major benefit
+of serverside physics calculation is that multiplayer collisions are
+possible, something that many have asked for and I want to see happening
+myself. It would also lead to a clear separation between client and server,
+potentially putting less stress on the client than before. We will have to
+see how much that could be since some calculations will probably still be
+needed clientside for movement predicition to reduce perceived lag. It would
+certainly seperate rendering and physics though, already increasing
+performance.</p>
+</div>
+<div class="paragraph">
+<p>I got access to an 80-core cluster computer. My ultimate goal is that the
+RoR server (with physics calculations being serverside) is able to take
+advantage of such a system. I would like to see it being able to make use of
+all cluster nodes using OpenMPI to spread physics calculations across all
+cores so we can potentially have many people spawning many vehicles in one
+multiplayer session. In case this becomes possible I may host a community
+event, hosting a RoR server on said cluster for an evening to have a big
+wreck fest. It&#8217;s still uncertain if this is possible at all. The possible
+degree of parallelization for the physics core has yet to be
+determined. When working with clusters additional problems arise like
+latency and bandwidth for communication between nodes. The latency could be
+large enough to make this whole project fail but since a similar project
+probably has never been done before we can&#8217;t know for certain until we
+tried.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">So, to summarize</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>large performance increase</p>
+</li>
+<li>
+<p>ability to make use of any number of CPU cores, if possible</p>
+</li>
+<li>
+<p>serverside physics calculations</p>
+</li>
+<li>
+<p>OpenMPI support for use on clusters</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Keep in mind though that this is just a vision of mine yet. Work hasn&#8217;t even
+started and it will probably take a while until it does since we would like
+to provide a solid new stable build first. Some of these things may not even
+possible or won&#8217;t ever come to life. We&#8217;ll have to see what the future
+holds.</p>
+</div>
+</div>
+</div></div></article><a class="previous" href="/de/blog"><span class="fa fa-arrow-left"></span> <b>Zurückkehren zur Blog-Startseite</b></a> </div></div><footer><div class="row"><div class="small-12 medium-4 columns"><h4>Wir sind offen</h4>Rigs of Rods ist kostenlos und Open Source, lizensiert unter der <a href='https://de.wikipedia.org/wiki/Copyleft' title='Copyleft Lizensierung'>copyleft</a>-style <a href='http://www.gnu.org/licenses/gpl-3.0.html' title='GPLv3'>GPLv3+</a> Lizenz.</div><div class="small-12 medium-2 columns"><h4>Startseite</h4><ul><li><a href="/de/download" title="Das Spiel herunterladen">Herunterladen</a></li><li><a href="/de/blog" title="Blog lesen">Blog</a></li><li><a href="/de/docs" title="Dokumentation studieren">Dokumentation</a></li></ul></div><div class="small-12 medium-2 columns"><h4>Forum</h4><ul><li><a href="http://rigsofrods.com/forum" title="Sprich mit der Community">Index</a></li><li><a href="http://rigsofrods.com/sso" title="Erstelle ein Konto für das Forum">Anmelden</a></li><li><a href="http://rigsofrods.com/search.php" title="Finde was du brauchst">Suche</a></li></ul></div><div class="small-12 medium-4 columns"><h4>Folge uns</h4><ul class="home-social"><li><a class="fa fa-vk" href="https://vk.com/rigsofrods.official"></a><a class="fa fa-facebook" href="https://facebook.com/rigsofrods.official"></a><a class="fa fa-twitter" href="https://twitter.com/rigsofrods_game"></a><a class="fa fa-youtube" href="https://youtube.com/OfficialRigsOfRods"></a></li></ul></div></div></footer>

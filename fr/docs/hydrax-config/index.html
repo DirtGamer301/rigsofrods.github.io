@@ -1,0 +1,172 @@
+<!DOCTYPE html><html class="no-js" lang="fr"><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><title>Hydrax Config - Rigs of Rods</title><link href="/images/favicon.png" rel="icon" /><link href="/stylesheets/styles.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.carousel.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.theme.default.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CUbuntu+Mono:400%7CUbuntu:300,300italic,300bold,400,400italic,400bold,600,600italic,600bold" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.5/jquery.smooth-scroll.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script><script src="/stylesheets/owl-carousel/owl.carousel.min.js"></script><script>hljs.initHighlightingOnLoad();</script><script>(function(){
+    var WebP = new Image();
+    WebP.onload = WebP.onerror = function(){
+        if(WebP.height != 2){
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            var s = document.getElementsByTagName('script')[0];
+            sc.src = 'http://webpjs.appspot.com/js/webpjs-0.0.2.min.js';
+            s.parentNode.insertBefore(sc,s);
+        }
+    };
+    WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+})();</script><script>$(document).foundation();</script><script>$(document).ready(function() {
+    $('a').smoothScroll();
+    $('').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+            scrollTarget: link.hash
+        });
+    });
+});</script><script>$(document).ready(function() {
+  $("#media-slider").owlCarousel({
+    items: 1,
+    nav: true,
+    merge: true,
+    loop: true,
+    video: true,
+    lazyLoad: true,
+    center: true,
+    videoHeight: 720,
+    responsive: {
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+    }
+  });
+});</script></head><body><div class="fixed contain-to-grid top-bar-margin"><nav class="top-bar" data-topbar="" role="navigation"><ul class="title-area"><li class="name"><h1><a href="/fr/">Rigs of Rods</a></h1></li></ul><section class="top-bar-section"><ul class="left"><li test="/fr/docs/"><a href="/fr/"><span class='fa fa-home'></span>  <span class="nav-entry-text">Accueil</span></a></li><li test="/fr/docs/"><a href="/fr/download/"><span class='fa fa-download'></span>  <span class="nav-entry-text">Télécharger</span></a></li><li test="/fr/docs/"><a href="/fr/repository/"><span class='fa fa-plus'></span>  <span class="nav-entry-text">Dépot de mods</span></a></li><li test="/fr/docs/"><a href="/fr/forum/"><span class='fa fa-comments'></span>  <span class="nav-entry-text">Forum</span></a></li><li test="/fr/docs/"><a href="/fr/blog/"><span class='fa fa-pencil'></span>  <span class="nav-entry-text">Blog</span></a></li><li class="active" test="/fr/docs/"><a href="/fr/docs/"><span class='fa fa-lightbulb-o'></span>  <span class="nav-entry-text">Docs</span></a></li><li test="/fr/docs/"><a href="/fr/races/"><span class='fa fa-users'></span>  <span class="nav-entry-text">Multi-joueur</span></a></li></ul></section></nav></div></body></html><div class="row main-start"><div class="small-12 columns"><article><header><h1>Hydrax Config</h1><div class="details"></div></header><div id="content"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This file is used to tweak Hydrax&#8217;s water to your needs.</p>
+</div>
+<div class="paragraph">
+<p>A hdx file is a text file, and must have the extension ".hdx".  You can have
+only 1 per "terrn2" file.</p>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#default">1. Default</a></li>
+<li><a href="#custom_hdx_config_file_for_your_terrain">2. Custom HDX Config file for your terrain</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="default"><a class="anchor" href="#default"></a>1. Default</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>#Hydrax cfg file.
+
+#Hydrax version field
+HydraxVersion=0.5.4
+
+#Main options field
+&lt;float&gt;PlanesError=10.5
+&lt;float&gt;FullReflectionDistance=1e+011
+&lt;float&gt;GlobalTransparency=0
+&lt;float&gt;NormalDistortion=0.075
+&lt;vector3&gt;WaterColor=0.0886994x0.204166x0.238806
+
+#Components field
+Components=Sun|Foam|Depth|Smooth|Caustics|Underwater|UnderwaterReflections|UnderwaterGodRays
+
+#Foam parameters
+&lt;float&gt;FoamMaxDistance=7.5e+006
+&lt;float&gt;FoamScale=0.1
+&lt;float&gt;FoamStart=0
+&lt;float&gt;FoamTransparency=1
+
+#Depth parameters
+&lt;float&gt;DepthLimit=70
+&lt;float&gt;DistLimit=90
+
+#Smooth transitions parameters
+&lt;float&gt;SmoothPower=5
+
+#Caustics parameters
+&lt;float&gt;CausticsScale=8.5
+&lt;float&gt;CausticsPower=5.5
+&lt;float&gt;CausticsEnd=0.7
+
+#God rays parameters
+&lt;vector3&gt;GodRaysExposure=0.76x2.46x2.29
+&lt;float&gt;GodRaysIntensity=0.015
+&lt;float&gt;GodRaysSpeed=5
+&lt;int&gt;GodRaysNumberOfRays=100
+&lt;float&gt;GodRaysRaysSize=0.03
+&lt;bool&gt;GodRaysIntersections=false
+
+#Rtt quality field(0x0 = Auto)
+&lt;size&gt;Rtt_Quality_Reflection=0x0
+&lt;size&gt;Rtt_Quality_Refraction=0x0
+&lt;size&gt;Rtt_Quality_Depth=0x0
+&lt;size&gt;Rtt_Quality_URDepth=0x0
+&lt;size&gt;Rtt_Quality_GPUNormalMap=0x0
+
+#Module options
+Module=ProjectedGridVertex
+
+&lt;float&gt;PG_ChoopyStrength=0.375
+&lt;bool&gt;PG_ChoppyWaves=true
+&lt;int&gt;PG_Complexity=264
+&lt;float&gt;PG_Elevation=5
+&lt;bool&gt;PG_ForceRecalculateGeometry=false
+&lt;bool&gt;PG_Smooth=true
+&lt;float&gt;PG_Strength=3.5
+
+#Noise options
+Noise=Perlin
+
+&lt;int&gt;Perlin_Octaves=8
+&lt;float&gt;Perlin_Scale=0.5
+&lt;float&gt;Perlin_Falloff=0.49
+&lt;float&gt;Perlin_Animspeed=1.4
+&lt;float&gt;Perlin_Timemulti=1.27
+&lt;float&gt;Perlin_GPU_Strength=2
+&lt;vector3&gt;Perlin_GPU_LODParameters=0.5x50x150000</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="custom_hdx_config_file_for_your_terrain"><a class="anchor" href="#custom_hdx_config_file_for_your_terrain"></a>2. Custom HDX Config file for your terrain</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As Caelum does, Hydrax also has its own configuration file, which you can
+customize to fit your requirements.</p>
+</div>
+<div class="paragraph">
+<p>Simply make a copy of the file found over this section, save it as
+"your_terrain_name.hdx" and put it in your zip file.</p>
+</div>
+<div class="paragraph">
+<p>Then, in the "terrn2" file, put this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>HydraxConfigFile = your_terrain_name.hdx</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And you&#8217;re done!</p>
+</div>
+<div class="paragraph">
+<p>For the moment, you can tweak the file by a text editor or use the
+HydraxEditor (But will look glitched because of the size proportions).</p>
+</div>
+<div class="paragraph">
+<p>We are planning to make our own Terrain Editor which will give your the
+possibility to tweak Hydrax in real-time.</p>
+</div>
+</div>
+</div></div></article></div></div><footer><div class="row"><div class="small-12 medium-4 columns"><h4>On est Open!</h4>Rigs of Rods est gratuit et open source, disponible sous le style de la license <a href='https://www.gnu.org/Copyleft/' title='Copyleft licensing'>copyleft</a> <a href='http://www.gnu.org/licenses/gpl-3.0.html' title='La license GPLv3'>GPLv3</a>.</div><div class="small-12 medium-2 columns"><h4>Accueil</h4><ul><li><a href="/fr/download" title="Obtenir le jeu">Télécharger</a></li><li><a href="/fr/blog" title="Read the blog">Blog</a></li><li><a href="/fr/docs" title="Read the docs">Docs</a></li></ul></div><div class="small-12 medium-2 columns"><h4>Forum</h4><ul><li><a href="http://rigsofrods.com/forum" title="Rester en contact avec la communauté">Index</a></li><li><a href="http://rigsofrods.com/sso" title="s'inscrire au forum">Inscription</a></li><li><a href="http://rigsofrods.com/search.php" title="Rechercher ce que vous voulez">Rechercher</a></li></ul></div><div class="small-12 medium-4 columns"><h4>Suivez-nous!</h4><ul class="home-social"><li><a class="fa fa-vk" href="https://vk.com/rigsofrods.official"></a><a class="fa fa-facebook" href="https://facebook.com/rigsofrods.official"></a><a class="fa fa-twitter" href="https://twitter.com/rigsofrods_game"></a><a class="fa fa-youtube" href="https://youtube.com/OfficialRigsOfRods"></a></li></ul></div></div></footer>

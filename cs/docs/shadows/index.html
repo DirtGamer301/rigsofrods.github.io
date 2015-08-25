@@ -1,0 +1,170 @@
+<!DOCTYPE html><html class="no-js" lang="cs"><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><title>Shadows - Rigs of Rods</title><link href="/images/favicon.png" rel="icon" /><link href="/stylesheets/styles.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.carousel.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.theme.default.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CUbuntu+Mono:400%7CUbuntu:300,300italic,300bold,400,400italic,400bold,600,600italic,600bold" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.5/jquery.smooth-scroll.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script><script src="/stylesheets/owl-carousel/owl.carousel.min.js"></script><script>hljs.initHighlightingOnLoad();</script><script>(function(){
+    var WebP = new Image();
+    WebP.onload = WebP.onerror = function(){
+        if(WebP.height != 2){
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            var s = document.getElementsByTagName('script')[0];
+            sc.src = 'http://webpjs.appspot.com/js/webpjs-0.0.2.min.js';
+            s.parentNode.insertBefore(sc,s);
+        }
+    };
+    WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+})();</script><script>$(document).foundation();</script><script>$(document).ready(function() {
+    $('a').smoothScroll();
+    $('').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+            scrollTarget: link.hash
+        });
+    });
+});</script><script>$(document).ready(function() {
+  $("#media-slider").owlCarousel({
+    items: 1,
+    nav: true,
+    merge: true,
+    loop: true,
+    video: true,
+    lazyLoad: true,
+    center: true,
+    videoHeight: 720,
+    responsive: {
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+    }
+  });
+});</script></head><body><div class="fixed contain-to-grid top-bar-margin"><nav class="top-bar" data-topbar="" role="navigation"><ul class="title-area"><li class="name"><h1><a href="/cs/">Rigs of Rods</a></h1></li></ul><section class="top-bar-section"><ul class="left"><li test="/cs/docs/"><a href="/cs/"><span class='fa fa-home'></span>  <span class="nav-entry-text">Home</span></a></li><li test="/cs/docs/"><a href="/cs/download/"><span class='fa fa-download'></span>  <span class="nav-entry-text">Download</span></a></li><li test="/cs/docs/"><a href="/cs/repository/"><span class='fa fa-plus'></span>  <span class="nav-entry-text">Repository</span></a></li><li test="/cs/docs/"><a href="/cs/forum/"><span class='fa fa-comments'></span>  <span class="nav-entry-text">Forum</span></a></li><li test="/cs/docs/"><a href="/cs/blog/"><span class='fa fa-pencil'></span>  <span class="nav-entry-text">Blog</span></a></li><li class="active" test="/cs/docs/"><a href="/cs/docs/"><span class='fa fa-lightbulb-o'></span>  <span class="nav-entry-text">Docs</span></a></li><li test="/cs/docs/"><a href="/cs/races/"><span class='fa fa-users'></span>  <span class="nav-entry-text">Multiplayer</span></a></li></ul></section></nav></div></body></html><div class="row main-start"><div class="small-12 columns"><article><header><h1>Shadows</h1><div class="details"></div></header><div id="content"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Rigs of Rods uses the Parallel-Split Shadow Maps technique. Shadow textures
+are split into 3 parts with different resolutions and size. The closest one
+to the camera is the smallest and has the greatest resolution. The second
+and the third are sometimes equal in resolution but not in size. Shadow
+details progressively degrade as soon as you get into the 2nd and 3rd split.</p>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#how_to_make_your_models_receive_shadows">1. How to make your models receive shadows</a>
+<ul class="sectlevel2">
+<li><a href="#vehicles">1.1. Vehicles</a></li>
+<li><a href="#objects">1.2. Objects</a></li>
+</ul>
+</li>
+<li><a href="#misc">2. Misc</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="how_to_make_your_models_receive_shadows"><a class="anchor" href="#how_to_make_your_models_receive_shadows"></a>1. How to make your models receive shadows</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We have been working hard on making material management easier for modders
+so it will be the last thing they&#8217;ll take care of. Note with these, your
+vehicles' minimum version requirement is 0.4.5.</p>
+</div>
+<div class="sect2">
+<h3 id="vehicles"><a class="anchor" href="#vehicles"></a>1.1. Vehicles</h3>
+<div class="paragraph">
+<p>For vehicles, you can simply use the managed materials section of the truck
+file, which will give you shadows instantly without any problems.</p>
+</div>
+<div class="paragraph">
+<p>If you want to use your own material file, you will have to proceed in this
+way.</p>
+</div>
+<div class="paragraph">
+<p>On the 1st line of the material file, put this line of code:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>import * from "managed_mats.material"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you want to go simple, you can do it this way:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>material material_name_here: RoR/Managed_Mats/Base
+{
+	set_texture_alias diffuse_tex texture_name_here.dds
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Do not forget to add the ": RoR/Managed_Mats/Base" after the material&#8217;s
+name.</p>
+</div>
+<div class="paragraph">
+<p>Or for more control over the material file, you can do it this way:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>material material_name_here: RoR/Managed_Mats/Base
+{
+	technique BaseTechnique
+	{
+		pass BaseRender
+		{
+			//Ambient, diffuse, emissive stuff here
+
+			texture_unit Diffuse_Map
+			{
+				texture texture_name_here.dds
+			}
+		}
+	}
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Notice here that in addition to the ": RoR/Managed_Mats/Base", the technique
+has a defined name "BaseTechnique", the pass has a defined name
+"BaseRender", and the texture has a defined name "Diffuse_Map". As soon as
+you put all these three, you will get working shadows with a detailed
+material file. You can still add as many techniques/passes as you want but
+do not use the same names again, you can simply not name them.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="objects"><a class="anchor" href="#objects"></a>1.2. Objects</h3>
+<div class="paragraph">
+<p>Use the same technique as explained above.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="misc"><a class="anchor" href="#misc"></a>2. Misc</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Other than the " RoR/Managed_Mats/Base" inheritance, you can use all these
+for each type of texture/model used.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>RoR/Managed_Mats/Base
+RoR/Managed_Mats/BaseNoShadows
+RoR/Managed_Mats/BaseSpecular
+RoR/Managed_Mats/Vegetation
+RoR/Managed_Mats/Transparent</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Take a look at Rigs of
+Rods/Resources/managed_materials/managed_mats.material for more information
+on how it works.</p>
+</div>
+</div>
+</div></div></article></div></div><footer><div class="row"><div class="small-12 medium-4 columns"><h4>We are open</h4>Rigs of Rods is free and open source, available under the <a href='https://www.gnu.org/Copyleft/' title='Copyleft licensing'>copyleft</a>-style <a href='http://www.gnu.org/licenses/gpl-3.0.html' title='The GPLv3 license'>GPLv3</a> license.</div><div class="small-12 medium-2 columns"><h4>Home</h4><ul><li><a href="/cs/download" title="Get the game">Download</a></li><li><a href="/cs/blog" title="Read the blog">Blog</a></li><li><a href="/cs/docs" title="Read the docs">Docs</a></li></ul></div><div class="small-12 medium-2 columns"><h4>Forum</h4><ul><li><a href="http://rigsofrods.com/forum" title="Talk to the community">Index</a></li><li><a href="http://rigsofrods.com/sso" title="Register at the forum">Register</a></li><li><a href="http://rigsofrods.com/search.php" title="Find what you need">Search</a></li></ul></div><div class="small-12 medium-4 columns"><h4>Follow us</h4><ul class="home-social"><li><a class="fa fa-vk" href="https://vk.com/rigsofrods.official"></a><a class="fa fa-facebook" href="https://facebook.com/rigsofrods.official"></a><a class="fa fa-twitter" href="https://twitter.com/rigsofrods_game"></a><a class="fa fa-youtube" href="https://youtube.com/OfficialRigsOfRods"></a></li></ul></div></div></footer>

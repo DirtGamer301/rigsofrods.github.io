@@ -1,0 +1,236 @@
+<!DOCTYPE html><html class="no-js" lang="ru"><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><title>Rigs of Rods: Симулятор мягких тел</title><link href="/images/favicon.png" rel="icon" /><link href="/stylesheets/styles.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.carousel.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.theme.default.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CUbuntu+Mono:400%7CUbuntu:300,300italic,300bold,400,400italic,400bold,600,600italic,600bold" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.5/jquery.smooth-scroll.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script><script src="/stylesheets/owl-carousel/owl.carousel.min.js"></script><script>hljs.initHighlightingOnLoad();</script><script>(function(){
+    var WebP = new Image();
+    WebP.onload = WebP.onerror = function(){
+        if(WebP.height != 2){
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            var s = document.getElementsByTagName('script')[0];
+            sc.src = 'http://webpjs.appspot.com/js/webpjs-0.0.2.min.js';
+            s.parentNode.insertBefore(sc,s);
+        }
+    };
+    WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+})();</script><script>$(document).foundation();</script><script>$(document).ready(function() {
+    $('a').smoothScroll();
+    $('').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+            scrollTarget: link.hash
+        });
+    });
+});</script><script>$(document).ready(function() {
+  $("#media-slider").owlCarousel({
+    items: 1,
+    nav: true,
+    merge: true,
+    loop: true,
+    video: true,
+    lazyLoad: true,
+    center: true,
+    videoHeight: 720,
+    responsive: {
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+    }
+  });
+});</script></head><body><div class="fixed contain-to-grid top-bar-margin"><nav class="top-bar" data-topbar="" role="navigation"><ul class="title-area"><li class="name"><h1><a href="/ru/">Rigs of Rods</a></h1></li></ul><section class="top-bar-section"><ul class="left"><li test="/ru/blog/"><a href="/ru/"><span class='fa fa-home'></span>  <span class="nav-entry-text">Главная</span></a></li><li test="/ru/blog/"><a href="/ru/download/"><span class='fa fa-download'></span>  <span class="nav-entry-text">Скачать</span></a></li><li test="/ru/blog/"><a href="/ru/repository/"><span class='fa fa-plus'></span>  <span class="nav-entry-text">Хранилище</span></a></li><li test="/ru/blog/"><a href="/ru/forum/"><span class='fa fa-comments'></span>  <span class="nav-entry-text">Форум</span></a></li><li class="active" test="/ru/blog/"><a href="/ru/blog/"><span class='fa fa-pencil'></span>  <span class="nav-entry-text">Блог</span></a></li><li test="/ru/blog/"><a href="/ru/docs/"><span class='fa fa-lightbulb-o'></span>  <span class="nav-entry-text">Документация</span></a></li><li test="/ru/blog/"><a href="/ru/races/"><span class='fa fa-users'></span>  <span class="nav-entry-text">Мультиплеер</span></a></li></ul></section></nav></div></body></html><div class="row main-start"><div class="small-12 columns bloglist"><article><header><h1>Блог разработки Rigs of Rods</h1></header><div class="small-12 columns blog-entry"><header class="bloglist"><h2>Релиз 0.4.5.1!</h2><div class="details"><span class="author" id="author">Артём Воротников</span><br /><span class="email" id="email"><a href="https://github.com/skybon">@skybon</a></span><br /><span id="revdate">2015-08-24</span></div></header><div id="summary"><p><div id="preamble">
+<div class="sectionbody">
+<div class="imageblock ">
+<div class="content">
+<img src="http://i.imgur.com/ccvDMrb.jpg" alt="ccvDMrb">
+</div>
+</div>
+<div class="paragraph">
+<p>Привет!</p>
+</div>
+<div class="paragraph">
+<p>Команда разработчиков рада сообщить о выпуске первой порции исправлений для
+ветки 0.4.5 NextStable. Она содержит изменения, которые не попали в 0.4.5.0
+и которые исправляют баги, обнаруженные уже после релиза NextStable.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="0_4_5_1">
+<a class="anchor" href="#0_4_5_1"></a>0.4.5...</h2>
+</div></p></div><span class="label">Разработка</span> <span class="label">Релиз</span> <div class="right"><a href="/ru/blog/2015-08-24-0.4.5.1-released.html">Далее →</a></div></div><div class="small-12 columns blog-entry"><header class="bloglist"><h2>Железнодорожные стрелки снова в строю</h2><div class="details"><span class="author" id="author">Артём Воротников</span><br /><span class="email" id="email"><a href="https://github.com/skybon">@skybon</a></span><br /><span id="revdate">2015-08-17</span></div></header><div id="summary"><p><div class="paragraph">
+<p>Привет,</p>
+</div>
+<div class="paragraph">
+<p>Неприятное <a href="https://github.com/RigsOfRods/rigs-of-rods/issues/160">падение при
+пересечении ЖД-стрелки</a> сегодня было
+устранено.
+См.
+<a href="https://github.com/RigsOfRods/rigs-of-rods/commit/130d222af07c671132b1485b31e1b4dc020ee0a5">это
+изменение</a>. Исправление будет включено в предстоящий релиз 0.4.5.1.</p>
+</div>
+<div class="paragraph">
+<p>Готовь стальные колёса! Спасибо за то, что играешь в RoR NextStable.</p>
+</div></p></div><span class="label">Разработка</span> <div class="right"><a href="/ru/blog/2015-08-17-railway-switches-are-working-now.html">Далее →</a></div></div><div class="small-12 columns blog-entry"><header class="bloglist"><h2>Десятилетие проекта Rigs of Rods, релиз версии 0.4.5 NextStable!</h2><div class="details"><span class="author" id="author">Монсеф Бен Слимане</span><br /><span class="email" id="email"><a href="https://github.com/Max98">@Max98</a></span><br /><span id="revdate">2015-08-11</span></div></header><div id="summary"><p><div id="preamble">
+<div class="sectionbody">
+<div class="imageblock ">
+<div class="content">
+<img src="http://i.imgur.com/UcwR08I.jpg" alt="UcwR08I">
+</div>
+</div>
+<div class="paragraph">
+<p>Dear Rigs of Rods community,</p>
+</div>
+<div class="paragraph">
+<p>Today is a special day for all of us. On this day,
+<a href="http://rigsofrods.blogspot.com/2005/08/ror-011-ready-for-download.html">10
+years ago</a>, the first version of Rigs of Rods soft body physics simulator
+was released to the public by Pierre Michel-Ricordel (known as pricorde).</p>
+</div>
+<div class="paragraph">
+<p>Rigs of...</p>
+</div>
+</div>
+</div></p></div><span class="label">Новости</span> <span class="label">Разработка</span> <span class="label">Релиз</span> <div class="right"><a href="/ru/blog/2015-08-11-10-years-nextstable-released.html">Далее →</a></div></div><div class="small-12 columns blog-entry"><header class="bloglist"><h2>Релиз тестовой сборки 5!</h2><div class="details"><span class="author" id="author">Монсеф Бен Слимане</span><br /><span class="email" id="email"><a href="https://github.com/Max98">@Max98</a></span><br /><span id="revdate">2015-08-04</span></div></header><div id="summary"><p><div class="dlist">
+<dl>
+<dt class="hdlist1">Основные изменения</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Добавлены новые обои.</p>
+</li>
+<li>
+<p>Улучшена отказоустойчивость парсера.</p>
+</li>
+<li>
+<p>Исправлены PSSM-тени.</p>
+</li>
+<li>
+<p>Исправлены вспышки, активируемые из меню паузы.</p>
+</li>
+<li>
+<p>Исправлен рёберный материал, использующий set_beam_defaults.</p>
+</li>
+<li>
+<p>Исправлена ошибка соед...</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div></p></div><span class="label">Новости</span> <span class="label">Разработка</span> <div class="right"><a href="/ru/blog/2015-08-04-test-build-5-released.html">Далее →</a></div></div><div class="small-12 columns blog-entry"><header class="bloglist"><h2>Мы в социальных сетях</h2><div class="details"><span class="author" id="author">Артём Воротников</span><br /><span class="email" id="email"><a href="https://github.com/skybon">@skybon</a></span><br /><span id="revdate">2015-08-04</span></div></header><div id="summary"><p><div class="paragraph">
+<p>Дорогие друзья,</p>
+</div>
+<div class="paragraph">
+<p>А вы знаете, что помимо нашего блога разработки, у нас теперь есть и
+страницы в социальных сетях</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Английская: <a href="https://facebook.com/rigsofrods.official" class="bare">https://facebook.com/rigsofrods.official</a></p>
+</li>
+<li>
+<p>Русская: <a href="https://vk.com/rigsofrods.official" class="bare">https://vk.com/rigsofrods.official</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Подпишитесь и будьте в к...</p>
+</div></p></div><span class="label">Разработка</span> <span class="label">Сообщество</span> <span class="label">Социальные сети</span> <div class="right"><a href="/ru/blog/2015-08-04-social-media-feeds.html">Далее →</a></div></div><div class="small-12 columns blog-entry"><header class="bloglist"><h2>Конкурс на лучший промо-ролик для RoR 0.4.5.0</h2><div class="details"><span class="author" id="author">Монсеф Бен Слимане</span><br /><span class="email" id="email"><a href="https://github.com/Max98">@Max98</a></span><br /><span id="revdate">2015-07-23</span></div></header><div id="summary"><p><div class="paragraph">
+<p>Всем привет!</p>
+</div>
+<div class="imageblock ">
+<div class="content">
+<img src="http://www.rigsofrods.com/images/imported/2015/03/kaeGBsS-1.png" alt="kaeGBsS 1">
+</div>
+</div>
+<div class="paragraph">
+<p>Несколько месяцев назад, когда мы стали разработчиками, кто-то (не помню
+кто) обещал сделать промо-ролик для RoR. К сожалению, этого не
+произошло. Сегодня мы решили провести конкурс и дать вам шанс самим стать
+частью этого про...</p>
+</div></p></div><span class="label">Разработка</span> <span class="label">Сообщество</span> <span class="label">Конкурс на промо-ролик</span> <div class="right"><a href="/ru/blog/2015-07-23-trailer-contest-ror-promo-contest-trailer-0-4-5-0.html">Далее →</a></div></div><div class="small-12 columns blog-entry"><header class="bloglist"><h2>Релиз тестовой сборки 4!</h2><div class="details"><span class="author" id="author">Монсеф Бен Слимане</span><br /><span class="email" id="email"><a href="https://github.com/Max98">@Max98</a></span><br /><span id="revdate">2015-07-19</span></div></header><div id="summary"><p><div class="paragraph">
+<p>Привет,</p>
+</div>
+<div class="paragraph">
+<p>Запись с небольшим опозданием, эх…​</p>
+</div>
+<div class="paragraph">
+<p>С каждой новой сборкой мы всё ближе и ближе к релизу версии 0.4.5.</p>
+</div>
+<div class="paragraph">
+<p>Версия 0.4.5 запланирована на 11 августа, но кто знает? Выпуск может
+состояться немного позже.</p>
+</div>
+<div class="paragraph">
+<p>Представляем тестовую сборку 4.</p>
+</div></p></div><span class="label">Новости</span> <span class="label">Разработка</span> <div class="right"><a href="/ru/blog/2015-07-19-test-build-4-released.html">Далее →</a></div></div><div class="small-12 columns blog-entry"><header class="bloglist"><h2>Скоро: Новая домашняя страница и Вики</h2><div class="details"><span class="author" id="author">Артём Воротников</span><br /><span class="email" id="email"><a href="https://github.com/skybon">@skybon</a></span><br /><span id="revdate">2015-07-07</span></div></header><div id="summary"><p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Дорогие друзья</strong></p>
+</div>
+<div class="paragraph">
+<p>Меня зовут <strong>Артём Воротников</strong>, и как многие из вас знают, я с недавнего
+времени состою в команде разработчиков RoR. Сегодня мы поговорим о сайте
+RoR: тех плюшках, которые мы подготовили для вас этим летом.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="О_нынешнем_сайте">
+<a class="anchor" href="#%D0%9E_%D0%BD%D1%8B%D0%BD%D0%B5%D1%88%D0%BD%D0%B5%D0%BC_%D1%81%D0%B0%D0%B9%D1%82%D0%B5"></a>О нынешнем сайте</h2>
+<div class="sectionbody">
+<div class="paragraph">
+</div>
+</div>
+</div></p></div><span class="label">Разработка</span> <span class="label">Сайт</span> <div class="right"><a href="/ru/blog/2015-07-07-coming-soon-new-home-page-and-wiki.html">Далее →</a></div></div><div class="small-12 columns blog-entry"><header class="bloglist"><h2>Отчёт о разработке за май 2015</h2><div class="details"><span class="author" id="author">Петр Оглидал</span><br /><span class="email" id="email"><a href="https://github.com/only-a-ptr">@only_a_ptr</a></span><br /><span id="revdate">2015-06-07</span></div></header><div id="summary"><p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Привет фанатам RoR!</strong></p>
+</div>
+<div class="paragraph">
+<p>Хоть и с опозданием, но публикуем обзор разработки RoR за май.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Оргвопросы">
+<a class="anchor" href="#%D0%9E%D1%80%D0%B3%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B"></a>Оргвопросы</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Рад сказать, что у проекта здоровый
+<a href="https://github.com/RigsOfRods/rigs-of-rods/pulse">пульс</a>. Это заслуга
+нашего центра разработки на GitHub. Багтрекер ежедневно пополняется вашими
+отчётами, а ...</p>
+</div>
+</div>
+</div></p></div><span class="label">Разработка</span> <div class="right"><a href="/ru/blog/2015-06-07-devblog-progress-report-05-2015.html">Далее →</a></div></div><div class="small-12 columns blog-entry"><header class="bloglist"><h2>Выпущена тестовая сборка 3!</h2><div class="details"><span class="author" id="author">Монсеф Бен Слимане</span><br /><span class="email" id="email"><a href="https://github.com/Max98">@max98</a></span><br /><span id="revdate">2015-05-31</span></div></header><div id="summary"><p><div class="paragraph">
+<p>Готова новая сборка! Список изменений:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">only_a_ptr</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Исправлена генерация гибких узлов, сломанная в 0.4.0.7. Гибкие узлы
+появлялись деформированными
+(см.
+<a href="https://github.com/RigsOfRods/rigs-of-rods/issues/16">#16</a>). Восстановлено за
+счёт портирования кода из последнего релиза (0.38.67).</p>
+</li>
+<li>
+<p>Добавлен...</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div></p></div><span class="label">Новости</span> <span class="label">Разработка</span> <div class="right"><a href="/ru/blog/2015-05-31-test-build-3-released.html">Далее →</a></div></div></article><div class="small-12 columns"><h4>Старые записи можно найти в <a href='/ru/blog/archive/' title='Архив записей'>архиве</a>...</h4></div></div></div><footer><div class="row"><div class="small-12 medium-4 columns"><h4>Мы открыты</h4>Rigs of Rods - свободное программное обеспечение, доступное на условиях <a href='https://www.gnu.org/Copyleft/' title='Авторское лево'>авторского лева</a>, лицензии <a href='http://www.gnu.org/licenses/gpl-3.0.html' title='Лицензия GPLv3'>GPLv3</a>.</div><div class="small-12 medium-2 columns"><h4>Главная</h4><ul><li><a href="/ru/download" title="Скачать игру">Скачать</a></li><li><a href="/ru/blog" title="Читать блог">Блог</a></li><li><a href="/ru/docs" title="Ознакомиться с документацией">Документация</a></li></ul></div><div class="small-12 medium-2 columns"><h4>Форум</h4><ul><li><a href="http://rigsofrods.com/forum" title="Общение с сообществом">Заглавная</a></li><li><a href="http://rigsofrods.com/sso" title="Зарегистрироваться на форуме">Зарегистрироваться</a></li><li><a href="http://rigsofrods.com/search.php" title="Найти нужную информацию">Поиск</a></li></ul></div><div class="small-12 medium-4 columns"><h4>Подпишись</h4><ul class="home-social"><li><a class="fa fa-vk" href="https://vk.com/rigsofrods.official"></a><a class="fa fa-facebook" href="https://facebook.com/rigsofrods.official"></a><a class="fa fa-twitter" href="https://twitter.com/rigsofrods_game"></a><a class="fa fa-youtube" href="https://youtube.com/OfficialRigsOfRods"></a></li></ul></div></div></footer>

@@ -1,0 +1,187 @@
+<!DOCTYPE html><html class="no-js" lang="ru"><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><title>Отчёт о разработке за апрель 2015 - Rigs of Rods</title><link href="/images/favicon.png" rel="icon" /><link href="/stylesheets/styles.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.carousel.css" rel="stylesheet" /><link href="/stylesheets/owl-carousel/assets/owl.theme.default.min.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CUbuntu+Mono:400%7CUbuntu:300,300italic,300bold,400,400italic,400bold,600,600italic,600bold" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.5.5/jquery.smooth-scroll.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script><script src="/stylesheets/owl-carousel/owl.carousel.min.js"></script><script>hljs.initHighlightingOnLoad();</script><script>(function(){
+    var WebP = new Image();
+    WebP.onload = WebP.onerror = function(){
+        if(WebP.height != 2){
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            var s = document.getElementsByTagName('script')[0];
+            sc.src = 'http://webpjs.appspot.com/js/webpjs-0.0.2.min.js';
+            s.parentNode.insertBefore(sc,s);
+        }
+    };
+    WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+})();</script><script>$(document).foundation();</script><script>$(document).ready(function() {
+    $('a').smoothScroll();
+    $('').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+            scrollTarget: link.hash
+        });
+    });
+});</script><script>$(document).ready(function() {
+  $("#media-slider").owlCarousel({
+    items: 1,
+    nav: true,
+    merge: true,
+    loop: true,
+    video: true,
+    lazyLoad: true,
+    center: true,
+    videoHeight: 720,
+    responsive: {
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+    }
+  });
+});</script></head><body><div class="fixed contain-to-grid top-bar-margin"><nav class="top-bar" data-topbar="" role="navigation"><ul class="title-area"><li class="name"><h1><a href="/ru/">Rigs of Rods</a></h1></li></ul><section class="top-bar-section"><ul class="left"><li test="/ru/blog/"><a href="/ru/"><span class='fa fa-home'></span>  <span class="nav-entry-text">Главная</span></a></li><li test="/ru/blog/"><a href="/ru/download/"><span class='fa fa-download'></span>  <span class="nav-entry-text">Скачать</span></a></li><li test="/ru/blog/"><a href="/ru/repository/"><span class='fa fa-plus'></span>  <span class="nav-entry-text">Хранилище</span></a></li><li test="/ru/blog/"><a href="/ru/forum/"><span class='fa fa-comments'></span>  <span class="nav-entry-text">Форум</span></a></li><li class="active" test="/ru/blog/"><a href="/ru/blog/"><span class='fa fa-pencil'></span>  <span class="nav-entry-text">Блог</span></a></li><li test="/ru/blog/"><a href="/ru/docs/"><span class='fa fa-lightbulb-o'></span>  <span class="nav-entry-text">Документация</span></a></li><li test="/ru/blog/"><a href="/ru/races/"><span class='fa fa-users'></span>  <span class="nav-entry-text">Мультиплеер</span></a></li></ul></section></nav></div></body></html><div class="row main-start"><div class="small-12 columns"><article><header><h1>Отчёт о разработке за апрель 2015</h1><div class="details"><span class="author" id="author">Петр Оглидал</span><br /><span class="email" id="email"><a href="https://github.com/only-a-ptr">@only_a_ptr</a></span><br /><span id="revdate">2015-05-02</span></div></header><div id="content"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Привет фанатам RoR!</strong></p>
+</div>
+<div class="paragraph">
+<p>Прошло ещё 2 месяца, и вот - новый отчёт. Оказалось, что все (включая меня)
+были настолько заняты в марте, что разработка шла ни шатко ни валко, и у
+меня не было времени на написание девблога (да и не о чем). К счастью,
+апрель был гораздо более расслабленным, и я смог внести существенные
+улучшения. Все из моих последних изменений можно оценить в версии
+<a href="http://rigsofrods.com/threads/119110">0.4.5.0-dev, тестовой сборке 2</a> -
+поэтому я призываю всех скачать и присоединиться к тестированию!</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Совместимость_ТС"><a class="anchor" href="#Совместимость_ТС"></a>Совместимость ТС</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>&#8230;&#8203;улучшена! По итогам тестирования многих транспортных средств, я
+переосмыслил подход к дизайну анализатора. Для начала я снизил требования к
+синтаксису, из-за которых ТС появлялись в нерабочем состоянии и засоряли
+окно "отчёта о появлении" предупреждениями. Частые ошибки (напр. лишние
+запятые на концах линий, хвостовые комментарии (да, они были запрещены),
+левые флаги и неправильный регистр ключевых слов) теперь допускаются, часто
+молча, без предупреждения. Кроме того, я начал добавлять "запасной" метод
+разбора для линий, которые не проходят проверку - в этом случае, анализатор
+выдаст предупреждение и обработает линию как RoR v0.38 / v0.4.0.7 - это
+небезопасно, но работоспособно. Пока таким образом доработаны "nodes /
+nodes2".</p>
+</div>
+<div class="paragraph">
+<p>Но самое главное - я изменил свой философский подход к обработке формата
+.truck. С самого начала я знал, что парсинг, используемый в 0.4.0.7, должен
+измениться, как для дальнейшего развития физики в RoR (а старый анализатор
+серьезно блокирует его), так и для включения в состав игры редактора ТС. В
+то же время, важно сохранить совместимость с существующим контентом. До сих
+пор, я пытался написать парсер, который удовлетворял бы обоим
+требованиям. Получилось криво, большинство ТС сломалось, а я начал плакаться
+о качестве как кода, так и truck-файлов. Наконец, неделю назад я пришёл к
+выводу, что парсер, который удовлетворяет моим потребностям, безнадёжно
+сломает совместимость с существующими ТС. Понимая это, очевидны и дальнейшие
+шаги:
+<a href="fake/../../docs/truck-description-file/index.html#fileformatversion">объявить
+новую версию формата</a>, и написать конвертер для старой. Новая версия
+формата будет именоваться "450" (ибо для версии 0.4.5.0), а также для
+обозначения нового поколения после прежних (1,2,3). Если раньше версия
+формата с точки зрения анализатора была пустяком, то теперь при парсинге
+имеет огромное значение.</p>
+</div>
+<div class="paragraph">
+<p>Тем не менее, начали вылезать нестыковки v0.38 &#8594; v0.4.0.7, например,
+эта. Их будет сложнее решать, потому что коду версии 0.38, на секундочку, 4
+года и он основан на устаревших библиотеках, так что создание рабочей беты
+займёт некоторое время. Я буду стараться изо всех сил, но ничего обещать не
+могу.</p>
+</div>
+<div class="paragraph">
+<p>Опять же, я призываю всех <a href="http://rigsofrods.com/threads/119110">скачать
+тестовую сборку и проверить свои любимые автомобили</a>. Они должны работать
+намного лучше.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Редактор_ТС"><a class="anchor" href="#Редактор_ТС"></a>Редактор ТС</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Редактор всё ещё не работает, но есть успехи в разработке. На этот раз я
+добавил поддержку колёс (на данный момент meshwheels2 + flexbodywheels). Там
+же меню выбора в верхней строке меню и панели, которые могут изменить
+параметры колеса. Изменения в размере колёс или числа лучей отображаются
+сразу, и вы можете выбрать + изменить несколько колёс одновременно. Также
+есть возможность создать новое ТС с нуля, а на панели "двигатель" теперь
+есть кнопки [добавить двигатель] / [удалить двигатель]. Инструменты
+редактирования узлов/рёбер по-прежнему не готовы (можно удалить рёбра, но
+пока нельзя добавить), но работа ведётся. Кроме того, компоненты колёсной
+подсистемы (меню выбора, поля выделения, панели) были созданы как общие, так
+что в ближайшее время будет аналогично реализована поддержка вспышек,
+винтов, крыльев и других функций.</p>
+</div>
+<div class="paragraph">
+<p>Во всяком случае, на данный момент, некоторые из вас могут законно
+сомневаться в моих усилиях по созданию редактора ТС. Хотя это полезная вещь,
+она, на первый взгляд, не является крайней необходимостью, поскольку моддеры
+годами создавали контент, используя существующие методы без каких-либо
+существенных проблем, <a href="http://rigsofrods.com/threads/118966">эта тема на
+форуме</a> тому подтверждение. Так а вообще есть ли смысл работать над
+редактором когда есть уйма более серьёзных проблем? Есть, и вам стоит его
+знать.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Физика_будущего"><a class="anchor" href="#Физика_будущего"></a>Физика будущего</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Сейчас RoR может обрабатывать около 500 узлов + 3000 рёбер на каждое ТС. С
+таким небольшим числом элементов разумно моделировать ТС вручную. Тем не
+менее, эта система оставляет желать лучшего - человеку трудно работать с
+моделью мягких тел (с взвешенными узлами, действующими как суставы<br>
+невесомые рёбра + требования устойчивости) - она очень трудна и
+неестественна. Кроме того, RoR обрабатывает только столько У/Р сколько надо
+для создания сеточного кузова, к которому прикрепляются 3D-модели (винты,
+гибкие узлы).</p>
+</div>
+<div class="paragraph">
+<p>Теперь представьте себе, что мы создали совершенно новый физический движок,
+который может обрабатывать примерно в <strong>10-раз больше У/Р</strong> (например, <strong>5 000
+узлов</strong> и <strong>30 000 рёбер</strong>). Думаете, эти цифры - бред сумасшедшего? У меня
+есть серьёзные технические основания полагать, что такая производительность
+достижима. Если отбросить детали, то мы понимаем, что создание настолько
+подробной У/Р вручную (или в Blender, или Editorizer или другим аналогичным
+методом) станет по-человечески невозможно. Кроме того, такое увеличение
+производительности повлечёт переход к новой архитектуре У/Р - от
+моделирования целой платформы мы перейдём к созданию отдельных деталей
+(жёсткая рама, мягкая обивка, тяжелый жесткий двигатель, внешние компоненты
+кузова, возможно, каркас безопасности), которые потом соединятся и будут
+иметь более реалистичное поведение при деформации.</p>
+</div>
+<div class="paragraph">
+<p>Существует только один способ справиться с таким вызовом - с помощью
+CAD-подобного редактора, где транспортное средство создаётся так, как это
+делают настоящие инженеры - путём определения реальных форм компонентов,
+материалов и средств соединения компонентов вместе. Редактор затем вычисляет
+наиболее пригодный У/Р, чтобы имитировать такой автомобиль. Именно это и
+есть нынешнее направление разработки редактора ТС. В настоящее время,
+конструктор имеет лишь частичную поддержку ручного редактирования У/Р, но
+это всего лишь начало, и кость для текущих моддеров + текущего контента. Но
+я с нетерпением смотрю в будущее, а будущее - за CAD.</p>
+</div>
+<div class="paragraph">
+<p>Конечно, это проект на голом энтузиазме, который я делаю в свободное от
+работы время. Он может провалиться. Но я включю поддержку сценариев,
+достаточную для распространения реализации среди членов сообщества, так что
+всё будет достижимо. Я настроен оптимистично.</p>
+</div>
+<div class="paragraph">
+<p>А пока, не стреляйте в пианиста.</p>
+</div>
+</div>
+</div></div></article><a class="previous" href="/ru/blog"><span class="fa fa-arrow-left"></span> <b>Вернуться в начало</b></a> </div></div><footer><div class="row"><div class="small-12 medium-4 columns"><h4>Мы открыты</h4>Rigs of Rods - свободное программное обеспечение, доступное на условиях <a href='https://www.gnu.org/Copyleft/' title='Авторское лево'>авторского лева</a>, лицензии <a href='http://www.gnu.org/licenses/gpl-3.0.html' title='Лицензия GPLv3'>GPLv3</a>.</div><div class="small-12 medium-2 columns"><h4>Главная</h4><ul><li><a href="/ru/download" title="Скачать игру">Скачать</a></li><li><a href="/ru/blog" title="Читать блог">Блог</a></li><li><a href="/ru/docs" title="Ознакомиться с документацией">Документация</a></li></ul></div><div class="small-12 medium-2 columns"><h4>Форум</h4><ul><li><a href="http://rigsofrods.com/forum" title="Общение с сообществом">Заглавная</a></li><li><a href="http://rigsofrods.com/sso" title="Зарегистрироваться на форуме">Зарегистрироваться</a></li><li><a href="http://rigsofrods.com/search.php" title="Найти нужную информацию">Поиск</a></li></ul></div><div class="small-12 medium-4 columns"><h4>Подпишись</h4><ul class="home-social"><li><a class="fa fa-vk" href="https://vk.com/rigsofrods.official"></a><a class="fa fa-facebook" href="https://facebook.com/rigsofrods.official"></a><a class="fa fa-twitter" href="https://twitter.com/rigsofrods_game"></a><a class="fa fa-youtube" href="https://youtube.com/OfficialRigsOfRods"></a></li></ul></div></div></footer>
