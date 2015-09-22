@@ -1,5 +1,5 @@
 LINGUAS="cs de fr ru"
-FOLDERS="blog content"
+FOLDERS="content"
 
 server: clean translate
 	bundle exec middleman server --verbose
@@ -9,25 +9,20 @@ build: clean translate
 	bundle exec middleman build
 
 clean: clean-po
-	rm -rf build/* source/blog/2* source/localizable/docs source/localizable/download
+	rm -rf build/* source/localizable/download
 
 clean-po:
-	find blog/po content/po | grep ".po~" | xargs rm -f
+	find content/po | grep ".po~" | xargs rm -f
 
 translate:
-	po4a-bulk-translate content/source asciidoc adoc content/po source/localizable $(LINGUAS)
-	po4a-bulk-translate blog/source asciidoc adoc blog/po source $(LINGUAS)
-
-	./copy_en.sh
+	utils/po4a-bulk-translate content/source asciidoc adoc content/po source/localizable $(LINGUAS)
+	utils/copy_en.sh
 
 gettextize:
 	rm -rf content/pot/*
-	rm -rf blog/pot/*
-	po4a-bulk-gettextize content/source asciidoc adoc content/pot
-	po4a-bulk-gettextize blog/source asciidoc adoc blog/pot
+	utils/po4a-bulk-gettextize content/source asciidoc adoc content/pot
 
 updatepo:
-	./create_locales.sh $(LINGUAS) $(FOLDERS)
-	po4a-bulk-updatepo content/source asciidoc adoc content/po $(LINGUAS)
-	po4a-bulk-updatepo blog/source asciidoc adoc blog/po $(LINGUAS)
+	utils/create_locales.sh $(LINGUAS) $(FOLDERS)
+	utils/po4a-bulk-updatepo content/source asciidoc adoc content/po $(LINGUAS)
 	make clean-po

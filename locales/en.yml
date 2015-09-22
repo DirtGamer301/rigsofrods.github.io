@@ -23,12 +23,15 @@ en:
         tip: "Find what you need"
     blog:
       title: "Blog"
-      tip: "Read the blog"
-    docs:
-      title: "Docs"
-      tip: "Read the docs"
+      tip: "Follow the Development"
+    wiki:
+      title: "Wiki"
+      tip: "Big collection of knowledge around RoR"
     multiplayer:
       title: "Multiplayer"
+    code:
+      title: "Source Code"
+      tip: "View Source Code on GitHub"
 
   footer:
     open:
@@ -71,7 +74,7 @@ en:
     getting-started:
       title: "Getting Started"
       content:
-        docs: "Read the documentation."
+        wiki: "Read the documentation."
         forum: "Join the forum."
         bugs: "Report bugs and request features."
         have-fun: "Have fun!"
@@ -81,10 +84,4 @@ en:
       alternative: "alternative downloads..."
 
   blog:
-    archive:
-      title: "Development Blog Archive"
     title: "Rigs of Rods Development Blog"
-    readmore: "Read more"
-    archivelink: "View older posts in <a href='/en/blog/archive/' title='Posts archive'>the archive</a>..."
-    backtoindex: "Return to blog index"
-    discuss: "Discuss"

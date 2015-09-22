@@ -12,16 +12,9 @@ branches:
   only:
   - source_middleman
 before_script:
-- wget https://github.com/skybon/po4a-bulk/archive/master.zip -O /tmp/po4a-bulk.zip
-- unzip /tmp/po4a-bulk.zip
-- export PATH=$PATH:$PWD/po4a-bulk-master/
 - wget https://alioth.debian.org/frs/download.php/latestfile/195/po4a-0.45.tar.gz -O /tmp/po4a-0.45.tar.gz
 - tar -xvf /tmp/po4a-0.45.tar.gz
 - export PATH=$PATH:$PWD/po4a-0.45/
 - export PERLLIB=$PERLLIB:$PWD/po4a-0.45/lib
 script:
   - sed -i 's|%W(showtitle |%W(|g' vendor/bundle/ruby/2.2.0/gems/middleman-core-3.3.12/lib/middleman-core/renderers/asciidoc.rb && make build
-  - cd build && git init && git config user.email "rigsofrods-bot@vorotnikov.me" && git config user.name "Rigs of Rods Bot" && git add -A && git commit -am "Automated commit at `date -u --rfc-3339=seconds` by Travis CI" && git push --quiet --force --set-upstream https://$GH_TOKEN:@github.com/RigsOfRods/rigsofrods.github.io.git master
-env:
-  global:
-    secure: GtgRlJeNvwHBHTv9/oYwPNhZwWCTsB6DDh+cXERoldPzqve8oitUw1hN7Eyg+1zg2eTIsteoBHjvaW/nKUfi20+fjhJlr2nrbMN+9TSam/wpMNVVfMKntsJHJbREFgn1O7fs0ScIQ+1nyLujpqM+LdLMTnxhpyoXvBJyPnNSgcvbSXESXK3LHktm+ogoeCSJWzCyCH4cwISuJhN1zYDzfgI3Vh6z5JUeRfvUWopfFFxSePsEVJ+KBJbOZjfn3/2llcmPw2iVmvgTARCyWztGPV0Ezs0PCFQq3+ee7rZA0CVJvLpqWFxdWDkiOYZcva3VJAKP5pFndF136y6zp1OzR1+6VQrVM1wsEoY43IpPGhX6b/+CXgRNg4bSWaZdA8TZZVOxrkCCtRnb5DGDtrb2BdMqu87eisMowajpZiQAb9XBF6ExEPdX2NJupt1fQSQRHE8z1GMyWBA7Z8xVtzpcz3bdMFbadvDcNsZ50vyxeoVKuvXLtUAqaHDJwl9amMmmrIUA9B2/bCM+NniWsuCKm8vWV82BIjKyXxrZAGRHQQPzwHFvgz10dVr836z4UkUeN/IpngYMHoxYDLsVwRLxKWVre6SvdDmv+Wsz05UUS5AX/2hDEhJh8gvkgspUYJueZYXgf14X/7rHXz2W2W394/AEZ/hApCCV+JL99ubNkxc=

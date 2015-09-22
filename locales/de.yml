@@ -1,12 +1,12 @@
 ---
 de:
-  slogan: "Soft-Body-Physik Simulator"
+  slogan: "Soft-Body-Physics Simulator"
 
   nav:
     home:
       title: "Startseite"
     download:
-      title: "Herunterladen"
+      title: "Download"
       tip: "Das Spiel herunterladen"
     repository:
       title: "Repository"
@@ -21,15 +21,18 @@ de:
         tip: "Erstelle ein Konto für das Forum"
       search:
         title: "Suche"
-        tip: "Finde was du brauchst"
+        tip: "Finde, was du brauchst"
     blog:
       title: "Blog"
-      tip: "Blog lesen"
-    docs:
-      title: "Dokumentation"
+      tip: "Die Entwicklung des Spiels verfolgen"
+    wiki:
+      title: "Wiki"
       tip: "Dokumentation studieren"
     multiplayer:
       title: "Mehrspieler"
+    code:
+      title: "Quellcode"
+      tip: "Quellcode auf GitHub ansehen"
 
   footer:
     open:
@@ -59,7 +62,7 @@ de:
           content: "Auftrieb simuliert durch elementare Druckgradienten - Du hast's erfasst, abgehakt!"
         aircraft:
           title: "Flugzeug?"
-          content: "Fortgeschrittenes Flugmodell basierend auf der Bladeelementtheorie - auch hier, abgehakt!"
+          content: "Komplexes Flugmodell basierend auf der Bladeelementtheorie - jupp, abgehakt!"
     foss:
       title: "Kostenlos. Offen. Für dich."
       content:
@@ -69,18 +72,14 @@ de:
     getting-started:
       title: "Los geht's!"
       content:
-        docs: "Lies die Dokumentation."
+        wiki: "Lies die Dokumentation."
         forum: "Tritt dem Forum bei."
         bugs: "Melde Fehler und frage nach neuen Funktionen."
-        have-fun: "Hab Spaß!"
+        have-fun: "Hab' Spaß!"
     download:
       download: "Herunterladen"
       for: "für"
       alternative: "Alternative Downloads"
 
   blog:
-    title: "Rigs of Rods Entwicklungsblog"
-    readmore: "weiter lesen"
-    archivelink: "Schau dir ältere Beiträge im <a href='/de/blog/archive/' title='Posts archive'>Archiv</a> an"
-    backtoindex: "Zurückkehren zur Blog-Startseite"
-    discuss: "Besprechen"
+    title: "Rigs of Rods Entwicklerblog"

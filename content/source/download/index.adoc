@@ -1,4 +1,3 @@
-= Download
 :baseurl: fake/../..
 :imagesdir: {baseurl}/../images
 :doctype: book
@@ -7,32 +6,27 @@
 :toclevels: 5
 :last-update-label!:
 
-toc::[]
-
-== Builds
 === Windows
-* Download the latest stable release https://github.com/RigsOfRods/rigs-of-rods/releases/download/0.4.5/Rigs_of_Rods_v0.4.5.0.exe[here] (recommended)
-* Preview builds for upcoming versions may be found http://www.rigsofrods.com/threads/119110-Test-Build-Rigs-of-rods-0-4-5-0-dev[here]
-* If you want to build from source see <<{baseurl}/docs/compile-windows/index.adoc#,Compiling on Windows>>
+* Download the latest stable release https://github.com/RigsOfRods/rigs-of-rods/releases/latest[here] (recommended)
+* Preview builds for upcoming versions may be found http://www.rigsofrods.com/forums/172-Development-Discussion[here]
+* If you want to build from source see http://www.rigsofrods.com/wiki/pages/Compiling_Sources_under_Windows[here]
 
 === Linux
 * Packages for various distributions: http://www.rigsofrods.com/threads/113517-Collection-of-prepuilt-packages-for-various-Linux-distributions[here]
-* Build from source, see <<{baseurl}/docs/compile-linux/index.adoc#,Compiling on Linux>>
+* Build from source, see http://www.rigsofrods.com/wiki/pages/Compiling_Sources_under_Linux[here]
 
 === OS X
-Unfortunately, due to lack of OS X coders, there is no up to date build of the latest version available.
+Unfortunately, due to lack of OS X coders, there is no native build of the latest version available.
 
-* If you want to build from source see <<{baseurl}/docs/compile-osx/index.adoc#,Compiling on OS X>>
+* Run the Windows build through Wine: https://github.com/RigsOfRods/rigs-of-rods/releases/latest[Download Windows build] and see http://www.rigsofrods.com/threads/110314-RoR-on-Mac-Picture-Heavy-Works-with-most-versions[Tutorial] (recommended)
+* Build from source, see http://www.rigsofrods.com/wiki/pages/Compiling_Sources_under_MacOS[here]
 
-== Overview / Readme / FAQ
-You can find more information about the latest stable release here: <<release-notes/0.38/index.adoc#,Gaggenau>>
-
-The changelog is presented <<changelog/index.adoc#,here>>.
-
-Many questions are answered in the documentation, have a look around: <<{baseurl}/docs/index.adoc#,Documentation index>>
+== Notes
+* The changelog is presented http://www.rigsofrods.com/wiki/pages/Changelog[here].
+* Many questions are answered on the Wiki, have a look around: http://www.rigsofrods.com/wiki/[Rigs of Rods Wiki]
 
 == License
 Rigs of Rods is free and open source software under the GPL v3 license, meaning it is both free as in speech (you can modify it) and free as in beer (it does not cost you anything).
 
 == Legacy
-If you are interested in Rigs of Rods' history check out the museum http://sourceforge.net/projects/rigsofrods/files/rigsofrods/museum/[here]
+If you are interested in Rigs of Rods' history check out the http://sourceforge.net/projects/rigsofrods/files/rigsofrods/museum/[museum]

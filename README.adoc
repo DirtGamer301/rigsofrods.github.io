@@ -84,4 +84,5 @@ See the link:CONTRIBUTING.adoc[Contributing Guide] for more information.
 == License
 image:https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg[link={agpl-uri}, width=100px, "GNU Affero General Public License v3"]
 
-Rigs of Rods website source code is available under the terms of link:{agpl-uri}[GNU Affero General Public License v3] or any later version.
+Rigs of Rods website source code is available under the terms of link:{agpl-uri}[GNU Affero General Public License v3] or any later version with the exception of:
+po4a-bulk-gettextize, po4a-bulk-translate and po4a-bulk-updatepo which are licensed under the terms of GPLv3.
