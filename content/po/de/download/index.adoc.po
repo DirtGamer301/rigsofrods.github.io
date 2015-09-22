@@ -7,147 +7,159 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-08-12 01:05+0300\n"
+"POT-Creation-Date: 2015-09-22 11:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Hiradur <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#. type: Title =
-#: content/source/download/index.adoc:1
-#, no-wrap
-msgid "Download"
-msgstr ""
-
-#. type: Plain text
-#: content/source/download/index.adoc:11
-msgid "toc::[]"
-msgstr ""
-
-#. type: Title ==
-#: content/source/download/index.adoc:12
-#, no-wrap
-msgid "Builds"
-msgstr ""
-
 #. type: Title ===
-#: content/source/download/index.adoc:13
+#: content/source/download/index.adoc:9
 #, no-wrap
 msgid "Windows"
 msgstr ""
 
 #. type: Plain text
-#: content/source/download/index.adoc:15
+#: content/source/download/index.adoc:11
 msgid ""
 "Download the latest stable release https://github.com/RigsOfRods/rigs-of-"
-"rods/releases/download/0.4.5/Rigs_of_Rods_v0.4.5.0.exe[here] (recommended)"
+"rods/releases/latest[here] (recommended)"
 msgstr ""
+"Aktuelle stabile Version https://github.com/RigsOfRods/rigs-"
+"of-rods/releases/latest[hier] herunterladen (empfohlen)"
 
 #. type: Plain text
-#: content/source/download/index.adoc:16
+#: content/source/download/index.adoc:12
 msgid ""
 "Preview builds for upcoming versions may be found http://www.rigsofrods.com/"
-"threads/119110-Test-Build-Rigs-of-rods-0-4-5-0-dev[here]"
+"forums/172-Development-Discussion[here]"
 msgstr ""
+"Beta Versionen können http://www.rigsofrods.com/forums/172-Development-"
+"Discussion[hier] gefunden werden"
 
 #. type: Plain text
-#: content/source/download/index.adoc:17
+#: content/source/download/index.adoc:13
 msgid ""
-"If you want to build from source see <<{baseurl}/docs/compile-windows/index."
-"adoc#,Compiling on Windows>>"
+"If you want to build from source see http://www.rigsofrods.com/wiki/pages/"
+"Compiling_Sources_under_Windows[here]"
 msgstr ""
+"Kompiliere das Spiel selbst: http://www.rigsofrods.com/wiki/pages/"
+"Compiling_Sources_under_Windows[Anleitung]"
 
 #. type: Title ===
-#: content/source/download/index.adoc:18
+#: content/source/download/index.adoc:14
 #, no-wrap
 msgid "Linux"
 msgstr ""
 
 #. type: Plain text
-#: content/source/download/index.adoc:20
+#: content/source/download/index.adoc:16
 msgid ""
 "Packages for various distributions: http://www.rigsofrods.com/threads/113517-"
 "Collection-of-prepuilt-packages-for-various-Linux-distributions[here]"
 msgstr ""
+"Pakete für diverse Linux-Distributionen gibt es http://www.rigsofrods.com/"
+"threads/113517-Collection-of-prepuilt-packages-for-various-Linux-"
+"distributions[hier]"
 
 #. type: Plain text
-#: content/source/download/index.adoc:21
+#: content/source/download/index.adoc:17
 msgid ""
-"Build from source, see <<{baseurl}/docs/compile-linux/index.adoc#,Compiling "
-"on Linux>>"
+"Build from source, see http://www.rigsofrods.com/wiki/pages/"
+"Compiling_Sources_under_Linux[here]"
 msgstr ""
+"Kompiliere das Spiel selber: http://www.rigsofrods.com/wiki/pages/"
+"Compiling_Sources_under_Linux[Anleitung]"
 
 #. type: Title ===
-#: content/source/download/index.adoc:22
+#: content/source/download/index.adoc:18
 #, no-wrap
 msgid "OS X"
 msgstr ""
 
 #. type: Plain text
-#: content/source/download/index.adoc:24
+#: content/source/download/index.adoc:20
 msgid ""
-"Unfortunately, due to lack of OS X coders, there is no up to date build of "
-"the latest version available."
+"Unfortunately, due to lack of OS X coders, there is no native build of the "
+"latest version available."
 msgstr ""
+"Leider können wir aus Mangel an OS X Entwicklern kein natives Build anbieten."
+
+#. type: Plain text
+#: content/source/download/index.adoc:22
+msgid ""
+"Run the Windows build through Wine: https://github.com/RigsOfRods/rigs-of-"
+"rods/releases/latest[Download Windows build] and see http://www.rigsofrods."
+"com/threads/110314-RoR-on-Mac-Picture-Heavy-Works-with-most-"
+"versions[Tutorial] (recommended)"
+msgstr ""
+"Spiele das Windows Build mit Wine: https://github.com/RigsOfRods/rigs-of-"
+"rods/releases/latest[Windows Build herunterladen] und http://www.rigsofrods."
+"com/threads/110314-RoR-on-Mac-Picture-Heavy-Works-with-most-"
+"versions[Anleitung] befolgen (empfohlen)"
+
+#. type: Plain text
+#: content/source/download/index.adoc:23
+msgid ""
+"Build from source, see http://www.rigsofrods.com/wiki/pages/"
+"Compiling_Sources_under_MacOS[here]"
+msgstr ""
+"Kompiliere das Spiel selber, siehe http://www.rigsofrods.com/wiki/pages/"
+"Compiling_Sources_under_MacOS[Anleitung]"
+
+#. type: Title ==
+#: content/source/download/index.adoc:24
+#, no-wrap
+msgid "Notes"
+msgstr "Bemerkungen"
 
 #. type: Plain text
 #: content/source/download/index.adoc:26
 msgid ""
-"If you want to build from source see <<{baseurl}/docs/compile-osx/index."
-"adoc#,Compiling on OS X>>"
+"The changelog is presented http://www.rigsofrods.com/wiki/pages/"
+"Changelog[here]."
 msgstr ""
+"Das Changelog gibt es http://www.rigsofrods.com/wiki/pages/Changelog[hier]"
 
-#. type: Title ==
+#. type: Plain text
 #: content/source/download/index.adoc:27
-#, no-wrap
-msgid "Overview / Readme / FAQ"
-msgstr ""
-
-#. type: Plain text
-#: content/source/download/index.adoc:29
 msgid ""
-"You can find more information about the latest stable release here: "
-"<<release-notes/0.38/index.adoc#,Gaggenau>>"
+"Many questions are answered on the Wiki, have a look around: http://www."
+"rigsofrods.com/wiki/[Rigs of Rods Wiki]"
 msgstr ""
-
-#. type: Plain text
-#: content/source/download/index.adoc:31
-msgid "The changelog is presented <<changelog/index.adoc#,here>>."
-msgstr ""
-
-#. type: Plain text
-#: content/source/download/index.adoc:33
-msgid ""
-"Many questions are answered in the documentation, have a look around: "
-"<<{baseurl}/docs/index.adoc#,Documentation index>>"
-msgstr ""
+"Viele Fragen werden hier beantwortet: http://www.rigsofrods.com/wiki/[Rigs "
+"of Rods Wiki]"
 
 #. type: Title ==
-#: content/source/download/index.adoc:34
+#: content/source/download/index.adoc:28
 #, no-wrap
 msgid "License"
-msgstr ""
+msgstr "Lizenz"
 
 #. type: Plain text
-#: content/source/download/index.adoc:36
+#: content/source/download/index.adoc:30
 msgid ""
 "Rigs of Rods is free and open source software under the GPL v3 license, "
 "meaning it is both free as in speech (you can modify it) and free as in beer "
 "(it does not cost you anything)."
 msgstr ""
+"Rigs of Rods ist nicht nur kostenlos, sondern auch freie Software. Der Source "
+"Code ist unter der GPLv3 lizensiert"
 
 #. type: Title ==
-#: content/source/download/index.adoc:37
+#: content/source/download/index.adoc:31
 #, no-wrap
 msgid "Legacy"
-msgstr ""
+msgstr "Geschichte"
 
 #. type: Plain text
-#: content/source/download/index.adoc:38
+#: content/source/download/index.adoc:32
 msgid ""
-"If you are interested in Rigs of Rods' history check out the museum http://"
-"sourceforge.net/projects/rigsofrods/files/rigsofrods/museum/[here]"
+"If you are interested in Rigs of Rods' history check out the http://"
+"sourceforge.net/projects/rigsofrods/files/rigsofrods/museum/[museum]"
 msgstr ""
+"When dich alte Versionen interessieren, schau mal ins http://sourceforge."
+"net/projects/rigsofrods/files/rigsofrods/museum/[Museum]"

@@ -17,12 +17,16 @@
 -
   id: 'nav.blog.title'
   pre: "<span class='fa fa-pencil'></span>"
-  url: "/blog/"
+  url: "/blogs/"
 -
-  id: 'nav.docs.title'
+  id: 'nav.wiki.title'
   pre: "<span class='fa fa-lightbulb-o'></span>"
-  url: "/docs/"
+  url: "/wiki/"
 -
   id: 'nav.multiplayer.title'
   pre: "<span class='fa fa-users'></span>"
   url: "/races/"
+-
+  id: 'nav.code.title'
+  pre: "<span class='fa fa-terminal'></span>"
+  url: "/code/"

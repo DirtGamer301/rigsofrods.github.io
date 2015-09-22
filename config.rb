@@ -49,13 +49,16 @@ page "/locale-select", :layout => false
 
 I18n.available_locales.each do |locale|
   page "/#{locale}/", :layout => 'base'
-  page "/#{locale}/blog/*", :layout => 'blog'
-  page "/#{locale}/blog/", :layout => false
-  page "/#{locale}/blog/archive/", :layout => false
+  #page "/#{locale}/blog/*", :layout => 'blog'
+  #page "/#{locale}/blog/", :layout => false
+  #page "/#{locale}/blog/archive/", :layout => false
 
+  redirect "#{locale}/blogs/index.html", :to => "http://www.rigsofrods.com/blogs/"
   redirect "#{locale}/forum/index.html", :to => "http://rigsofrods.com/forum"
   redirect "#{locale}/repository/index.html", :to => "http://rigsofrods.com/repository"
   redirect "#{locale}/races/index.html", :to => "http://rigsofrods.com/races"
+  redirect "#{locale}/wiki/index.html", :to => "http://www.rigsofrods.com/wiki"
+  redirect "#{locale}/code/index.html", :to => "https://github.com/RigsOfRods/rigs-of-rods/"
 end
 
 #configure :development do
